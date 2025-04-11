@@ -1,0 +1,19 @@
+# Ignore các tệp và thư mục không cần thiết trong Unity
+
+# Unity specific
+Library/*
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+
+# Ignore nội dung trong Packages nhưng giữ manifest.json
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# Ignore các file hệ thống
+.DS_Store
+Thumbs.db
