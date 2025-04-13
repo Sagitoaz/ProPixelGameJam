@@ -445,15 +445,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 766.4
     width: 1414.2
     height: 234
-=======
-    y: 340
-    width: 854.2
-    height: 374.8
->>>>>>> 2238452 (feature: Create nodes for Areas)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -551,17 +545,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 262.6
     y: 24
     width: 1151.6
     height: 716.4
-=======
-    x: 0
-    y: 24
-    width: 854.2
-    height: 290
->>>>>>> 2238452 (feature: Create nodes for Areas)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1388,13 +1375,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-<<<<<<< HEAD
     width: 290
     height: 416.4
-=======
-    width: 313.99994
-    height: 290
->>>>>>> 2238452 (feature: Create nodes for Areas)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1458,15 +1440,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1
-<<<<<<< HEAD
     y: 466.4
     width: 290
     height: 534
-=======
-    y: 340
-    width: 313.99994
-    height: 374.8
->>>>>>> 2238452 (feature: Create nodes for Areas)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1507,11 +1483,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 525a0000
     m_LastClickedID: 23122
-<<<<<<< HEAD
     m_ExpandedIDs: 000000005aaf00007aaf00007caf00007eaf000080af000082af000084af000086af000088af0000
-=======
-    m_ExpandedIDs: 0000000030ae0000
->>>>>>> 2238452 (feature: Create nodes for Areas)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1540,11 +1512,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
     m_ExpandedIDs: 000000005aaf00007aaf00007caf00007eaf000080af000082af000084af000086af000088af0000
-=======
-    m_ExpandedIDs: 0000000030ae0000
->>>>>>> 2238452 (feature: Create nodes for Areas)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1623,17 +1591,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 1708.2
     y: 24
     width: 339.80005
     height: 976.4
-=======
-    x: 1172.2
-    y: 24
-    width: 363.80005
-    height: 690.8
->>>>>>> 2238452 (feature: Create nodes for Areas)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
