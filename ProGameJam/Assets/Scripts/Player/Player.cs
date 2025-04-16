@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         }
     }
     bool IsGround() {
-        RaycastHit2D hitInfor = Physics2D.Raycast(transform.position, Vector2.down, 1.0f, _groundLayer);
+        RaycastHit2D hitInfor = Physics2D.Raycast(transform.position, Vector2.down, 1.5f, _groundLayer);
         Debug.DrawRay(transform.position, Vector2.down, Color.green);
         if (hitInfor.collider != null) {
             Debug.Log("Hit: " + hitInfor.collider.name);
