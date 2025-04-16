@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shop_anim_0: -703694214479097736
+      shop_anim_1: 6383442354913522013
+      shop_anim_10: 833213197867434526
+      shop_anim_2: -6908235122186328917
+      shop_anim_3: 6263233112828526159
+      shop_anim_4: 3879049702924754164
+      shop_anim_5: 8363047684650912007
+      shop_anim_6: 6148641648076903915
+      shop_anim_7: 2438464394787915291
+      shop_anim_8: 6290392290864417
+      shop_anim_9: -3090753169418455008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

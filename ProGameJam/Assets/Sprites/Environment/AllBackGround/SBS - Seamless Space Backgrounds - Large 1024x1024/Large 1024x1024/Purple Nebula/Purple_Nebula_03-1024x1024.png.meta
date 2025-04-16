@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Purple_Nebula_03-1024x1024_0: -4377343299106076008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
