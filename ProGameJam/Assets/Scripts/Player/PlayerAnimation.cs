@@ -16,4 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     public void Fall(float velocityY) {
         _anim.SetFloat("VelocityY", velocityY);
     }
+    public void Dash() {
+        _anim.SetTrigger("Dash");
+    }
 }

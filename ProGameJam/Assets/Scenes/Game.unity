@@ -1902,7 +1902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpforce: 18
+  _jumpforce: 20
+  _dashForce: 12
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
