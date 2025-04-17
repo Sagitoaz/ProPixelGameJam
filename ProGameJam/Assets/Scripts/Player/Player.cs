@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         }
         _rb.linearVelocity = new Vector2(move * _speed, _rb.linearVelocityY);
         _playerAnimator.Move(move);
+        _playerAnimator.Fall(_rb.linearVelocityY);
     }
     void Flip(float move) {
         if (move > 0) {

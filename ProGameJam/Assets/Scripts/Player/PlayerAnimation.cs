@@ -13,4 +13,7 @@ public class PlayerAnimation : MonoBehaviour
     public void Jump(bool jump) {
         _anim.SetBool("Jumping", jump);
     }
+    public void Fall(float velocityY) {
+        _anim.SetFloat("VelocityY", velocityY);
+    }
 }
