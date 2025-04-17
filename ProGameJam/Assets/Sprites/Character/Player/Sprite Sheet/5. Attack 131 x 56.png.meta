@@ -159,6 +159,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -659,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      5. Attack 131 x 56_0: -19073062547071739
+      5. Attack 131 x 56_1: -4894337481457450197
+      5. Attack 131 x 56_10: 1567631419914147087
+      5. Attack 131 x 56_11: 23089410826577975
+      5. Attack 131 x 56_12: -5637612120116941185
+      5. Attack 131 x 56_13: 1624853246204233412
+      5. Attack 131 x 56_14: -2714974177703524080
+      5. Attack 131 x 56_15: -5425225236488050941
+      5. Attack 131 x 56_16: 127684885963166052
+      5. Attack 131 x 56_17: -5195586140175137722
+      5. Attack 131 x 56_18: 5665075888316191386
+      5. Attack 131 x 56_19: -539847320057064516
+      5. Attack 131 x 56_2: 373222667339541996
+      5. Attack 131 x 56_20: -7029859580874044477
+      5. Attack 131 x 56_21: -5728063235203234124
+      5. Attack 131 x 56_3: 4659223821559019240
+      5. Attack 131 x 56_4: 658678907757527501
+      5. Attack 131 x 56_5: 9187138342068808669
+      5. Attack 131 x 56_6: 8116540919482319168
+      5. Attack 131 x 56_7: -5911271788880919984
+      5. Attack 131 x 56_8: 4613803453294131492
+      5. Attack 131 x 56_9: 253900573125892848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
