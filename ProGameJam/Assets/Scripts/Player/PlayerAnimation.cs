@@ -19,4 +19,20 @@ public class PlayerAnimation : MonoBehaviour
     public void Dash() {
         _anim.SetTrigger("Dash");
     }
+    public void Attack(int attackType) {
+        switch (attackType) {
+            case 1:
+                _anim.SetTrigger("Attack1");
+                break;
+            case 2:
+                _anim.SetTrigger("Attack2");
+                break;
+            case 3:
+                _anim.SetTrigger("Attack3");
+                break;
+        }
+    }
+    public void Death() {
+        _anim.SetTrigger("Death");
+    }
 }
