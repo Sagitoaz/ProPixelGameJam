@@ -1902,10 +1902,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpforce: 18
+  _jumpForce: 19
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  _canAirJump: 1
+  _hasAirJump: 0
+  _dashForce: 12
+  _comboDelay: 0.5
+  _health: 3
 --- !u!114 &1714412674
 MonoBehaviour:
   m_ObjectHideFlags: 0
