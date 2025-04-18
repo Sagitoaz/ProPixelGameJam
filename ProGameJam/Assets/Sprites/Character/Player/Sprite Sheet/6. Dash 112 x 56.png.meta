@@ -147,6 +147,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      6. Dash 112 x 56_0: 2290566818770710418
+      6. Dash 112 x 56_1: -5831102140280658660
+      6. Dash 112 x 56_10: 6310064854511343254
+      6. Dash 112 x 56_11: 103552254869327964
+      6. Dash 112 x 56_12: 9121144579930361083
+      6. Dash 112 x 56_13: -3483611717692078146
+      6. Dash 112 x 56_14: -5249436811145451132
+      6. Dash 112 x 56_15: 691140502765414381
+      6. Dash 112 x 56_16: -1584901992984958997
+      6. Dash 112 x 56_17: -9112005403890572123
+      6. Dash 112 x 56_2: 7119156185660004257
+      6. Dash 112 x 56_3: 223053982626546926
+      6. Dash 112 x 56_4: -4556780635623497497
+      6. Dash 112 x 56_5: 192449287695137614
+      6. Dash 112 x 56_6: 4038638977563302636
+      6. Dash 112 x 56_7: -5527962381568870404
+      6. Dash 112 x 56_8: -933671243373593934
+      6. Dash 112 x 56_9: -3121937552799190640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
