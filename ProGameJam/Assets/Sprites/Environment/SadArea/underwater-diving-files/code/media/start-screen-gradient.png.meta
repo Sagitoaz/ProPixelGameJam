@@ -1797,7 +1797,74 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      start-screen-gradient_0: -380515912529417029
+      start-screen-gradient_1: 2250430320059275868
+      start-screen-gradient_10: -4023476851897445159
+      start-screen-gradient_11: 5470926058540364236
+      start-screen-gradient_12: -7634067558833964160
+      start-screen-gradient_13: 5032680180736129486
+      start-screen-gradient_14: -6084415422545234729
+      start-screen-gradient_15: -5193118436242457751
+      start-screen-gradient_16: 6749314359930817668
+      start-screen-gradient_17: -5952942859697111686
+      start-screen-gradient_18: -3054208893840378598
+      start-screen-gradient_19: -14969034825172908
+      start-screen-gradient_2: -4279459605411497591
+      start-screen-gradient_20: 1370196587479205515
+      start-screen-gradient_21: 866621110584936834
+      start-screen-gradient_22: -884833864566548630
+      start-screen-gradient_23: 2496393288031471441
+      start-screen-gradient_24: -2048397824251621502
+      start-screen-gradient_25: 2184038221832214162
+      start-screen-gradient_26: -1828918556824382494
+      start-screen-gradient_27: -6658265672755643401
+      start-screen-gradient_28: -5368694619128661148
+      start-screen-gradient_29: -2859228867269450700
+      start-screen-gradient_3: -4833377131763489433
+      start-screen-gradient_30: -3978821401826808220
+      start-screen-gradient_31: 5194484502037547399
+      start-screen-gradient_32: -8144537772692256542
+      start-screen-gradient_33: -5267932022261799085
+      start-screen-gradient_34: 2044565705405781654
+      start-screen-gradient_35: 4797822338641438139
+      start-screen-gradient_36: -7255894769802342071
+      start-screen-gradient_37: 828002316504078248
+      start-screen-gradient_38: 831142870702573151
+      start-screen-gradient_39: -7809445382642389516
+      start-screen-gradient_4: 5236560364949116908
+      start-screen-gradient_40: 1867789569127177516
+      start-screen-gradient_41: -6431480767604568400
+      start-screen-gradient_42: -641505269442425259
+      start-screen-gradient_43: 272070464759078837
+      start-screen-gradient_44: -1147957682085732024
+      start-screen-gradient_45: -3783215977291281843
+      start-screen-gradient_46: 47806898111422554
+      start-screen-gradient_47: 4891259328922781021
+      start-screen-gradient_48: -2409898490129865727
+      start-screen-gradient_49: 90890719672217277
+      start-screen-gradient_5: -86387962782546191
+      start-screen-gradient_50: 3942831801017911422
+      start-screen-gradient_51: 8288691779166992800
+      start-screen-gradient_52: 3488625893994731502
+      start-screen-gradient_53: 4167486576069811340
+      start-screen-gradient_54: -4335421185228322404
+      start-screen-gradient_55: 3769894153938748800
+      start-screen-gradient_56: 3225506844619704416
+      start-screen-gradient_57: -5462632052700136514
+      start-screen-gradient_58: 1434685447508714510
+      start-screen-gradient_59: 5044508209982792505
+      start-screen-gradient_6: 4400804725167706361
+      start-screen-gradient_60: 2673717864372352006
+      start-screen-gradient_61: 885555331178526563
+      start-screen-gradient_62: 411085313995952244
+      start-screen-gradient_63: 347974316051215858
+      start-screen-gradient_64: -6408835331168708489
+      start-screen-gradient_65: 8879051212201958372
+      start-screen-gradient_66: 3676925886113180073
+      start-screen-gradient_7: -7148386906330701724
+      start-screen-gradient_8: -3708102534195989372
+      start-screen-gradient_9: -7235541991589303936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
