@@ -1422,7 +1422,59 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      start-screen_0: -5030789786271137735
+      start-screen_1: 6845226717878797665
+      start-screen_10: 7058210525760539679
+      start-screen_11: 7565970143403562738
+      start-screen_12: 5104631098929917240
+      start-screen_13: -4512917457379977703
+      start-screen_14: 4180599146393636511
+      start-screen_15: -3509096837171537074
+      start-screen_16: -745045272241977026
+      start-screen_17: -998157080254674453
+      start-screen_18: 6295013617125653500
+      start-screen_19: -8941856254544137293
+      start-screen_2: 6023154715999644251
+      start-screen_20: -5819080182249441318
+      start-screen_21: -6918897440487414514
+      start-screen_22: 2843354074838006975
+      start-screen_23: -1626940786701198833
+      start-screen_24: -7646380000916673063
+      start-screen_25: 993729506681035172
+      start-screen_26: 289892842083632178
+      start-screen_27: -5707422613520201411
+      start-screen_28: -3971951938730376397
+      start-screen_29: -8186750394413619498
+      start-screen_3: -8006833553259415524
+      start-screen_30: 7121891918797053567
+      start-screen_31: 6836761670406962810
+      start-screen_32: -1385338339623611710
+      start-screen_33: 4480914853760992507
+      start-screen_34: 1459042652818286146
+      start-screen_35: 704324066621832243
+      start-screen_36: -2590482964137645177
+      start-screen_37: -1745830129632922351
+      start-screen_38: -2349133269750113907
+      start-screen_39: -3723339831405257471
+      start-screen_4: 5886111032685884839
+      start-screen_40: 775190397846973417
+      start-screen_41: -700395581630597096
+      start-screen_42: 555152920365643324
+      start-screen_43: 8946434357984024925
+      start-screen_44: -4914162217843546095
+      start-screen_45: 2746432495262387570
+      start-screen_46: -8409790390960461272
+      start-screen_47: -3389400922643872955
+      start-screen_48: -6480976323710682868
+      start-screen_49: 2882890288697915362
+      start-screen_5: 8244580395527125523
+      start-screen_50: 574007188165026194
+      start-screen_51: 3409968720181550444
+      start-screen_6: 7012425186798404625
+      start-screen_7: -1572799496036149593
+      start-screen_8: -7359778786142678754
+      start-screen_9: 3301715773733206048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
