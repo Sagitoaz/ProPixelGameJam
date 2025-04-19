@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      start-screen-fg_0: 2408630005713481542
+      start-screen-fg_1: -7762532506335083645
+      start-screen-fg_2: -510926631361796287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
