@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fish-dart_0: 291351909045924676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

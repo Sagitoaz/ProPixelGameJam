@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player-swiming_0: 5660276636136405323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
