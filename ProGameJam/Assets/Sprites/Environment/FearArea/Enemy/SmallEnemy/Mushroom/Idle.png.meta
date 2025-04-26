@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 6c92996a66ada86468151e411b958591
+guid: 9a9d70024945d9648bb8f531c923dce3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2065811891799403669
-    second: Golem_AttackC_0
+      213: 4723107735738678597
+    second: Idle_0
   - first:
-      213: 8125249240268200814
-    second: Golem_AttackC_1
+      213: -7385789195546760866
+    second: Idle_1
   - first:
-      213: 1883173458087719619
-    second: Golem_AttackC_2
+      213: 3234629978573100161
+    second: Idle_2
   - first:
-      213: -5487499152044177002
-    second: Golem_AttackC_3
-  - first:
-      213: -5674592245790650583
-    second: Golem_AttackC_4
+      213: 6373048116405451881
+    second: Idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,83 +105,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Golem_AttackC_0
+      name: Idle_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 81
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59c2b7f68fc3bac10800000000000000
-      internalID: 2065811891799403669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem_AttackC_1
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 81
-        width: 27
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6bd2b5722fa2c070800000000000000
-      internalID: 8125249240268200814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem_AttackC_2
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 81
-        width: 29
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c233cb5840622a10800000000000000
-      internalID: 1883173458087719619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem_AttackC_3
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 81
+        x: 63
+        y: 48
         width: 25
-        height: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6994621689c78d3b0800000000000000
-      internalID: -5487499152044177002
+      spriteID: 54d7a982679db8140800000000000000
+      internalID: 4723107735738678597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem_AttackC_4
+      name: Idle_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 17
-        width: 19
-        height: 25
+        x: 213
+        y: 48
+        width: 25
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +159,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92f4670fa6ccf31b0800000000000000
-      internalID: -5674592245790650583
+      spriteID: e596485bbd7608990800000000000000
+      internalID: -7385789195546760866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_2
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 48
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184dda4e3d6b3ec20800000000000000
+      internalID: 3234629978573100161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_3
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 48
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cb1dafe7d917850800000000000000
+      internalID: 6373048116405451881
       vertices: []
       indices: 
       edges: []
@@ -235,11 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Golem_AttackC_0: 2065811891799403669
-      Golem_AttackC_1: 8125249240268200814
-      Golem_AttackC_2: 1883173458087719619
-      Golem_AttackC_3: -5487499152044177002
-      Golem_AttackC_4: -5674592245790650583
+      Idle_0: 4723107735738678597
+      Idle_1: -7385789195546760866
+      Idle_2: 3234629978573100161
+      Idle_3: 6373048116405451881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

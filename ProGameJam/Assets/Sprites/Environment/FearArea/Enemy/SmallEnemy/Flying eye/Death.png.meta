@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 6c92996a66ada86468151e411b958591
+guid: 1193461917133f848a56914d83d4e889
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2065811891799403669
-    second: Golem_AttackC_0
+      213: 6991849013916550155
+    second: Death_0
   - first:
-      213: 8125249240268200814
-    second: Golem_AttackC_1
+      213: -276728812324164698
+    second: Death_1
   - first:
-      213: 1883173458087719619
-    second: Golem_AttackC_2
+      213: 3156895337291164288
+    second: Death_2
   - first:
-      213: -5487499152044177002
-    second: Golem_AttackC_3
-  - first:
-      213: -5674592245790650583
-    second: Golem_AttackC_4
+      213: 1400002288684528572
+    second: Death_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,17 +105,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Golem_AttackC_0
+      name: Death_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 81
-        width: 24
-        height: 25
+        x: 56
+        y: 57
+        width: 43
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59c2b7f68fc3bac10800000000000000
-      internalID: 2065811891799403669
+      spriteID: b0449ad32a9080160800000000000000
+      internalID: 6991849013916550155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem_AttackC_1
+      name: Death_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 81
-        width: 27
-        height: 25
+        x: 218
+        y: 50
+        width: 21
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6bd2b5722fa2c070800000000000000
-      internalID: 8125249240268200814
+      spriteID: 6ab6d428c9cd82cf0800000000000000
+      internalID: -276728812324164698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem_AttackC_2
+      name: Death_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 81
-        width: 29
-        height: 25
+        x: 349
+        y: 48
+        width: 58
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c233cb5840622a10800000000000000
-      internalID: 1883173458087719619
+      spriteID: 08aa354559b8fcb20800000000000000
+      internalID: 3156895337291164288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Golem_AttackC_3
+      name: Death_3
       rect:
         serializedVersion: 2
-        x: 212
-        y: 81
-        width: 25
-        height: 25
+        x: 502
+        y: 48
+        width: 51
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,30 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6994621689c78d3b0800000000000000
-      internalID: -5487499152044177002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golem_AttackC_4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 17
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92f4670fa6ccf31b0800000000000000
-      internalID: -5674592245790650583
+      spriteID: cb376cdf9aecd6310800000000000000
+      internalID: 1400002288684528572
       vertices: []
       indices: 
       edges: []
@@ -235,11 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Golem_AttackC_0: 2065811891799403669
-      Golem_AttackC_1: 8125249240268200814
-      Golem_AttackC_2: 1883173458087719619
-      Golem_AttackC_3: -5487499152044177002
-      Golem_AttackC_4: -5674592245790650583
+      Death_0: 6991849013916550155
+      Death_1: -276728812324164698
+      Death_2: 3156895337291164288
+      Death_3: 1400002288684528572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
