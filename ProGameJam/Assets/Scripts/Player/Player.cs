@@ -34,6 +34,10 @@ public class Player : MonoBehaviour
     private PlayerAnimation _playerAnimator;
     private SpriteRenderer _playerSprite;
 
+    //Hitbox
+    [SerializeField] private Transform _hitbox;
+    private bool _facingRight = true;
+
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
@@ -82,8 +86,19 @@ public class Player : MonoBehaviour
     }
 
     void FlipSprite() {
-        if (_move > 0) _playerSprite.flipX = false;
-        else if (_move < 0) _playerSprite.flipX = true;
+        if (_move > 0) {
+            _playerSprite.flipX = false;
+            if (!_facingRight) {
+                _facingRight = true;
+                FlipHitbox();
+            }
+        } else if (_move < 0) {
+            _playerSprite.flipX = true;
+            if (_facingRight) {
+                _facingRight = false;
+                FlipHitbox();
+            }
+        }
     }
 
     bool IsGrounded() {
@@ -138,6 +153,12 @@ public class Player : MonoBehaviour
                 _comboTimer = 0;
             }
         }
+    }
+
+    private void FlipHitbox() {
+        Vector3 scale = _hitbox.localScale;
+        scale.x = _facingRight ? 1 : -1;
+        _hitbox.localScale = scale;
     }
 
     IEnumerator AttackCoolDown() {

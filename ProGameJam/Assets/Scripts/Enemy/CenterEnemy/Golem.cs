@@ -1,22 +1,38 @@
 using System.Collections;
 using UnityEngine;
 
-public class Golem1 : Enemy
+public class Golem1 : Enemy, IDamageable
 {
     [SerializeField] private LayerMask _groundLayer;
     private Rigidbody2D _rb;
     private bool _moveRight = true;
     private bool _canFlip = true;
+    private bool _isIdle = false;
+    private bool _isAttack = false;
+    private Transform _target;
+    [SerializeField] private GameObject _firePrefab;
+    private Coroutine _attackCoroutine;
+
+    public int Health { get; set; }
+
     void Start()
     {
         base.Init();
+        Health = base.health;
         _rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        Patrol();
+        if (!_isAttack) {
+            Patrol();
+        } else {
+            FaceTarget();
+        }
     }
     private void Patrol() {
+        if (_isIdle) {
+            return;
+        }
         Vector2 originPosition = transform.position;
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
         bool checkGround = Physics2D.Raycast(originPosition, Vector2.down, 1.5f, _groundLayer);
@@ -25,25 +41,79 @@ public class Golem1 : Enemy
         Debug.DrawRay(transform.position, direction, Color.red);
         if (!checkGround || checkWall) {
             if (_canFlip) {
-                Flip();
-                StartCoroutine(ResetFlip());
+                StartCoroutine(IdleToFlip());
             }
+            return;
         }
         Move();
     }
     private void Move() {
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
         transform.Translate(direction * speed * Time.deltaTime);
-        anim.SetBool("InCombat", false);
+        anim.SetBool("Moving", true);
     }
     private void Flip() {
         _moveRight = !_moveRight;
         sprite.flipX = !sprite.flipX;
-        anim.SetTrigger("Idle");
     }
-    IEnumerator ResetFlip() {
+    IEnumerator IdleToFlip() {
+        _isIdle = true;
+        anim.SetBool("Moving", false); 
+        yield return new WaitForSeconds(1.0f);
+        Flip();
         _canFlip = false;
-        yield return new WaitForSeconds(0.5f);
+        Move();
+        yield return new WaitForSeconds(1.0f);
         _canFlip = true;
+        _isIdle = false;
+        anim.SetBool("Moving", true);
+    }
+
+    public void Damage()
+    {
+        Health--;
+        Debug.Log("Health point lefts: " + Health);
+        anim.SetTrigger("Hit");
+        if (Health < 1) {
+            Destroy(gameObject);
+        }
+    }
+    public void StartAttack(Transform player) {
+        _isAttack = true;
+        _isIdle = false;
+        _target = player;
+        anim.SetBool("Moving", false);
+        if (_attackCoroutine == null) {
+            _attackCoroutine = StartCoroutine(AttackRoutine());
+        }
+    }
+    public void StopAttack() {
+        _isAttack = false;
+        _isIdle = false;
+        anim.SetBool("Moving", true);
+    }
+    private void FaceTarget() {
+        if (_target == null) return;
+        if (_target.position.x > transform.position.x && !_moveRight) {
+            Flip();
+        } else if (_target.position.x < transform.position.x && _moveRight) {
+            Flip();
+        }
+    }
+    IEnumerator AttackRoutine() {
+        while (true) {
+            if (_isAttack) {
+                anim.SetTrigger("Attack");
+                SpawnFire();
+            }
+            yield return new WaitForSeconds(1.0f);
+        }
+    }
+    private void SpawnFire() {
+        if (_firePrefab != null && _target != null) {
+            GameObject fire = Instantiate(_firePrefab, transform.position, Quaternion.identity);
+            Vector2 direction = _target.position - transform.position;
+            fire.GetComponent<Fire>().SetDirection(direction);
+        }
     }
 }
