@@ -1,18 +1,18 @@
 using UnityEngine;
 
-public class DetectZone : MonoBehaviour
+public class ChasingZone : MonoBehaviour
 {
     [SerializeField] private Golem _enemy;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) {
-            _enemy.StartAttack(collision.transform);
+            _enemy.StartChase(collision.transform);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) {
-            _enemy.StopAttack();
+            _enemy.StopChase();
         }
     }
 }
