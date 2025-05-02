@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Mushroom : Enemy, IDamageable
+public class Mushroom : Enemy, IDamageable, IAttackableEnemy
 {
     [SerializeField] private LayerMask _groundLayer;
     private Rigidbody2D _rb;
@@ -10,9 +10,9 @@ public class Mushroom : Enemy, IDamageable
     private bool _isIdle = false;
     private bool _isAttack = false;
     private Transform _target;
-    [SerializeField] private GameObject _firePrefab;
     private Coroutine _attackCoroutine;
-
+    [SerializeField] private GameObject _hitbox;
+    private bool _isDead = false;
     public int Health { get; set; }
 
     void Start()
@@ -63,7 +63,6 @@ public class Mushroom : Enemy, IDamageable
         Flip();
         _canFlip = false;
         Move();
-        yield return new WaitForSeconds(1.0f);
         _canFlip = true;
         _isIdle = false;
         anim.SetBool("Walk", true);
@@ -71,13 +70,22 @@ public class Mushroom : Enemy, IDamageable
 
     public void Damage()
     {
+        if(_isDead) return;
         Health--;
         Debug.Log("Health point lefts: " + Health);
         anim.SetTrigger("TakeHit");
-        if (Health < 1) {
-            Destroy(gameObject);
+        if (Health < 1)
+        {
+            _isDead = true;
+            anim.SetTrigger("Death");
+            _isAttack = false;
+            _isIdle = true;
+            _canFlip = false;
+            StopAllCoroutines();
+            StartCoroutine(DeathRoutine());
         }
     }
+
     public void StartAttack(Transform player) {
         _isAttack = true;
         _isIdle = false;
@@ -103,17 +111,19 @@ public class Mushroom : Enemy, IDamageable
     IEnumerator AttackRoutine() {
         while (true) {
             if (_isAttack) {
+                _hitbox.SetActive(true);
                 anim.SetTrigger("Attack");
-                SpawnFire();
+                yield return new WaitForSeconds(0.5f);
+                _hitbox.SetActive(false);
             }
             yield return new WaitForSeconds(1.0f);
         }
     }
-    private void SpawnFire() {
-        if (_firePrefab != null && _target != null) {
-            GameObject fire = Instantiate(_firePrefab, transform.position, Quaternion.identity);
-            Vector2 direction = _target.position - transform.position;
-            fire.GetComponent<Fire>().SetDirection(direction);
-        }
+    
+    IEnumerator DeathRoutine()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Destroy(gameObject);
     }
+
 }
