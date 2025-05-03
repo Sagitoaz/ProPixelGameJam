@@ -143,10 +143,10 @@ TextureImporter:
       name: 8. Death 76 x 48_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 4
-        width: 17
-        height: 41
+        x: 0
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: 8. Death 76 x 48_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 4
-        width: 23
-        height: 35
+        x: 76
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: 8. Death 76 x 48_2
       rect:
         serializedVersion: 2
-        x: 173
-        y: 4
-        width: 32
-        height: 27
+        x: 152
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: 8. Death 76 x 48_3
       rect:
         serializedVersion: 2
-        x: 254
-        y: 4
-        width: 37
-        height: 22
+        x: 228
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: 8. Death 76 x 48_4
       rect:
         serializedVersion: 2
-        x: 330
-        y: 4
-        width: 37
-        height: 11
+        x: 304
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: 8. Death 76 x 48_5
       rect:
         serializedVersion: 2
-        x: 407
-        y: 4
-        width: 38
-        height: 26
+        x: 380
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +275,10 @@ TextureImporter:
       name: 8. Death 76 x 48_6
       rect:
         serializedVersion: 2
-        x: 483
-        y: 4
-        width: 42
-        height: 27
+        x: 456
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: 8. Death 76 x 48_7
       rect:
         serializedVersion: 2
-        x: 559
-        y: 4
-        width: 44
-        height: 29
+        x: 532
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,10 +319,10 @@ TextureImporter:
       name: 8. Death 76 x 48_8
       rect:
         serializedVersion: 2
-        x: 635
-        y: 4
-        width: 44
-        height: 29
+        x: 608
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: 8. Death 76 x 48_9
       rect:
         serializedVersion: 2
-        x: 711
-        y: 4
-        width: 44
-        height: 8
+        x: 684
+        y: 0
+        width: 76
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a47e3965238cac14a84f94f76d7e01f7
     internalID: 0
     vertices: []
     indices: 

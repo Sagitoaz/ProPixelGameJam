@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: e9b46f53adabe684b96598cddde5b3dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3215916386185775760
+    second: atk26_0
+  - first:
+      213: 9042145852765806358
+    second: atk26_1
+  - first:
+      213: 5849558044066428513
+    second: atk26_2
+  - first:
+      213: 2138895560704097290
+    second: atk26_3
+  - first:
+      213: 6393779397286216824
+    second: atk26_4
+  - first:
+      213: 3674252240251148702
+    second: atk26_5
+  - first:
+      213: 5689213180626927191
+    second: atk26_6
+  - first:
+      213: 4564998267988173677
+    second: atk26_7
+  - first:
+      213: 4688788563167753733
+    second: atk26_8
+  - first:
+      213: -5158491361550733772
+    second: atk26_9
+  - first:
+      213: -5299518486558460325
+    second: atk26_10
+  - first:
+      213: -3619986973865515955
+    second: atk26_11
+  - first:
+      213: -9154199266406255764
+    second: atk26_12
+  - first:
+      213: 2571564747234163176
+    second: atk26_13
+  - first:
+      213: -2253456079441971652
+    second: atk26_14
+  - first:
+      213: -842070408319044104
+    second: atk26_15
+  - first:
+      213: -4374013929513711247
+    second: atk26_16
+  - first:
+      213: 4720961601546983562
+    second: atk26_17
+  - first:
+      213: 8646454243967903909
+    second: atk26_18
+  - first:
+      213: 6317776626682910239
+    second: atk26_19
+  - first:
+      213: -8540867816247107982
+    second: atk26_20
+  - first:
+      213: 6048130208212238497
+    second: atk26_21
+  - first:
+      213: 3070967523312187660
+    second: atk26_22
+  - first:
+      213: -2991309788163440884
+    second: atk26_23
+  - first:
+      213: 4237791115616529270
+    second: atk26_24
+  - first:
+      213: -1110386078724838363
+    second: atk26_25
+  - first:
+      213: 2317754217347633347
+    second: atk26_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atk26_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 6400
+        height: 2650
+      alignment: 9
+      pivot: {x: 0.24, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c6ec2e100845a49af6b95e027f68db
+      internalID: 1705575084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 69a5e47c26a2a7b44856729e9d9ced28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atk26_0: 1705575084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

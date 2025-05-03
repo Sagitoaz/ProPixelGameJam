@@ -23,6 +23,8 @@ public class Fire : MonoBehaviour
     {
         if (collision.CompareTag("Player")) {
             Debug.Log("Fire hit: " + collision.name);
+            IDamageable player = collision.GetComponent<IDamageable>();
+            player.Damage();
             Destroy(gameObject);
         } else if (collision.CompareTag("Ground")) {
             Destroy(gameObject);

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DetectZone : MonoBehaviour
 {
-    [SerializeField] private Golem1 _enemy;
+    [SerializeField] private Golem _enemy;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) {
