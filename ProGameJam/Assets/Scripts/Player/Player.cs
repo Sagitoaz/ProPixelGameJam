@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
     //Movement
     private Rigidbody2D _rb;
@@ -38,14 +38,17 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform _hitbox;
     private bool _facingRight = true;
 
+    public int Health { get; set; }
+
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
+        Health = _health;
     }
 
     void Update() {
-        if (HandleDeath()) return;
+        if (_isDead) return;
         if (_isDash) return;
 
         HandleAttack();
@@ -199,18 +202,23 @@ public class Player : MonoBehaviour
     }
 
     //DEATH
-    bool HandleDeath()  {
-        if (_health < 1 && !_isDead) {
+    public void Damage()
+    {
+        if (_isDead) return;
+        Health--;
+        Debug.Log("Player's HP lefts: " + Health);
+        _playerAnimator.Hit();
+        if (Health < 1) {
             _isDead = true;
-            StartCoroutine(DestroyPlayerDelay());
-            return true;
+            _playerAnimator.Death();
         }
-        return _isDead;
+    }
+    public void DestroyPlayer() {
+        Destroy(gameObject);
     }
 
-    IEnumerator DestroyPlayerDelay() {
-        _playerAnimator.Death();
-        yield return new WaitForSeconds(1.0f);
-        Destroy(gameObject);
+    //GETTER
+    public bool GetIsGround() {
+        return _grounded;
     }
 }
