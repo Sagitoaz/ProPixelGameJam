@@ -148,7 +148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1739821893742965154
 Transform:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0040531307, y: -0.030317292}
+  m_Offset: {x: -0.0034761429, y: -0.011494853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -208,7 +208,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4368486, y: 0.3050465}
+  m_Size: {x: 0.54225445, y: 0.43303967}
   m_EdgeRadius: 0
 --- !u!50 &3394417698372596361
 Rigidbody2D:
@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6135746201736897969}
   - component: {fileID: 1171145784720612078}
+  - component: {fileID: 2260144879074901259}
   m_Layer: 0
   m_Name: ChasingZone
   m_TagString: Untagged
@@ -420,6 +421,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.1577835, y: 0.93639183}
   m_EdgeRadius: 0
+--- !u!114 &2260144879074901259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7381546101159315355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41499bf2f7f31641b3fe92af4a7476f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 8477712115879118363}
 --- !u!1 &7655451203934223219
 GameObject:
   m_ObjectHideFlags: 0

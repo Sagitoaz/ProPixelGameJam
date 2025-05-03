@@ -216,4 +216,9 @@ public class Player : MonoBehaviour, IDamageable
     public void DestroyPlayer() {
         Destroy(gameObject);
     }
+
+    //GETTER
+    public bool GetIsGround() {
+        return _grounded;
+    }
 }
