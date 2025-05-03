@@ -6,7 +6,8 @@ public class _meleeAttackHitbox : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // damageable.Damage();
+            IDamageable player = collision.GetComponent<IDamageable>();
+            player.Damage();
             Debug.Log("Melee hit: " + collision.name);
         }
     }

@@ -23,7 +23,7 @@ public class AxeDemon : Enemy, IDamageable
         Health = base.health;
         _rb = GetComponent<Rigidbody2D>();
         _meleeCollider = _meleeAttackHitbox.GetComponent<CircleCollider2D>();
-        // _meleeAttackHitbox.SetActive(false);
+        _meleeAttackHitbox.SetActive(false);
     }
     void Update()
     {
@@ -135,7 +135,7 @@ public class AxeDemon : Enemy, IDamageable
             {
                 _meleeAttackHitbox.SetActive(true);
                 anim.SetTrigger("Attack");
-                // yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.5f);
                 _meleeAttackHitbox.SetActive(false);
             }
             yield return new WaitForSeconds(1.0f);

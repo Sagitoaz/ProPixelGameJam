@@ -26,6 +26,8 @@ public class Fireball : MonoBehaviour
     {
         if (collision.CompareTag("Player")) {
             Debug.Log("Fire hit: " + collision.name);
+            IDamageable player = collision.GetComponent<IDamageable>();
+            player.Damage();
             anim.SetTrigger("Explosion");
             Destroy(gameObject);
         } else if (collision.CompareTag("Ground")) {
