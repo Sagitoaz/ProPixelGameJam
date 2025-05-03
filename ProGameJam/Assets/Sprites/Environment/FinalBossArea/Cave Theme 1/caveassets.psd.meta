@@ -934,7 +934,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caveassets_0: -2749495126682692631
+      caveassets_1: 7010875373914345626
+      caveassets_10: 9182775513160568363
+      caveassets_11: -7669616424695764395
+      caveassets_12: -4064863556545737735
+      caveassets_13: 3595686647152449865
+      caveassets_14: -6843469463353040566
+      caveassets_15: -3741515506181955202
+      caveassets_16: -6912578801861356582
+      caveassets_17: 4863957799789004694
+      caveassets_18: 4850286240436342308
+      caveassets_19: -4760403790593134077
+      caveassets_2: 2182390705597124960
+      caveassets_20: 7878811060465851732
+      caveassets_21: -4066229641824486418
+      caveassets_22: -4090142670721616763
+      caveassets_23: -2396155011749928455
+      caveassets_24: -4481243291166456424
+      caveassets_25: -5248465390870754705
+      caveassets_26: -5684623006959032258
+      caveassets_27: -7352352868147486221
+      caveassets_28: 1433483357437429602
+      caveassets_29: 495552065992569526
+      caveassets_3: -8964641591831807048
+      caveassets_30: -7749200623653559336
+      caveassets_31: -6520720975084953802
+      caveassets_32: 6261259353239556656
+      caveassets_4: 7162793224250218118
+      caveassets_5: 1475760968585440907
+      caveassets_6: -5559072348690274789
+      caveassets_7: -3639408803672167072
+      caveassets_8: 6708606689206117718
+      caveassets_9: -2146136545850806753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
