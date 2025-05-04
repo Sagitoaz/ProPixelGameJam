@@ -159,7 +159,7 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
             if (_isAttack)
             {
                 _isPerformingAction = true;
-                _hitbox.SetActive(true);
+                _hitbox.SetActive(false);
 
                 if (useAttack1)
                 {
@@ -172,12 +172,12 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
 
                 useAttack1 = !useAttack1;
 
-                yield return new WaitForSeconds(1f);
-                _hitbox.SetActive(false);
+                yield return new WaitForSeconds(0.5f);
+                _hitbox.SetActive(true);
                 _isPerformingAction = false;
             }
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
     IEnumerator TakeHitRoutine()

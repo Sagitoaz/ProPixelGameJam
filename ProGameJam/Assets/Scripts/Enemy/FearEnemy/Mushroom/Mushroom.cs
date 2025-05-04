@@ -111,10 +111,10 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
     IEnumerator AttackRoutine() {
         while (true) {
             if (_isAttack) {
-                _hitbox.SetActive(true);
+                _hitbox.SetActive(false);
                 anim.SetTrigger("Attack");
                 yield return new WaitForSeconds(0.5f);
-                _hitbox.SetActive(false);
+                _hitbox.SetActive(true);
             }
             yield return new WaitForSeconds(1.0f);
         }

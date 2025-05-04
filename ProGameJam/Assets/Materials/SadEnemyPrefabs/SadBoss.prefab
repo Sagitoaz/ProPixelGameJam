@@ -362,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _hitbox: {fileID: 3404456530416528793}
-  teleportInterval: 3
+  teleportInterval: 10
   teleportDistance: 2
   fallSpeed: 5
 --- !u!61 &8774160481607564456

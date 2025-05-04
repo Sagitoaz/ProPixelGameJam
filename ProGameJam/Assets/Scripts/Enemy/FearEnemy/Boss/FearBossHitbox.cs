@@ -16,6 +16,8 @@ public class FearBossHitbox : MonoBehaviour
     private void DamageTo(Collider2D collision) {
         if (collision.CompareTag("Player")) {
             if (Time.time - _lastAttack >= _attackCoolDown) {
+                IDamageable player = collision.GetComponent<IDamageable>();
+                player.Damage();
                 Debug.Log("Hitbox hit: " + collision.name + Time.time);
                 _lastAttack = Time.time;
             }

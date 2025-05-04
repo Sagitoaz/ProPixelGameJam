@@ -13,6 +13,7 @@ public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
     private Coroutine _attackCoroutine;
     public int Health { get; set; }
     [SerializeField] private float flyDistance = 5f;
+    [SerializeField] private GameObject _hitbox;
     private Vector3 _startPos;
     private Vector3 _leftLimit;
     private Vector3 _rightLimit;
@@ -126,15 +127,19 @@ public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
         {
             if (_isAttack)
             {
+                _hitbox.SetActive(false);
                 anim.SetTrigger("Attack");
+                yield return new WaitForSeconds(0.5f);
+                _hitbox.SetActive(true);
             }
             yield return new WaitForSeconds(1.0f);
         }
     }
-    
+
     IEnumerator DeathRoutine()
     {
         yield return new WaitForSeconds(1.0f);
         Destroy(gameObject);
     }
+    
 }

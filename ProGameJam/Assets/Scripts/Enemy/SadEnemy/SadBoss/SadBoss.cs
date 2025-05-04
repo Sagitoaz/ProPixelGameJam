@@ -189,7 +189,7 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy
             if (_isAttack)
             {
                 _isPerformingAction = true;
-                _hitbox.SetActive(true);
+                _hitbox.SetActive(false);
 
                 int attackIndex = Random.Range(1, 4);
 
@@ -206,12 +206,12 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy
                         break;
                 }
 
-                yield return new WaitForSeconds(1f);
-                _hitbox.SetActive(false);
+                yield return new WaitForSeconds(0.5f);
+                _hitbox.SetActive(true);
                 _isPerformingAction = false;
             }
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 

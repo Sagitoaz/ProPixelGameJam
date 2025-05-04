@@ -7,11 +7,15 @@ public class MushroomAttackHitbox : MonoBehaviour
 
     public void EnableDamage()
     {
-        hitbox.canDamage = true;
+        Debug.Log("EnableDamage called");
+        Debug.Log("Hitbox reference: " + hitbox);
+        hitbox.CanDamage = true;
+        Debug.Log("hitbox.canDamage: " + hitbox.CanDamage);
     }
 
     public void DisableDamage()
     {
-        hitbox.canDamage = false;
+        Debug.Log("DisableDamage called");
+        hitbox.CanDamage = false;
     }
 }
