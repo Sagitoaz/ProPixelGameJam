@@ -106,12 +106,12 @@ TextureImporter:
       name: attack5_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 84
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack5_1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 3
-        width: 132
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f0b562ae6c332f40800000000000000
-      internalID: 5702467999049822454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f9203f32f6744a34e829090bb51d0c28
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +139,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack5_0: -2399656577511229375
-      attack5_1: 5702467999049822454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

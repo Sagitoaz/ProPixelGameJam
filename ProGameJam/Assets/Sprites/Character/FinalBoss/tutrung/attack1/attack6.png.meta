@@ -115,12 +115,12 @@ TextureImporter:
       name: attack6_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 174
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,99 +133,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack6_1
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 60
-        width: 165
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ed24fa0b03fe3410800000000000000
-      internalID: 1458870558068583910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack6_2
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 132
-        width: 36
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d883e89aaeadf19b0800000000000000
-      internalID: -5107122751012980595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack6_3
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 39
-        width: 225
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5deb313a50c16d9f0800000000000000
-      internalID: -444136702713020715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack6_4
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 148
-        width: 14
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1af35e5c4410a9030800000000000000
-      internalID: 3502113055123521441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a9c6feb325e3a34469597a99e6a738ed
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +148,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack6_0: -8992048278120488344
-      attack6_1: 1458870558068583910
-      attack6_2: -5107122751012980595
-      attack6_3: -444136702713020715
-      attack6_4: 3502113055123521441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

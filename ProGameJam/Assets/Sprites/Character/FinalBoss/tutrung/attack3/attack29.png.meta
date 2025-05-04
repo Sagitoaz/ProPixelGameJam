@@ -109,12 +109,12 @@ TextureImporter:
       name: attack29_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 12
-        width: 436
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,55 +127,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack29_1
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 61
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5fc0d37535b5e1f0800000000000000
-      internalID: -1016206899721220261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack29_2
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 47
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7d7b4d627a2ca670800000000000000
-      internalID: 8551256463418031484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: acb5a3e1877ae19498d83b949d1ca93d
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +142,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack29_0: -6518447768330449044
-      attack29_1: -1016206899721220261
-      attack29_2: 8551256463418031484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

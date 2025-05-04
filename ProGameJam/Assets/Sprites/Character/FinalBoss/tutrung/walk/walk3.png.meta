@@ -103,12 +103,12 @@ TextureImporter:
       name: walk3_0
       rect:
         serializedVersion: 2
-        x: 266
-        y: 59
-        width: 107
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.53, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cf7995f9dd0fd7348bea95eb5bbd24e5
     internalID: 0
     vertices: []
     indices: 

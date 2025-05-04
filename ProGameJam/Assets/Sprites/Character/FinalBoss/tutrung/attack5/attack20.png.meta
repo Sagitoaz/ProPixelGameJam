@@ -112,12 +112,12 @@ TextureImporter:
       name: attack20_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 35
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,77 +130,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack20_1
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 30
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4329efbe401b52100800000000000000
-      internalID: 82666802873537076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_2
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 10
-        width: 190
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b423bf845882aaa30800000000000000
-      internalID: 4227235753160815179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_3
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 12
-        width: 165
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 314d98be7eff3bbf0800000000000000
-      internalID: -309622577804225517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 08152e1d3410d5f42b9dc8b8bfaae21e
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +145,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack20_0: 3169973584780830041
-      attack20_1: 82666802873537076
-      attack20_2: 4227235753160815179
-      attack20_3: -309622577804225517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
