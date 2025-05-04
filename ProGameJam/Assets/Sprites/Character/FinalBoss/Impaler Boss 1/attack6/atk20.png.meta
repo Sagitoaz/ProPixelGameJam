@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: ceb171e7603828f47884f38255d24283
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8033445899425044210
+    second: atk20_0
+  - first:
+      213: -7603351798137674991
+    second: atk20_1
+  - first:
+      213: -8981994466396468519
+    second: atk20_2
+  - first:
+      213: 2009355318458383716
+    second: atk20_3
+  - first:
+      213: 6203028808391053435
+    second: atk20_4
+  - first:
+      213: -2821485579628148870
+    second: atk20_5
+  - first:
+      213: 9195574275247361763
+    second: atk20_6
+  - first:
+      213: -6639359463345516978
+    second: atk20_7
+  - first:
+      213: 8378888093497033802
+    second: atk20_8
+  - first:
+      213: -3113910025153334073
+    second: atk20_9
+  - first:
+      213: 6305231587603163608
+    second: atk20_10
+  - first:
+      213: 6771884412051547699
+    second: atk20_11
+  - first:
+      213: -6699881120896826590
+    second: atk20_12
+  - first:
+      213: -8599102753988194083
+    second: atk20_13
+  - first:
+      213: -6096441105269515146
+    second: atk20_14
+  - first:
+      213: 3245361600068723226
+    second: atk20_15
+  - first:
+      213: 2426132373287673318
+    second: atk20_16
+  - first:
+      213: -5982544902777774791
+    second: atk20_17
+  - first:
+      213: -9023388153499348874
+    second: atk20_18
+  - first:
+      213: -9128680878399716771
+    second: atk20_19
+  - first:
+      213: 65553542381140162
+    second: atk20_20
+  - first:
+      213: 6571072986963333731
+    second: atk20_21
+  - first:
+      213: -2286285012959283069
+    second: atk20_22
+  - first:
+      213: 3016682596656284506
+    second: atk20_23
+  - first:
+      213: 5326333906168209307
+    second: atk20_24
+  - first:
+      213: -2807988687831373366
+    second: atk20_25
+  - first:
+      213: -2024098421244619897
+    second: atk20_26
+  - first:
+      213: -8181356339953976006
+    second: atk20_27
+  - first:
+      213: 8829114503898117252
+    second: atk20_28
+  - first:
+      213: 8034082925423814922
+    second: atk20_29
+  - first:
+      213: -6171839967228395191
+    second: atk20_30
+  - first:
+      213: 924123091670071963
+    second: atk20_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atk20_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 6400
+        height: 2650
+      alignment: 9
+      pivot: {x: 0.24, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e13b391c2024b46be7660d15368616
+      internalID: -1151534554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 29b64289ebb81be4e9a4b9629fd0ebc0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atk20_0: -1151534554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
