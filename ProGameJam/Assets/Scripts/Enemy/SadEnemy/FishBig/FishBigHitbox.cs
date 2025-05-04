@@ -1,14 +1,9 @@
 using UnityEngine;
 
-public class MushroomHitbox : MonoBehaviour
+public class FishBigHitbox : MonoBehaviour
 {
     [SerializeField] private float _attackCoolDown = 0.5f;
     private float _lastAttack = 0f;
-    [HideInInspector] public bool canDamage = false;
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     DamageTo(collision);
-    // }
     void OnTriggerStay2D(Collider2D collision)
     {
         DamageTo(collision);

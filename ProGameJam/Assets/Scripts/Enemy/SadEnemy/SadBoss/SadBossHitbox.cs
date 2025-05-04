@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MushroomHitbox : MonoBehaviour
+public class SadBossHitbox : MonoBehaviour
 {
     [SerializeField] private float _attackCoolDown = 0.5f;
     private float _lastAttack = 0f;
@@ -14,8 +14,11 @@ public class MushroomHitbox : MonoBehaviour
         DamageTo(collision);
     }
     private void DamageTo(Collider2D collision) {
-        if (collision.CompareTag("Player")) {
-            if (Time.time - _lastAttack >= _attackCoolDown) {
+        if (!canDamage) return;
+        if (collision.CompareTag("Player"))
+        {
+            if (Time.time - _lastAttack >= _attackCoolDown)
+            {
                 Debug.Log("Hitbox hit: " + collision.name);
                 _lastAttack = Time.time;
             }
