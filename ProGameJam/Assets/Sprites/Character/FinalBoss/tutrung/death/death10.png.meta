@@ -115,12 +115,12 @@ TextureImporter:
       name: death10_0
       rect:
         serializedVersion: 2
-        x: 87
-        y: 16
-        width: 111
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,99 +133,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: death10_1
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 103
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 356918640a8c68190800000000000000
-      internalID: -7960454700627552685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death10_2
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 122
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3357c14e6aca939a0800000000000000
-      internalID: -6252776774835604173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death10_3
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 111
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 886f26005a1d82b00800000000000000
-      internalID: 804123040091928200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death10_4
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 22
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 626c966e4fefda3b0800000000000000
-      internalID: -5499459242158340570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0211d942efea7fe41a31e9efb76a3ccf
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +148,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       death10_0: 5765887010986686461
-      death10_1: -7960454700627552685
-      death10_2: -6252776774835604173
-      death10_3: 804123040091928200
-      death10_4: -5499459242158340570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

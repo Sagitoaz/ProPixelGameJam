@@ -121,12 +121,12 @@ TextureImporter:
       name: attack27_0
       rect:
         serializedVersion: 2
-        x: 88
-        y: 192
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -139,143 +139,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack27_1
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 189
-        width: 31
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3824473cbd5223c0800000000000000
-      internalID: -4385840024142993348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack27_2
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 124
-        width: 27
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ab6c55f39b1254a0800000000000000
-      internalID: -6606187381108479071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack27_3
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 5
-        width: 216
-        height: 185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2c58846e114d0610800000000000000
-      internalID: 1588997842323135533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack27_4
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 151
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1be19548e0027d090800000000000000
-      internalID: -8009898165533073743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack27_5
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 56
-        width: 31
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4edce9e3e5aea500800000000000000
-      internalID: 409447014438067791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack27_6
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 73
-        width: 9
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f74c37078ffde52f0800000000000000
-      internalID: -982101410588670849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1101bda2c576f2940a7ba2fa9f7aeed9
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +154,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack27_0: 9033863968118378097
-      attack27_1: -4385840024142993348
-      attack27_2: -6606187381108479071
-      attack27_3: 1588997842323135533
-      attack27_4: -8009898165533073743
-      attack27_5: 409447014438067791
-      attack27_6: -982101410588670849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

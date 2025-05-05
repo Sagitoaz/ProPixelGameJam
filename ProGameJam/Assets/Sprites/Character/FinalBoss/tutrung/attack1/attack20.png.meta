@@ -121,12 +121,12 @@ TextureImporter:
       name: attack20_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 123
-        width: 45
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -139,143 +139,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack20_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 179
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4329efbe401b52100800000000000000
-      internalID: 82666802873537076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 14
-        width: 50
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b423bf845882aaa30800000000000000
-      internalID: 4227235753160815179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 272
-        height: 175
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 314d98be7eff3bbf0800000000000000
-      internalID: -309622577804225517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 7
-        width: 94
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9953a3e99fcf9bf0800000000000000
-      internalID: -315305189036566116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_5
-      rect:
-        serializedVersion: 2
-        x: 359
-        y: 13
-        width: 75
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc07f2a2e714eb310800000000000000
-      internalID: 1422646542425092301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack20_6
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 21
-        width: 52
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af82546fbfb347fa0800000000000000
-      internalID: -5803948066419169030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e75166149146ec24bad5d56ae96014ba
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +154,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack20_0: 3169973584780830041
-      attack20_1: 82666802873537076
-      attack20_2: 4227235753160815179
-      attack20_3: -309622577804225517
-      attack20_4: -315305189036566116
-      attack20_5: 1422646542425092301
-      attack20_6: -5803948066419169030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

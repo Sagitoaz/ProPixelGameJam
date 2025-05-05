@@ -118,12 +118,12 @@ TextureImporter:
       name: attack15_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 3
-        width: 240
-        height: 137
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -136,121 +136,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack15_1
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 85
-        width: 33
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d8def9bd75ff0490800000000000000
-      internalID: -7777728111105353517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack15_2
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 74
-        width: 39
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea1ce66272c782250800000000000000
-      internalID: 5920118217768878510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack15_3
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 57
-        width: 104
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e10aff312276d4080800000000000000
-      internalID: -9201585067585986530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack15_4
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 53
-        width: 41
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56506bebf8c59ae40800000000000000
-      internalID: 5668163378472158565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack15_5
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 55
-        width: 42
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01f277c375c985cc0800000000000000
-      internalID: -3722053193531183344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b66a0ce8064e08145a0eae519dae6c79
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +151,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack15_0: 6565590338962452100
-      attack15_1: -7777728111105353517
-      attack15_2: 5920118217768878510
-      attack15_3: -9201585067585986530
-      attack15_4: 5668163378472158565
-      attack15_5: -3722053193531183344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -106,12 +106,12 @@ TextureImporter:
       name: death16_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 7
-        width: 124
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: death16_1
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 8
-        width: 14
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b332a88971ce30640800000000000000
-      internalID: 5045135593672680251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4b396c58cb485a1448cc2ff7ede2719a
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +139,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       death16_0: -2602778507100370316
-      death16_1: 5045135593672680251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
