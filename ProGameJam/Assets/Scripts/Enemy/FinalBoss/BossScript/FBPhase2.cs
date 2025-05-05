@@ -13,6 +13,9 @@ public class FBPhase2 : FinalBoss
     }
     protected override bool TrySkills()
     {
+        if (Time.time - _lastUsedTime[5] >= _skillCooldowns[5]) {
+            return ActiveSkill(5, 6);
+        }
         float distance = Vector2.Distance(_target.position, transform.position);
         if (distance < 5.0f) {
             return ActiveSkill(3, 4);

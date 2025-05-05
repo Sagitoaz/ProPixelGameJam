@@ -18,6 +18,7 @@ public class FinalBoss : Enemy
     protected bool _playerInAir = false;
     protected bool _isDead = false;
     [SerializeField] protected float _retreatSpeed = 2.0f;
+    [SerializeField] protected LayerMask _groundLayer;
     protected virtual void Start()
     {
         _anim = GetComponentInChildren<Animator>();
@@ -102,6 +103,46 @@ public class FinalBoss : Enemy
     IEnumerator SkillRoutine(int skillIndex) {
         if (_isDead) yield break;
         _isUsingSkil = true;
+        if (skillIndex == 5 && this is FBPhase2) {
+            Vector3 playerPos = _target.position;
+            Vector3 dirToBack = (_facingRight ? -1 : 1) * transform.right;
+            float[] checkDistances = new float[] { 3.0f, 2.0f, 1.0f };
+
+            Vector3? validTeleportPos = null;
+
+            foreach (float dist in checkDistances)
+            {
+                Vector3 candidatePos = playerPos + dirToBack * dist;
+
+                bool hasGround = Physics2D.Raycast(candidatePos, Vector2.down, 2.0f, _groundLayer);
+                bool isBlocked = Physics2D.OverlapCircle(candidatePos, 0.3f, _groundLayer);
+
+                if (hasGround && !isBlocked)
+                {
+                    validTeleportPos = candidatePos;
+                    break;
+                }
+            }
+
+            if (validTeleportPos == null)
+            {
+                Debug.Log("Teleport failed: no valid position.");
+                _isUsingSkil = false;
+                yield break;
+            }
+
+            // Teleport
+            transform.position = new Vector3(validTeleportPos.Value.x, transform.position.y, transform.position.z);
+
+            // Flip to player
+            Flip(_target.position.x - transform.position.x);
+
+            _anim.SetTrigger("Counter");
+            _lastUsedTime[skillIndex] = Time.time;
+            yield return new WaitForSeconds(_skillLast[skillIndex]);
+            _isUsingSkil = false;
+            yield break;
+        }
         _anim.SetTrigger("Attack" + (skillIndex + 1));
         _lastUsedTime[skillIndex] = Time.time;
         yield return new WaitForSeconds(_skillLast[skillIndex]);
