@@ -1,13 +1,9 @@
 using UnityEngine;
 
-public class FlyingEyeHitbox : MonoBehaviour
+public class MineHitbox : MonoBehaviour
 {
     [SerializeField] private float _attackCoolDown = 0.5f;
     private float _lastAttack = 0f;
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     DamageTo(collision);
-    // }
     void OnTriggerStay2D(Collider2D collision)
     {
         DamageTo(collision);

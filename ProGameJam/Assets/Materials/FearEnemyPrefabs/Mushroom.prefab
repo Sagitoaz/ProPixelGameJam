@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackCoolDown: 0.5
+  canDamage: 0
 --- !u!61 &2932053657155214725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -431,6 +432,7 @@ GameObject:
   - component: {fileID: 1093409944070169870}
   - component: {fileID: 4287726274502800203}
   - component: {fileID: 2741135845992411037}
+  - component: {fileID: 373017735189935051}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -530,3 +532,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &373017735189935051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794365573050741493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9554f0f1de031c43ae9e10ea0efad4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitbox: {fileID: 5964288043406395000}

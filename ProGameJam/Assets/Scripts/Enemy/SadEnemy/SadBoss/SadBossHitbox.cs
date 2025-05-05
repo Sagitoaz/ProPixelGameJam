@@ -1,17 +1,10 @@
 using UnityEngine;
-using System.Collections;
 
-public class MushroomHitbox : MonoBehaviour
+public class SadBossHitbox : MonoBehaviour
 {
     [SerializeField] private float _attackCoolDown = 0.5f;
     private float _lastAttack = 0f;
-    private bool _canDamage = false; // Đổi tên biến nội bộ
-
-    public bool CanDamage
-    {
-        get => _canDamage;
-        set => _canDamage = value;
-    }
+    [HideInInspector] public bool canDamage = false;
     // void OnTriggerEnter2D(Collider2D collision)
     // {
     //     DamageTo(collision);
@@ -20,9 +13,8 @@ public class MushroomHitbox : MonoBehaviour
     {
         DamageTo(collision);
     }
-    private void DamageTo(Collider2D collision)
-    {
-        Debug.Log("value: " + _canDamage);
+    private void DamageTo(Collider2D collision) {
+        if (!canDamage) return;
         if (collision.CompareTag("Player"))
         {
             if (Time.time - _lastAttack >= _attackCoolDown)
@@ -34,5 +26,4 @@ public class MushroomHitbox : MonoBehaviour
             }
         }
     }
-
 }

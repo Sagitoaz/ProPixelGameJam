@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class FlyingEyeHitbox : MonoBehaviour
+public class FearBossHitbox : MonoBehaviour
 {
     [SerializeField] private float _attackCoolDown = 0.5f;
     private float _lastAttack = 0f;
+    [HideInInspector] public bool canDamage = false;
     // void OnTriggerEnter2D(Collider2D collision)
     // {
     //     DamageTo(collision);
@@ -17,7 +18,7 @@ public class FlyingEyeHitbox : MonoBehaviour
             if (Time.time - _lastAttack >= _attackCoolDown) {
                 IDamageable player = collision.GetComponent<IDamageable>();
                 player.Damage();
-                Debug.Log("Hitbox hit: " + collision.name);
+                Debug.Log("Hitbox hit: " + collision.name + Time.time);
                 _lastAttack = Time.time;
             }
         }
