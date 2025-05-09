@@ -17,7 +17,7 @@ public class Player : MonoBehaviour, IDamageable
 
     //Dash
     [SerializeField] private float _dashForce = 12.0f;
-    private bool _canDash = true;
+    [SerializeField] private bool _canDash = true;
     private bool _isDash = false;
 
     //Combat
@@ -286,13 +286,14 @@ public class Player : MonoBehaviour, IDamageable
         }
         if (other.CompareTag("Lava")) {
             _inLava = false;
-            _environmentDamaged = false;
         }
+        _environmentDamaged = false;
     }
     private IEnumerator RespawnToCheckpoint() {
         yield return new WaitForSeconds(0.5f);
         transform.position = _checkpoint.position;
         _inLava = false;
+        _inWater = false;
         _environmentDamaged = false; 
     }
 }
