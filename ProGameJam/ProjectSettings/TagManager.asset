@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Water
+  - Lava
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - Enemy
   - PlayerAttack
   - BossHitbox
-  - 
-  - 
+  - Water
+  - Lava
   - 
   - 
   - 
