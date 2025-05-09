@@ -15,9 +15,18 @@ MonoBehaviour:
   npcName: PurpleNPC
   npcPortrait: {fileID: -956217350, guid: 76707d4a8ffdfe44697b91eca59773f8, type: 3}
   dialogueLines:
-  - Test
-  - EndTest
-  autoProgressLine: 0100
+  - Hello
+  - Help me
+  - nice
+  - bye
+  autoProgressLines: 01010101
+  endDialogueLines: 00000101
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - YES
+    - NO
+    nextDialogueIndexes: 0200000003000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}

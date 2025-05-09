@@ -8,12 +8,11 @@ public class NPCDialogue : ScriptableObject
     public string[] dialogueLines;
     public bool[] autoProgressLines;
     public bool[] endDialogueLines;
+    public DialogueChoice[] choices;
     public float autoProgressDelay = 1.5f;
     public float typingSpeed = 0.05f;
     public AudioClip voiceSound;
     public float voicePitch = 1f;
-
-    public DialogueChoice[] choices;
 }
 
 [System.Serializable]

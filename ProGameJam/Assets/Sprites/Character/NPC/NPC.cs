@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC : MonoBehaviour, IIneractable
@@ -7,6 +8,9 @@ public class NPC : MonoBehaviour, IIneractable
     private DialogueController dialogueUI;
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
+    private static int totalYesCount = 0;
+    private static int totalNoCount = 0;
+    private static HashSet<string> askedNPCs = new HashSet<string>();
 
     public bool CanInteract()
     {
@@ -133,14 +137,34 @@ public class NPC : MonoBehaviour, IIneractable
         for (int i = 0; i < choice.choices.Length; i++)
         {
             int nextIndex = choice.nextDialogueIndexes[i];
-            dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex));
+            string choiceText = choice.choices[i];
+            dialogueUI.CreateChoiceButton(choice.choices[i], () => ChooseOption(nextIndex, choiceText));
         }
     }
 
-    void ChooseOption(int nextIndex) {
+    void ChooseOption(int nextIndex, string choiceText)
+    {
+        bool hasBeenAsked = askedNPCs.Contains(dialogueData.npcName);
+
+        if (!hasBeenAsked)
+        {
+            if (choiceText.ToUpper() == "YES")
+            {
+                totalYesCount++;
+                PlayerPrefs.SetInt("TotalYesCount", totalYesCount);
+            }
+            else if (choiceText.ToUpper() == "NO")
+            {
+                totalNoCount++;
+                PlayerPrefs.SetInt("TotalNoCount", totalNoCount);
+            }
+            askedNPCs.Add(dialogueData.npcName);            
+        }
         dialogueIndex = nextIndex;
         dialogueUI.ClearChoices();
         DisplayCurrentLine();
+
+        Debug.Log($"NPC: {dialogueData.npcName} - Total YES: {totalYesCount}, Total NO: {totalNoCount}, Asked: {hasBeenAsked}");
     }
 
     void DisplayCurrentLine() {

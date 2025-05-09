@@ -15,12 +15,18 @@ MonoBehaviour:
   npcName: BlueNPC
   npcPortrait: {fileID: 471107871, guid: 72c40d9500d2ebb4d814996b613e6b86, type: 3}
   dialogueLines:
-  - Hello
-  - Bye
-  autoProgressLines: 
-  endDialogueLines: 
+  - Hello, can u help
+  - Thanks
+  - Ok bye
+  autoProgressLines: 010101
+  endDialogueLines: 000101
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - YES
+    - NO
+    nextDialogueIndexes: 0100000002000000
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  choices: []
