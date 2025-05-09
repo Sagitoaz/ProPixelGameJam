@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1485050063921054869}
   - component: {fileID: 2148528908992010654}
   - component: {fileID: 97345630268252359}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: PurpleNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,10 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: e57690a82e1243b419685141c2875b6b, type: 2}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portraitImage: {fileID: 0}
 --- !u!212 &1485050063921054869
 SpriteRenderer:
   m_ObjectHideFlags: 0
