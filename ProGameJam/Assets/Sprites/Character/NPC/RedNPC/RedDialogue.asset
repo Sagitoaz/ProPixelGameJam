@@ -16,9 +16,20 @@ MonoBehaviour:
   npcPortrait: {fileID: -639057597, guid: a2f25f77f46bba3408a580bb2d2296ca, type: 3}
   dialogueLines:
   - Hello my hero
-  - Good bye my hero
-  autoProgressLine: 0100
+  - Can you help me?
+  - Thanks
+  - I know you can help
+  - Oh, ok
+  - Maybe next time
+  autoProgressLines: 010101010101
+  endDialogueLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: eb0e33e9850916242b96b514f84c3874, type: 3}
   voicePitch: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - YES
+    - NO
+    nextDialogueIndexes: 0200000004000000
