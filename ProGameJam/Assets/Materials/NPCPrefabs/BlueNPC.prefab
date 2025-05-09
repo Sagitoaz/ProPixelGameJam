@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5770703997322134091}
   - component: {fileID: 7087890294591383972}
   - component: {fileID: 982821605567211182}
-  m_Layer: 16
+  m_Layer: 14
   m_Name: BlueNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1485050063921054869}
   - component: {fileID: 2148528908992010654}
   - component: {fileID: 97345630268252359}
-  m_Layer: 16
+  m_Layer: 14
   m_Name: PurpleNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

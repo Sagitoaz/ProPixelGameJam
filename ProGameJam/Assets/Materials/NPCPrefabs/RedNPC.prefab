@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2275075306741298526}
   - component: {fileID: 8612700137197647795}
   - component: {fileID: 144176022929275}
-  m_Layer: 16
+  m_Layer: 14
   m_Name: RedNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
