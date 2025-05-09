@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5770703997322134091}
   - component: {fileID: 7087890294591383972}
   - component: {fileID: 982821605567211182}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: BlueNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,10 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 79709b8f5532f3841807f154406aaa6a, type: 2}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portraitImage: {fileID: 0}
 --- !u!212 &5770703997322134091
 SpriteRenderer:
   m_ObjectHideFlags: 0

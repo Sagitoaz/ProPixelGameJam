@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2275075306741298526}
   - component: {fileID: 8612700137197647795}
   - component: {fileID: 144176022929275}
-  m_Layer: 14
+  m_Layer: 16
   m_Name: RedNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,10 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: cb585ee3761791648aa1957d0c4b03f7, type: 2}
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portraitImage: {fileID: 0}
 --- !u!212 &2275075306741298526
 SpriteRenderer:
   m_ObjectHideFlags: 0
