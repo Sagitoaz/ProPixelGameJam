@@ -14,7 +14,7 @@ public class AxeDemon : Enemy, IDamageable
     private bool _isAttack = false;
     private Transform _target;
     private Coroutine _attackCoroutine;
-
+    private bool _isChasing = false;
     public int Health { get; set; }
 
     void Start()
@@ -25,15 +25,14 @@ public class AxeDemon : Enemy, IDamageable
         _meleeCollider = _meleeAttackHitbox.GetComponent<CircleCollider2D>();
         _meleeAttackHitbox.SetActive(false);
     }
-    void Update()
+   void Update()
     {
-        if (!_isAttack)
-        {
-            Patrol();
-        }
-        else
-        {
+        if (_isAttack) {
             FaceTarget();
+        } else if (_isChasing) {
+            MoveToTarget();
+        } else {
+            Patrol();
         }
     }
     private void Patrol()
@@ -68,10 +67,10 @@ public class AxeDemon : Enemy, IDamageable
     {
         _moveRight = !_moveRight;
         sprite.flipX = !sprite.flipX;
-        if (_meleeAttackHitbox != null){
-            Vector2 _currentOffset = _meleeCollider.offset;
-            _meleeCollider.offset = new Vector2(-_currentOffset.x, _currentOffset.y);
-        }
+        // if (_meleeAttackHitbox != null){
+        //     Vector2 _currentOffset = _meleeCollider.offset;
+        //     _meleeCollider.offset = new Vector2(-_currentOffset.x, _currentOffset.y);
+        // }
     }
     IEnumerator IdleToFlip()
     {
@@ -81,7 +80,7 @@ public class AxeDemon : Enemy, IDamageable
         Flip();
         _canFlip = false;
         Move();
-        yield return new WaitForSeconds(1.0f);
+        // yield return new WaitForSeconds(1.0f);
         _canFlip = true;
         _isIdle = false;
         anim.SetBool("Moving", true);
@@ -114,6 +113,49 @@ public class AxeDemon : Enemy, IDamageable
         _isAttack = false;
         _isIdle = false;
         anim.SetBool("Moving", true);
+    }
+    public virtual void StartChase(Transform player) {
+        if (_isAttack) return;
+        _isChasing = true;
+        _isAttack = false;
+        _isIdle = false;
+        _target = player;
+        anim.SetBool("Moving", true);
+    }
+    public virtual void StopChase() {
+        if (_isAttack) return;
+        _isChasing = false;
+        _target = null;
+        anim.SetBool("Moving", false);
+    }
+    private void MoveToTarget()
+    {
+        if (_target == null) {
+            return;
+        }
+        Vector2 originPosition = transform.position;
+        Vector2 directionToTarget = _target.position - transform.position;
+        bool moveRight = directionToTarget.x > 0;
+        Vector2 moveDirection = moveRight ? Vector2.right : Vector2.left;
+        float distanceX = Mathf.Abs(directionToTarget.x); // Khoảng cách theo trục X
+
+        if (distanceX < 0.1f) // Nếu rất gần thì đứng lại
+        {
+            anim.SetBool("Moving", false);
+            return;
+        }
+        bool checkGround = Physics2D.Raycast(originPosition, Vector2.down, 1.5f, _groundLayer);
+        bool checkWall = Physics2D.Raycast(originPosition, moveDirection, 1.0f, _groundLayer);
+        Debug.DrawRay(transform.position, Vector2.down * 1.5f, Color.green);
+        Debug.DrawRay(transform.position, moveDirection * 1.0f, Color.red);
+        if (!checkGround || checkWall) {
+            anim.SetBool("Moving", false);
+            return;
+        }
+        if (moveRight != _moveRight) {
+            Flip();
+        }
+        Move();
     }
     private void FaceTarget()
     {

@@ -12,6 +12,7 @@ public class FireWorm : Enemy, IDamageable
     private Transform _target;
     [SerializeField] private GameObject _firePrefab;
     private Coroutine _attackCoroutine;
+    protected bool _isChasing = false;
 
     public int Health { get; set; }
 
@@ -23,10 +24,12 @@ public class FireWorm : Enemy, IDamageable
     }
     void Update()
     {
-        if (!_isAttack) {
-            Patrol();
-        } else {
+        if (_isAttack) {
             FaceTarget();
+        } else if (_isChasing) {
+            MoveToTarget();
+        } else {
+            Patrol();
         }
     }
     private void Patrol() {
@@ -47,6 +50,35 @@ public class FireWorm : Enemy, IDamageable
         }
         Move();
     }
+    private void MoveToTarget()
+    {
+        if (_target == null) {
+            return;
+        }
+        Vector2 originPosition = transform.position;
+        Vector2 directionToTarget = _target.position - transform.position;
+        bool moveRight = directionToTarget.x > 0;
+        Vector2 moveDirection = moveRight ? Vector2.right : Vector2.left;
+        float distanceX = Mathf.Abs(directionToTarget.x); // Khoảng cách theo trục X
+
+        if (distanceX < 0.1f) // Nếu rất gần thì đứng lại
+        {
+            anim.SetBool("Moving", false);
+            return;
+        }
+        bool checkGround = Physics2D.Raycast(originPosition, Vector2.down, 1.5f, _groundLayer);
+        bool checkWall = Physics2D.Raycast(originPosition, moveDirection, 1.0f, _groundLayer);
+        Debug.DrawRay(transform.position, Vector2.down * 1.5f, Color.green);
+        Debug.DrawRay(transform.position, moveDirection * 1.0f, Color.red);
+        if (!checkGround || checkWall) {
+            anim.SetBool("Moving", false);
+            return;
+        }
+        if (moveRight != _moveRight) {
+            Flip();
+        }
+        Move();
+    }
     private void Move() {
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
         transform.Translate(direction * speed * Time.deltaTime);
@@ -63,7 +95,7 @@ public class FireWorm : Enemy, IDamageable
         Flip();
         _canFlip = false;
         Move();
-        yield return new WaitForSeconds(1.0f);
+        // yield return new WaitForSeconds(1.0f);
         _canFlip = true;
         _isIdle = false;
         anim.SetBool("Moving", true);
@@ -92,6 +124,20 @@ public class FireWorm : Enemy, IDamageable
         _isAttack = false;
         _isIdle = false;
         anim.SetBool("Moving", true);
+    }
+    public virtual void StartChase(Transform player) {
+        if (_isAttack) return;
+        _isChasing = true;
+        _isAttack = false;
+        _isIdle = false;
+        _target = player;
+        anim.SetBool("Moving", true);
+    }
+    public virtual void StopChase() {
+        if (_isAttack) return;
+        _isChasing = false;
+        _target = null;
+        anim.SetBool("Moving", false);
     }
     private void FaceTarget() {
         if (_target == null) return;

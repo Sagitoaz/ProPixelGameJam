@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: c6d40160ac2aa6f48b170caea28dcb08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6720056609108671267
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_0
+  - first:
+      213: -3240473773487196095
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_1
+  - first:
+      213: 909227214262484892
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_2
+  - first:
+      213: -1589179716488394095
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_3
+  - first:
+      213: 5116251435716211199
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_4
+  - first:
+      213: -1508609139495638695
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_5
+  - first:
+      213: -524437432405912153
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_6
+  - first:
+      213: -805196348058492422
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_7
+  - first:
+      213: 5196246701573366591
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_8
+  - first:
+      213: -4742741288332382715
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_9
+  - first:
+      213: -3955974087866875515
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_10
+  - first:
+      213: 4170479589497403340
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_11
+  - first:
+      213: -7524093862681525313
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_12
+  - first:
+      213: -5272713726645798488
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_13
+  - first:
+      213: 5186222672424965364
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_14
+  - first:
+      213: -8290293648156804877
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_15
+  - first:
+      213: 1862861428078056979
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_16
+  - first:
+      213: -6806446037890860817
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_17
+  - first:
+      213: 3971316830726088667
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_18
+  - first:
+      213: -5250001254927193630
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_19
+  - first:
+      213: -7034590792551059094
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_20
+  - first:
+      213: -6449910554490347870
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_21
+  - first:
+      213: -5404109454394424617
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_22
+  - first:
+      213: -7072126789157539536
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_23
+  - first:
+      213: -1298899443740731245
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_24
+  - first:
+      213: 4084872771531594257
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_25
+  - first:
+      213: 7441152187596317020
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_26
+  - first:
+      213: -6079633664315336513
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_27
+  - first:
+      213: 5651287809430615767
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_28
+  - first:
+      213: 7068622711931849820
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_29
+  - first:
+      213: -5486339505734130621
+    second: ArchDemonBasicAtk001-Sheet(1)(3)_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArchDemonBasicAtk001-Sheet(1)(3)_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 138
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a1341b88e43b7499de5ddd9a3c323f
+      internalID: 1017383380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArchDemonBasicAtk001-Sheet(1)(3)_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 138
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c7725e0815d52448d3afec1e677930
+      internalID: -437278326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArchDemonBasicAtk001-Sheet(1)(3)_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 0
+        width: 138
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76f0f857dc502042ab9dc5b13272bbe
+      internalID: -1092241560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArchDemonBasicAtk001-Sheet(1)(3)_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 0
+        width: 138
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8388f7812433741b7f5461fa225254
+      internalID: 1371328541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArchDemonBasicAtk001-Sheet(1)(3)_4
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 0
+        width: 138
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0a6ac4dff32d04ca76de001178e177
+      internalID: -121372835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c2e48e433097cf64a834f57fe5e3e859
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ArchDemonBasicAtk001-Sheet(1)(3)_0: 1017383380
+      ArchDemonBasicAtk001-Sheet(1)(3)_1: -437278326
+      ArchDemonBasicAtk001-Sheet(1)(3)_2: -1092241560
+      ArchDemonBasicAtk001-Sheet(1)(3)_3: 1371328541
+      ArchDemonBasicAtk001-Sheet(1)(3)_4: -121372835
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
