@@ -249,6 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515476121961350360}
   - component: {fileID: 6311364893407715393}
+  - component: {fileID: 1836888268396580034}
   m_Layer: 0
   m_Name: ChasingZone
   m_TagString: Untagged
@@ -317,6 +318,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 18.348484, y: 0.93639183}
   m_EdgeRadius: 0
+--- !u!114 &1836888268396580034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619034426147555831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f047eccaa530516408897e2b4186b177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireWormEnemy: {fileID: 5917303834116207496}
 --- !u!1 &7644049934826256716
 GameObject:
   m_ObjectHideFlags: 0

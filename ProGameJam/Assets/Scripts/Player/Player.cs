@@ -13,6 +13,7 @@ public class Player : MonoBehaviour, IDamageable
     private bool _resetJump = false;
     [SerializeField] private bool _canAirJump = true;
     [SerializeField] private bool _hasAirJump = false;
+    [SerializeField] private int _coin = 0;
     [SerializeField] private bool _canSwim = false;
 
     //Dash
@@ -256,6 +257,10 @@ public class Player : MonoBehaviour, IDamageable
     //GETTER
     public bool GetIsGround() {
         return _grounded;
+    }
+
+    public void SetCoin(int coinQuantity){
+        _coin += coinQuantity;
     }
 
     //ENVIRONMENT
