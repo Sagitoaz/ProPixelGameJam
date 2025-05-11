@@ -5,21 +5,21 @@ using UnityEngine;
 
 public class FinalBoss : Enemy
 {
-    [SerializeField] private Transform _target;
-    private Animator _anim;
-    private SpriteRenderer _sprite;
-    [SerializeField] private Transform _hitbox;
-    [SerializeField] private bool _facingRight = true;
-    [SerializeField] private float[] _skillCooldowns = new float[6];
-    [SerializeField] private float[] _skillLast = new float[6];
-    [SerializeField] private float[] _lastUsedTime = new float[6];
-    private bool _isUsingSkil = false;
-    private bool _isRetreat = false;
-    private bool _playerInAir = false;
-    private bool _isDead = false;
-    [SerializeField] private float _retreatSpeed = 2.0f;
-
-    void Start()
+    [SerializeField] protected Transform _target;
+    protected Animator _anim;
+    protected SpriteRenderer _sprite;
+    [SerializeField] protected Transform _hitbox;
+    [SerializeField] protected bool _facingRight = true;
+    [SerializeField] protected float[] _skillCooldowns;
+    [SerializeField] protected float[] _skillLast;
+    [SerializeField] protected float[] _lastUsedTime;
+    protected bool _isUsingSkil = false;
+    protected bool _isRetreat = false;
+    protected bool _playerInAir = false;
+    protected bool _isDead = false;
+    [SerializeField] protected float _retreatSpeed = 2.0f;
+    [SerializeField] protected LayerMask _groundLayer;
+    protected virtual void Start()
     {
         _anim = GetComponentInChildren<Animator>();
         _sprite = GetComponentInChildren<SpriteRenderer>();
@@ -27,7 +27,7 @@ public class FinalBoss : Enemy
             _lastUsedTime[i] = -_skillCooldowns[i];
         }
     }
-    void Update()
+    protected virtual void Update()
     {
         if (_isDead) {
             return;
@@ -42,7 +42,7 @@ public class FinalBoss : Enemy
             }
         }
     }
-    private void Movement() {
+    protected void Movement() {
         if (_isDead) return;
         Vector3 direction = _target.position;
         float distance = transform.position.x - direction.x;
@@ -54,7 +54,7 @@ public class FinalBoss : Enemy
         transform.position = Vector3.MoveTowards(transform.position, direction, speed * Time.deltaTime);
         _anim.SetBool("Moving", true);
     }
-    private void Flip(float distance) {
+    protected void Flip(float distance) {
         if (distance > 0) {
             _sprite.flipX = true;
             if (_facingRight) {
@@ -69,12 +69,12 @@ public class FinalBoss : Enemy
             }
         }
     }
-    private void FlipHitbox() {
+    protected void FlipHitbox() {
         Vector3 scale = _hitbox.localScale;
         scale.x = _facingRight ? 1 : -1;
         _hitbox.localScale = scale;
     }
-    private bool TrySkills() {
+    protected virtual bool TrySkills() {
         float distance = Vector2.Distance(_target.position, transform.position);
         if (distance < 6.0f) {
             return ActiveSkill(3, 5);
@@ -84,7 +84,7 @@ public class FinalBoss : Enemy
             return ActiveSkill(5, 6);
         }
     }
-    private bool ActiveSkill(int from, int to) {
+    protected bool ActiveSkill(int from, int to) {
         List<int> usableSkills = new List<int>();
         for (int i = from; i < to; i++) {
             if (Time.time - _lastUsedTime[i] >= _skillCooldowns[i] && !_isUsingSkil) {
@@ -103,6 +103,46 @@ public class FinalBoss : Enemy
     IEnumerator SkillRoutine(int skillIndex) {
         if (_isDead) yield break;
         _isUsingSkil = true;
+        if (skillIndex == 5 && this is FBPhase2) {
+            Vector3 playerPos = _target.position;
+            Vector3 dirToBack = (_facingRight ? -1 : 1) * transform.right;
+            float[] checkDistances = new float[] { 3.0f, 2.0f, 1.0f };
+
+            Vector3? validTeleportPos = null;
+
+            foreach (float dist in checkDistances)
+            {
+                Vector3 candidatePos = playerPos + dirToBack * dist;
+
+                bool hasGround = Physics2D.Raycast(candidatePos, Vector2.down, 2.0f, _groundLayer);
+                bool isBlocked = Physics2D.OverlapCircle(candidatePos, 0.3f, _groundLayer);
+
+                if (hasGround && !isBlocked)
+                {
+                    validTeleportPos = candidatePos;
+                    break;
+                }
+            }
+
+            if (validTeleportPos == null)
+            {
+                Debug.Log("Teleport failed: no valid position.");
+                _isUsingSkil = false;
+                yield break;
+            }
+
+            // Teleport
+            transform.position = new Vector3(validTeleportPos.Value.x, transform.position.y, transform.position.z);
+
+            // Flip to player
+            Flip(_target.position.x - transform.position.x);
+
+            _anim.SetTrigger("Counter");
+            _lastUsedTime[skillIndex] = Time.time;
+            yield return new WaitForSeconds(_skillLast[skillIndex]);
+            _isUsingSkil = false;
+            yield break;
+        }
         _anim.SetTrigger("Attack" + (skillIndex + 1));
         _lastUsedTime[skillIndex] = Time.time;
         yield return new WaitForSeconds(_skillLast[skillIndex]);
@@ -135,7 +175,8 @@ public class FinalBoss : Enemy
             _anim.SetTrigger("Death");
         }
     }
-    public void DestroyBoss() {
+    public virtual void DestroyBoss() {
         Destroy(this.gameObject);
     }
+
 }

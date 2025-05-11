@@ -106,12 +106,12 @@ TextureImporter:
       name: counter5_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 11
-        width: 146
-        height: 131
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: counter5_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 140
-        width: 50
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c20c4739068c3da0800000000000000
-      internalID: -5963744432404823351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e76b04ca3981f345afb8d3d8fbb3882
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +139,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       counter5_0: 1339507989768467798
-      counter5_1: -5963744432404823351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

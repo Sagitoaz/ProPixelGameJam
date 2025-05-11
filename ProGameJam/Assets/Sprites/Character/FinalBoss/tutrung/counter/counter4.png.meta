@@ -103,12 +103,12 @@ TextureImporter:
       name: counter4_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 11
-        width: 146
-        height: 169
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8d4c20c867e5054e88fa3387a128312
     internalID: 0
     vertices: []
     indices: 

@@ -14,10 +14,11 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private bool _canAirJump = true;
     [SerializeField] private bool _hasAirJump = false;
     [SerializeField] private int _coin = 0;
+    [SerializeField] private bool _canSwim = false;
 
     //Dash
     [SerializeField] private float _dashForce = 12.0f;
-    private bool _canDash = true;
+    [SerializeField] private bool _canDash = true;
     private bool _isDash = false;
 
     //Combat
@@ -39,6 +40,14 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private Transform _hitbox;
     private bool _facingRight = true;
 
+    //Environment Interact
+    [SerializeField] private bool _inWater = false;
+    [SerializeField] private bool _inLava = false;
+    [SerializeField] private float _waterJumpForce = 3.0f;
+    [SerializeField] private Transform _checkpoint;
+    private bool _environmentDamaged = false;
+    [SerializeField] private float _maxUnderwaterTime = 5f;
+    [SerializeField] private float _underwaterTimer;
     public int Health { get; set; }
 
     void Start() {
@@ -46,10 +55,12 @@ public class Player : MonoBehaviour, IDamageable
         _playerAnimator = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         Health = _health;
+        _underwaterTimer = _maxUnderwaterTime;
     }
 
     void Update() {
         if (_isDead) return;
+        HandleSwim();
         if (_isDash) return;
 
         HandleAttack();
@@ -71,6 +82,14 @@ public class Player : MonoBehaviour, IDamageable
         _grounded = IsGrounded();
 
         if (Input.GetKeyDown(KeyCode.Space)) {
+            if (_inLava) {
+                return;
+            }
+            if (_inWater) {
+                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _waterJumpForce);
+                _playerAnimator.Jump(true);
+                return;
+            }
             if (_grounded) {
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
                 StartCoroutine(ResetJump());
@@ -122,6 +141,23 @@ public class Player : MonoBehaviour, IDamageable
         _resetJump = true;
         yield return new WaitForSeconds(0.5f);
         _resetJump = false;
+    }
+
+    private void HandleSwim() {
+        if (_inWater && _canSwim) {
+            _underwaterTimer -= Time.deltaTime;
+            if (_underwaterTimer <= 0f) {
+                if (!_environmentDamaged) {
+                    Damage();
+                    _environmentDamaged = true;
+                    StartCoroutine(RespawnToCheckpoint());
+                }
+                _underwaterTimer = _maxUnderwaterTime;
+            }
+        } else if (_underwaterTimer < _maxUnderwaterTime) {
+            _underwaterTimer += Time.deltaTime;
+            _underwaterTimer = Mathf.Min(_underwaterTimer, _maxUnderwaterTime);
+        }
     }
 
     //COMBAT
@@ -227,7 +263,42 @@ public class Player : MonoBehaviour, IDamageable
         _coin += coinQuantity;
     }
 
-    public void Heal(int healthAmount){
-        Health += healthAmount;
+    //ENVIRONMENT
+    private void OnTriggerStay2D(Collider2D other) {
+        if (other.CompareTag("Water")) {
+            if (!_canSwim) {
+                if (!_environmentDamaged) {
+                    Damage();
+                    _environmentDamaged = true;
+                    StartCoroutine(RespawnToCheckpoint());
+                }
+            }
+            _inWater = true;
+        }
+        if (other.CompareTag("Lava")) {
+            _inLava = true;
+            if (!_environmentDamaged) {
+                Damage();
+                _environmentDamaged = true;
+                StartCoroutine(RespawnToCheckpoint());
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Water")) {
+            Debug.Log("OnTriggerExit2D Water");
+            _inWater = false;
+        }
+        if (other.CompareTag("Lava")) {
+            _inLava = false;
+        }
+        _environmentDamaged = false;
+    }
+    private IEnumerator RespawnToCheckpoint() {
+        yield return new WaitForSeconds(0.5f);
+        transform.position = _checkpoint.position;
+        _inLava = false;
+        _inWater = false;
+        _environmentDamaged = false; 
     }
 }

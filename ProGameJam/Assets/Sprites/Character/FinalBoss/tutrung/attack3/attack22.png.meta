@@ -112,12 +112,12 @@ TextureImporter:
       name: attack22_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 52
-        width: 54
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,77 +130,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: attack22_1
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 5
-        width: 223
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76c9c4b5d3f160440800000000000000
-      internalID: 4901639592824577127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack22_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 180
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e739fcfcc004136f0800000000000000
-      internalID: -706713242750184578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack22_3
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 182
-        width: 104
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78ad31f7e249970a0800000000000000
-      internalID: -6883307628037678457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da6bfa536498b5044a0b77fcc6a7b5eb
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +145,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       attack22_0: 8014119708934747959
-      attack22_1: 4901639592824577127
-      attack22_2: -706713242750184578
-      attack22_3: -6883307628037678457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
