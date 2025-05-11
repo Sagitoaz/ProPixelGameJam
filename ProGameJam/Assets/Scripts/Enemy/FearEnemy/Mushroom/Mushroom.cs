@@ -3,13 +3,6 @@ using UnityEngine;
 
 public class Mushroom : Enemy, IDamageable, IAttackableEnemy
 {
-    [SerializeField] private LayerMask _groundLayer;
-    private Rigidbody2D _rb;
-    private bool _moveRight = true;
-    private bool _canFlip = true;
-    private bool _isIdle = false;
-    private bool _isAttack = false;
-    private Transform _target;
     private Coroutine _attackCoroutine;
     [SerializeField] private GameObject _hitbox;
     private bool _isDead = false;
@@ -29,7 +22,7 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
             FaceTarget();
         }
     }
-    private void Patrol() {
+    protected override void Patrol() {
         if (_isIdle) {
             return;
         }
@@ -47,16 +40,12 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
         }
         Move();
     }
-    private void Move() {
+    protected override void Move() {
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
         transform.Translate(direction * speed * Time.deltaTime);
         anim.SetBool("Walk", true);
     }
-    private void Flip() {
-        _moveRight = !_moveRight;
-        sprite.flipX = !sprite.flipX;
-    }
-    IEnumerator IdleToFlip() {
+    protected override IEnumerator IdleToFlip() {
         _isIdle = true;
         anim.SetBool("Walk", false); 
         yield return new WaitForSeconds(1.0f);
@@ -99,14 +88,6 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
         _isAttack = false;
         _isIdle = false;
         anim.SetBool("Walk", true);
-    }
-    private void FaceTarget() {
-        if (_target == null) return;
-        if (_target.position.x > transform.position.x && !_moveRight) {
-            Flip();
-        } else if (_target.position.x < transform.position.x && _moveRight) {
-            Flip();
-        }
     }
     IEnumerator AttackRoutine() {
         while (true) {

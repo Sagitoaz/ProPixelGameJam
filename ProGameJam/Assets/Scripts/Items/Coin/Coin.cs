@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
         {
             Debug.LogWarning("Coin: GameObject should have 'Coin' tag for clarity!", this);
         }
-        if (GetComponent<Collider2D>() == null || !GetComponent<Collider2D>().isTrigger)
+        if (GetComponent<Collider2D>() == null)
         {
             Debug.LogError("Coin: Collider2D is missing or not set to Is Trigger!", this);
         }

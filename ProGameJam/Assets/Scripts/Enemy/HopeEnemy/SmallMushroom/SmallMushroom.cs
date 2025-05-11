@@ -3,14 +3,7 @@ using UnityEngine;
 
 public class SmallMushroom : Enemy, IDamageable
 {
-    [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private GameObject _hitbox;
-    private Rigidbody2D _rb;
-    protected bool _moveRight = true;
-    protected bool _canFlip = true;
-    protected bool _isIdle = false;
-    protected bool _isAttack = false;
-    protected Transform _target;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
     public int Health { get; set; }
@@ -40,7 +33,7 @@ public class SmallMushroom : Enemy, IDamageable
             Patrol();
         }
     }
-    private void Patrol()
+    protected override void Patrol()
     {
         if (_isIdle)
         {
@@ -69,7 +62,7 @@ public class SmallMushroom : Enemy, IDamageable
         }
         Move();
     }
-    private void MoveToTarget()
+    protected override void MoveToTarget()
     {
         if (_target == null)
         {
@@ -108,30 +101,12 @@ public class SmallMushroom : Enemy, IDamageable
         }
         Move();
     }
-    private void Move()
+    protected override void Move()
     {
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
         float moveDistance = speed * Time.deltaTime;
         if (moveDistance > 0.1f) moveDistance = 0.1f; // Giới hạn di chuyển
         transform.Translate(direction * moveDistance);
-        anim.SetBool("Moving", true);
-    }
-    private void Flip()
-    {
-        _moveRight = !_moveRight;
-        sprite.flipX = !sprite.flipX;
-    }
-    IEnumerator IdleToFlip()
-    {
-        _isIdle = true;
-        anim.SetBool("Moving", false);
-        yield return new WaitForSeconds(1.0f);
-        Flip();
-        _canFlip = false;
-        Move();
-        // yield return new WaitForSeconds(1.0f);
-        _canFlip = true;
-        _isIdle = false;
         anim.SetBool("Moving", true);
     }
     public void Damage()
@@ -185,19 +160,6 @@ public class SmallMushroom : Enemy, IDamageable
         _target = null;
         anim.SetBool("Moving", false);
     }
-    private void FaceTarget()
-    {
-        if (_target == null) return;
-        if (_target.position.x > transform.position.x && !_moveRight)
-        {
-            Flip();
-        }
-        else if (_target.position.x < transform.position.x && _moveRight)
-        {
-            Flip();
-        }
-    }
-
     public virtual IEnumerator AttackRoutine()
     {
         while (true)

@@ -3,17 +3,10 @@ using UnityEngine;
 
 public class AngryBoss : Enemy, IDamageable
 {
-    [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private GameObject _hitbox;
     [SerializeField] private GameObject[] _flameHitboxes;
-    private Rigidbody2D _rb;
     protected bool _isActivated = false;
-    protected bool _moveRight = true;
-    protected bool _canFlip = true;
-    protected bool _isIdle = false;
-    protected bool _isAttack = false;
     protected bool _isDead = false;
-    protected Transform _target;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
     public int Health { get; set; }
@@ -48,7 +41,7 @@ public class AngryBoss : Enemy, IDamageable
             Patrol();
         }
     }
-    private void Patrol()
+    protected override void Patrol()
     {
         if (_isIdle)
         {
@@ -79,7 +72,7 @@ public class AngryBoss : Enemy, IDamageable
         }
         Move();
     }
-    private void MoveToTarget()
+    protected override void MoveToTarget()
     {
         if (_target == null || _isAttack)
         {
@@ -119,30 +112,6 @@ public class AngryBoss : Enemy, IDamageable
             Flip();
         }
         Move();
-    }
-    private void Move()
-    {
-        Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
-        transform.Translate(direction * speed * Time.deltaTime);
-        anim.SetBool("Moving", true);
-    }
-    private void Flip()
-    {
-        _moveRight = !_moveRight;
-        sprite.flipX = !sprite.flipX;
-    }
-    IEnumerator IdleToFlip()
-    {
-        _isIdle = true;
-        anim.SetBool("Moving", false);
-        yield return new WaitForSeconds(1.0f);
-        Flip();
-        _canFlip = false;
-        Move();
-        // yield return new WaitForSeconds(1.0f);
-        _canFlip = true;
-        _isIdle = false;
-        anim.SetBool("Moving", true);
     }
     public void Damage()
     {
@@ -218,31 +187,6 @@ public class AngryBoss : Enemy, IDamageable
         _target = null;
         anim.SetBool("Moving", false);
     }
-    private void FaceTarget()
-    {
-        if (_target == null) return;
-        if (_target.position.x > transform.position.x && !_moveRight)
-        {
-            Flip();
-        }
-        else if (_target.position.x < transform.position.x && _moveRight)
-        {
-            Flip();
-        }
-    }
-    //  public virtual IEnumerator AttackRoutine() {
-    //     while (true) {
-    //         if (_isAttack) {
-    //             Debug.Log("Triggering Attack animation");
-    //             anim.SetTrigger("Attack");
-    //             yield return new WaitForSeconds(1.0f);
-    //             _hitbox.SetActive(true);
-    //             yield return new WaitForSeconds(0.5f);
-    //             _hitbox.SetActive(false);
-    //         }
-    //         yield return new WaitForSeconds(1.0f);
-    //     }
-    // }
     public void ActivateHitbox()
     {
         _hitbox.SetActive(true);

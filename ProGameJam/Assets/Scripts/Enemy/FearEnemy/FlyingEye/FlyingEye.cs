@@ -3,13 +3,7 @@ using UnityEngine;
 
 public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
 {
-    [SerializeField] private LayerMask _groundLayer;
-    private Rigidbody2D _rb;
-    private bool _moveRight = true;
-    private bool _isIdle = false;
-    private bool _isAttack = false;
     private bool _isDead = false;
-    private Transform _target;
     private Coroutine _attackCoroutine;
     public int Health { get; set; }
     [SerializeField] private float flyDistance = 5f;
@@ -41,7 +35,7 @@ public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
         }
     }
 
-    private void Patrol()
+    protected override void Patrol()
     {
         if (_isIdle) return;
 
@@ -65,13 +59,6 @@ public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
         _isIdle = false;
         anim.SetBool("Walk", true);
     }
-
-    private void Flip()
-    {
-        _moveRight = !_moveRight;
-        sprite.flipX = !sprite.flipX;
-    }
-
     public void Damage()
     {
         if (_isDead) return;
@@ -107,20 +94,6 @@ public class FlyingEye : Enemy, IDamageable, IAttackableEnemy
         _isIdle = false;
         anim.SetBool("Walk", true);
     }
-
-    private void FaceTarget()
-    {
-        if (_target == null) return;
-        if (_target.position.x > transform.position.x && !_moveRight)
-        {
-            Flip();
-        }
-        else if (_target.position.x < transform.position.x && _moveRight)
-        {
-            Flip();
-        }
-    }
-
     IEnumerator AttackRoutine()
     {
         while (true)

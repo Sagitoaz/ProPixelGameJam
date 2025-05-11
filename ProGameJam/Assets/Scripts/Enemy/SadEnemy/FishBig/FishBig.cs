@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class FishBig : Enemy, IDamageable
 {
-    private Rigidbody2D _rb;
-    private bool _moveRight = true;
-    private bool _isIdle = false;
     private bool _isDead = false;
     public int Health { get; set; }
 
@@ -33,7 +30,7 @@ public class FishBig : Enemy, IDamageable
         }
     }
 
-    private void Patrol()
+    protected override void Patrol()
     {
         Vector3 targetPos = _moveRight ? _rightLimit : _leftLimit;
         Vector3 direction = (targetPos - transform.position).normalized;
@@ -52,13 +49,6 @@ public class FishBig : Enemy, IDamageable
         Flip();
         _isIdle = false;
     }
-
-    private void Flip()
-    {
-        _moveRight = !_moveRight;
-        sprite.flipX = !_moveRight;
-    }
-
     public void Damage()
     {
         if (_isDead) return;

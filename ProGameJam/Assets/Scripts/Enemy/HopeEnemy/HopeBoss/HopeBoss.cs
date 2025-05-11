@@ -3,15 +3,8 @@ using UnityEngine;
 
 public class HopeBoss : Enemy, IDamageable
 {
-    [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private GameObject _hitbox;
-    private Rigidbody2D _rb;
-    protected bool _moveRight = true;
-    protected bool _canFlip = true;
-    protected bool _isIdle = false;
-    protected bool _isAttack = false;
     protected bool _isDead = false;
-    protected Transform _target;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
     [SerializeField] private float _teleportDistance = 3.0f;
@@ -49,7 +42,7 @@ public class HopeBoss : Enemy, IDamageable
         }
     }
 
-    private void Patrol()
+    protected override void Patrol()
     {
         if (_isIdle || _isAttack) return;
 
@@ -84,7 +77,7 @@ public class HopeBoss : Enemy, IDamageable
         Debug.Log($"Speed decreased to: {speed}");
     }
 
-    private void MoveToTarget()
+    protected override void MoveToTarget()
     {
         if (_target == null || _isAttack)
         {
@@ -124,24 +117,7 @@ public class HopeBoss : Enemy, IDamageable
 
         Move();
     }
-
-    private void Move()
-    {
-        if (_isAttack) return;
-
-        Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
-        transform.Translate(direction * speed * Time.deltaTime);
-        anim.SetBool("Moving", true);
-    }
-
-    private void Flip()
-    {
-        _moveRight = !_moveRight;
-        sprite.flipX = !sprite.flipX;
-        Debug.Log($"Flipped: _moveRight={_moveRight}");
-    }
-
-    IEnumerator IdleToFlip()
+    protected override IEnumerator IdleToFlip()
     {
         _isIdle = true;
         anim.SetBool("Moving", false);
@@ -328,21 +304,6 @@ public class HopeBoss : Enemy, IDamageable
         _target = null;
         anim.SetBool("Moving", false);
     }
-
-    private void FaceTarget()
-    {
-        if (_target == null) return;
-
-        if (_target.position.x > transform.position.x && !_moveRight)
-        {
-            Flip();
-        }
-        else if (_target.position.x < transform.position.x && _moveRight)
-        {
-            Flip();
-        }
-    }
-
     public void ActivateHitbox()
     {
         _hitbox.SetActive(true);

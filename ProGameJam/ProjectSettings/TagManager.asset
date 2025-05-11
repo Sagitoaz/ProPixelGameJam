@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Water
   - Lava
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -23,6 +24,8 @@ TagManager:
   - PlayerAttack
   - BossHitbox
   - NPC
+  - Coin
+  - 
   - 
   - 
   - 
