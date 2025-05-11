@@ -6,7 +6,6 @@ public class HopeBoss : Enemy, IDamageable
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private GameObject _hitbox;
     private Rigidbody2D _rb;
-    protected bool _isActivated = false;
     protected bool _moveRight = true;
     protected bool _canFlip = true;
     protected bool _isIdle = false;
@@ -15,29 +14,27 @@ public class HopeBoss : Enemy, IDamageable
     protected Transform _target;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
-    [SerializeField] private float _teleportDistance; // Khoảng cách dịch chuyển phía sau player
-    [SerializeField] private float _teleportInterval; // Khoảng thời gian giữa các lần dịch chuyển tự động
-    private float _teleportCooldownTimer = 0f; // Theo dõi thời gian cooldown
+    [SerializeField] private float _teleportDistance = 3.0f;
+    private bool _isActivated = false;
     public int Health { get; set; }
-
     public Animator Animator => anim;
+
     protected void Start()
     {
         base.Init();
         Health = base.health;
         _rb = GetComponent<Rigidbody2D>();
-        _teleportCooldownTimer = _teleportInterval; // Cho phép dịch chuyển ngay lần đầu
-        StartCoroutine(PeriodicTeleportRoutine());
+        anim.SetBool("Moving", false);
+        if (anim == null)
+        {
+            Debug.LogError("HopeBoss: Animator (anim) is null!", this);
+        }
     }
 
     protected void Update()
     {
         if (_isDead || !_isActivated) return;
-        // Cập nhật cooldown timer
-        if (_teleportCooldownTimer < _teleportInterval)
-        {
-            _teleportCooldownTimer += Time.deltaTime;
-        }
+
         if (_isAttack)
         {
             FaceTarget();
@@ -58,19 +55,12 @@ public class HopeBoss : Enemy, IDamageable
 
         Vector2 originPosition = transform.position;
         Vector2 direction = _moveRight ? Vector2.right : Vector2.left;
-        Vector2 rayPosition;
-        if (_moveRight)
-        {
-            rayPosition = new Vector2(originPosition.x + 1.0f, originPosition.y);
-        }
-        else
-        {
-            rayPosition = new Vector2(originPosition.x - 1.0f, originPosition.y);
-        }
+        Vector2 rayPosition = _moveRight ? new Vector2(originPosition.x + 1.0f, originPosition.y) : new Vector2(originPosition.x - 1.0f, originPosition.y);
         bool checkGround = Physics2D.Raycast(rayPosition, Vector2.down, 5.0f, _groundLayer);
-        Debug.DrawRay(rayPosition, Vector2.down * 5.0f, Color.green);
         bool checkWall = Physics2D.Raycast(rayPosition, direction, 1.0f, _groundLayer);
-        Debug.DrawRay(rayPosition, direction, Color.red);
+        Debug.DrawRay(rayPosition, Vector2.down * 5.0f, Color.green);
+        Debug.DrawRay(rayPosition, direction * 1.0f, Color.red);
+
         if (!checkGround || checkWall)
         {
             if (_canFlip)
@@ -84,22 +74,28 @@ public class HopeBoss : Enemy, IDamageable
 
     public void speedUp(float multiSpeed)
     {
-        speed *= 2;
+        speed *= multiSpeed;
+        Debug.Log($"Speed increased to: {speed}");
     }
 
     public void speedDown(float multiSpeed)
     {
-        speed /= 2;
+        speed /= multiSpeed;
+        Debug.Log($"Speed decreased to: {speed}");
     }
 
     private void MoveToTarget()
     {
-        if (_target == null || _isAttack) return;
+        if (_target == null || _isAttack)
+        {
+            Debug.LogWarning("MoveToTarget failed: _target is null or boss is attacking!");
+            _isChasing = false;
+            return;
+        }
 
         Vector2 originPosition = transform.position;
         Vector2 directionToTarget = _target.position - transform.position;
         bool moveRight = directionToTarget.x > 0;
-        Vector2 moveDirection = moveRight ? Vector2.right : Vector2.left;
         float distanceX = Mathf.Abs(directionToTarget.x);
 
         if (distanceX < 0.1f)
@@ -107,28 +103,25 @@ public class HopeBoss : Enemy, IDamageable
             anim.SetBool("Moving", false);
             return;
         }
-        Vector2 rayPosition;
-        if (_moveRight)
-        {
-            rayPosition = new Vector2(originPosition.x + 1.0f, originPosition.y);
-        }
-        else
-        {
-            rayPosition = new Vector2(originPosition.x - 1.0f, originPosition.y);
-        }
+
+        Vector2 rayPosition = moveRight ? new Vector2(originPosition.x + 1.0f, originPosition.y) : new Vector2(originPosition.x - 1.0f, originPosition.y);
         bool checkGround = Physics2D.Raycast(rayPosition, Vector2.down, 5.0f, _groundLayer);
-        bool checkWall = Physics2D.Raycast(rayPosition, moveDirection, 1.0f, _groundLayer);
+        bool checkWall = Physics2D.Raycast(rayPosition, moveRight ? Vector2.right : Vector2.left, 1.0f, _groundLayer);
         Debug.DrawRay(rayPosition, Vector2.down * 5.0f, Color.green);
-        Debug.DrawRay(rayPosition, moveDirection * 1.0f, Color.red);
+        Debug.DrawRay(rayPosition, (moveRight ? Vector2.right : Vector2.left) * 1.0f, Color.red);
+
         if (!checkGround || checkWall)
         {
             anim.SetBool("Moving", false);
+            Debug.Log($"MoveToTarget stopped: Grounded={checkGround}, Blocked={checkWall}");
             return;
         }
+
         if (moveRight != _moveRight)
         {
             Flip();
         }
+
         Move();
     }
 
@@ -145,6 +138,7 @@ public class HopeBoss : Enemy, IDamageable
     {
         _moveRight = !_moveRight;
         sprite.flipX = !sprite.flipX;
+        Debug.Log($"Flipped: _moveRight={_moveRight}");
     }
 
     IEnumerator IdleToFlip()
@@ -165,9 +159,9 @@ public class HopeBoss : Enemy, IDamageable
         if (!_isAttack && !_isDead)
         {
             Health--;
-            Debug.Log("Health point lefts: " + Health);
+            Debug.Log($"Health point lefts: {Health}");
             anim.SetTrigger("Hit");
-            TeleportBehindTarget();
+            TryTeleportBehindTarget();
             if (Health < 1)
             {
                 _isDead = true;
@@ -181,11 +175,11 @@ public class HopeBoss : Enemy, IDamageable
         }
     }
 
-    public void TeleportBehindTarget()
+    public void TryTeleportBehindTarget()
     {
-        if (_teleportCooldownTimer < _teleportInterval)
+        if (!_isActivated)
         {
-            Debug.Log($"Teleport skipped: Cooldown not finished. Time remaining: {(_teleportInterval - _teleportCooldownTimer):F2}s");
+            Debug.Log("Teleport skipped: Boss is not activated!");
             return;
         }
 
@@ -216,7 +210,6 @@ public class HopeBoss : Enemy, IDamageable
         {
             transform.position = teleportPosition;
             Debug.Log("Boss teleported behind player!");
-            _teleportCooldownTimer = 0f; // Reset cooldown
             if (playerDirection.x > 0 && _moveRight)
             {
                 Flip();
@@ -243,8 +236,6 @@ public class HopeBoss : Enemy, IDamageable
                 {
                     transform.position = altTeleportPosition;
                     Debug.Log($"Boss teleported to alternative position: {altTeleportPosition}");
-                    _teleportCooldownTimer = 0f; // Reset cooldown
-                    FaceTarget();
                     if (playerDirection.x > 0 && _moveRight)
                     {
                         Flip();
@@ -264,8 +255,8 @@ public class HopeBoss : Enemy, IDamageable
     {
         while (!_isDead)
         {
-            yield return new WaitForSeconds(_teleportInterval);
-            if (!_isDead && !_isAttack) // Chỉ dịch chuyển nếu không tấn công
+            yield return new WaitForSeconds(5.0f);
+            if (!_isDead && !_isAttack && _isActivated)
             {
                 anim.SetTrigger("Teleport");
             }
@@ -274,19 +265,18 @@ public class HopeBoss : Enemy, IDamageable
 
     public virtual IEnumerator DeathRoutine()
     {
-        anim.SetTrigger("Death");
         _isAttack = false;
         _isChasing = false;
         _isIdle = false;
         _target = null;
         _hitbox.SetActive(false);
-        yield return new WaitForSeconds(1.0f);
-        // Animation Event sẽ xử lý hủy GameObject
+        yield return new WaitForSeconds(0.5f);
+        anim.SetTrigger("Death");
     }
 
     public virtual void StartAttack(Transform player)
     {
-        if (_isDead) return;
+        if (_isDead || !_isActivated) return;
 
         anim.SetBool("Moving", false);
         _isAttack = true;
@@ -317,18 +307,23 @@ public class HopeBoss : Enemy, IDamageable
     public virtual void StartChase(Transform player)
     {
         if (_isAttack || _isDead) return;
+
+        Debug.Log($"StartChase: Chasing player {player.name}");
         _isActivated = true;
         _isChasing = true;
         _isAttack = false;
         _isIdle = false;
         _target = player;
         anim.SetBool("Moving", true);
+        anim.SetTrigger("Teleport");
+        StartCoroutine(PeriodicTeleportRoutine());
     }
 
     public virtual void StopChase()
     {
         if (_isAttack || _isDead) return;
 
+        Debug.Log("StopChase: Stopping chase");
         _isChasing = false;
         _target = null;
         anim.SetBool("Moving", false);

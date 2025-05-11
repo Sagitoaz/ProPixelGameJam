@@ -7,6 +7,10 @@ public class HopeBossAnimationEventHandler : MonoBehaviour
     void Start()
     {
         hopeBoss = GetComponentInParent<HopeBoss>();
+        if (hopeBoss == null)
+        {
+            Debug.LogError("HopeBossAnimationEventHandler: HopeBoss script not found in parent!", this);
+        }
     }
 
     public void TriggerActivateHitbox()
@@ -18,7 +22,7 @@ public class HopeBossAnimationEventHandler : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("hopeBoss script not found in parent!");
+            Debug.LogWarning("HopeBossAnimationEventHandler: HopeBoss script not found in parent!");
         }
     }
 
@@ -26,25 +30,51 @@ public class HopeBossAnimationEventHandler : MonoBehaviour
     {
         if (hopeBoss != null)
         {
-            Debug.Log("Hitbox Activated");
+            Debug.Log("Hitbox Deactivated");
             hopeBoss.DeactivateHitbox();
         }
         else
         {
-            Debug.LogWarning("hopeBoss script not found in parent!");
+            Debug.LogWarning("HopeBossAnimationEventHandler: HopeBoss script not found in parent!");
         }
     }
 
-    public void TriggerDie(){
-        if (hopeBoss != null){
-            Debug.Log("Hope Boss is dead!");
+    public void TriggerDie()
+    {
+        if (hopeBoss != null)
+        {
+            Debug.Log("HopeBoss is dead!");
             Destroy(hopeBoss.gameObject);
         }
+        else
+        {
+            Debug.LogWarning("HopeBossAnimationEventHandler: HopeBoss script not found in parent!");
+        }
     }
-    public void TriggerTeleport(){
-        if (hopeBoss != null){
-            Debug.Log("Hope Boss teleported!");
-            hopeBoss.TeleportBehindTarget();
+
+    public void TriggerTeleport()
+    {
+        if (hopeBoss != null)
+        {
+            Debug.Log("HopeBoss teleported!");
+            hopeBoss.TryTeleportBehindTarget();
+        }
+        else
+        {
+            Debug.LogWarning("HopeBossAnimationEventHandler: HopeBoss script not found in parent!");
+        }
+    }
+
+    public void TriggerSpawnCoin()
+    {
+        if (hopeBoss != null)
+        {
+            Debug.Log("HopeBoss Spawned Coin!");
+            hopeBoss.SpawnCoin();
+        }
+        else
+        {
+            Debug.LogWarning("HopeBossAnimationEventHandler: HopeBoss script not found in parent!");
         }
     }
 }

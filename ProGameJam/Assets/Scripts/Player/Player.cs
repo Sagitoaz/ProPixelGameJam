@@ -13,6 +13,7 @@ public class Player : MonoBehaviour, IDamageable
     private bool _resetJump = false;
     [SerializeField] private bool _canAirJump = true;
     [SerializeField] private bool _hasAirJump = false;
+    [SerializeField] private int _coin = 0;
 
     //Dash
     [SerializeField] private float _dashForce = 12.0f;
@@ -220,5 +221,13 @@ public class Player : MonoBehaviour, IDamageable
     //GETTER
     public bool GetIsGround() {
         return _grounded;
+    }
+
+    public void SetCoin(int coinQuantity){
+        _coin += coinQuantity;
+    }
+
+    public void Heal(int healthAmount){
+        Health += healthAmount;
     }
 }
