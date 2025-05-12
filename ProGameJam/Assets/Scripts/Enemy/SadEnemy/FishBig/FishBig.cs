@@ -57,6 +57,7 @@ public class FishBig : Enemy, IDamageable
         if (Health < 1)
         {
             _isDead = true;
+            OnEnemyDeath?.Invoke();
             _isIdle = true;
             StopAllCoroutines();
             StartCoroutine(DeathRoutine());

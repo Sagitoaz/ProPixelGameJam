@@ -27,6 +27,7 @@ public class Mine : Enemy, IDamageable
         if (Health < 1)
         {
             _isDead = true;
+            OnEnemyDeath?.Invoke();
             StopAllCoroutines();
             StartCoroutine(DeathRoutine());
         }
