@@ -116,6 +116,8 @@ public class SmallMushroom : Enemy, IDamageable
         anim.SetTrigger("Hit");
         if (Health < 1)
         {
+            _isDead = true;
+            OnEnemyDeath?.Invoke();
             Destroy(gameObject);
         }
     }

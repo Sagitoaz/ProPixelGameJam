@@ -3,11 +3,13 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
+    public System.Action OnEnemyDeath;
     [SerializeField] protected int health;
     [SerializeField] protected float speed;
     [SerializeField] private int coins = 1;
     [SerializeField] private GameObject _coinPrefabs;
     [SerializeField] protected LayerMask _groundLayer;
+    protected bool _isDead = false;
     protected Rigidbody2D _rb;
     protected Transform _target;
     protected bool _isIdle = false;
