@@ -66,6 +66,7 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
         if (Health < 1)
         {
             _isDead = true;
+            OnEnemyDeath?.Invoke();
             anim.SetTrigger("Death");
             _isAttack = false;
             _isIdle = true;

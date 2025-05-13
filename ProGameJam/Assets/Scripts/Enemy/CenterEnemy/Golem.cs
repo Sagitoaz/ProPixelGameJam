@@ -30,7 +30,11 @@ public class Golem : Enemy, IDamageable
         Debug.Log("Health point lefts: " + Health);
         anim.SetTrigger("Hit");
         if (Health < 1) {
-            Destroy(gameObject);
+            anim.SetTrigger("Death");
+            _isDead = true;
+            OnEnemyDeath?.Invoke();
+            StopAllCoroutines();
+            StartCoroutine(DeathRoutine());
         }
     }
     public virtual void StartAttack(Transform player) {
@@ -77,5 +81,10 @@ public class Golem : Enemy, IDamageable
             Vector2 direction = _target.position - transform.position;
             fire.GetComponent<Fire>().SetDirection(direction);
         }
+    }
+    IEnumerator DeathRoutine()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Destroy(gameObject);
     }
 }

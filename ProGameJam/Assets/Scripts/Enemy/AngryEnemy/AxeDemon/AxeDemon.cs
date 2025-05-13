@@ -35,6 +35,8 @@ public class AxeDemon : Enemy, IDamageable
         if (Health < 1)
         {
             anim.SetTrigger("Death");
+            _isDead = true;
+            OnEnemyDeath?.Invoke();
             Destroy(gameObject);
         }
     }
