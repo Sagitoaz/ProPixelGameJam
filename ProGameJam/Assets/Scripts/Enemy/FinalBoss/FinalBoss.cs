@@ -18,7 +18,6 @@ public class FinalBoss : Enemy
     protected bool _playerInAir = false;
     protected bool _isDead = false;
     [SerializeField] protected float _retreatSpeed = 2.0f;
-    [SerializeField] protected LayerMask _groundLayer;
     protected virtual void Start()
     {
         _anim = GetComponentInChildren<Animator>();

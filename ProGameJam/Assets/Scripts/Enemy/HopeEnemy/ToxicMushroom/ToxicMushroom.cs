@@ -57,6 +57,8 @@ public class ToxicMushroom : Enemy, IDamageable
         anim.SetTrigger("Hit");
         if (Health < 1)
         {
+            _isDead = true;
+            OnEnemyDeath?.Invoke();
             anim.SetTrigger("Death");
             Destroy(gameObject);
         }

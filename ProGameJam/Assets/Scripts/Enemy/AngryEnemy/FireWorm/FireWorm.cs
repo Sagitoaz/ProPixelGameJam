@@ -32,6 +32,8 @@ public class FireWorm : Enemy, IDamageable
         anim.SetTrigger("Hit");
         if (Health < 1) {
             anim.SetTrigger("Death");
+            _isDead = true;
+            OnEnemyDeath?.Invoke();
             Destroy(gameObject);
         }
     }
