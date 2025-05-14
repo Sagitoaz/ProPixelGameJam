@@ -111,6 +111,7 @@ public class SmallMushroom : Enemy, IDamageable
     }
     public void Damage()
     {
+        if (_isDead) return;
         Health--;
         Debug.Log("Health point lefts: " + Health);
         anim.SetTrigger("Hit");

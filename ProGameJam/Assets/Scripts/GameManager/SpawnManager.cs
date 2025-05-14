@@ -25,6 +25,7 @@ public class SpawnManager : MonoBehaviour
     {
         GameObject enemy = Instantiate(point._currentEnemy, point._spawnLocation.position, Quaternion.identity);
         Enemy enemyScript = enemy.GetComponent<Enemy>();
+        enemyScript.OnEnemyDeath = null;
         enemyScript.OnEnemyDeath = () => StartCoroutine(RespawnCoroutine(point));
     }
 

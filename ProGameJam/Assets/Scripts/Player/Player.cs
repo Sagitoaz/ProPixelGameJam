@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Player : MonoBehaviour, IDamageable
@@ -50,11 +51,21 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private float _underwaterTimer;
     public int Health { get; set; }
 
+    //UI
+    [SerializeField] private HeartUI _heartUI;
+    [SerializeField] private ManaUI _manaUI;
+    [SerializeField] private int _maxMana = 100;
+    private int _currentMana;
+
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         Health = _health;
+        _heartUI.SetMaxHealth(_health);
+        _heartUI.UpdateHearts(Health);
+        _currentMana = _maxMana;
+        _manaUI.SetMaxMana(_currentMana);
         _underwaterTimer = _maxUnderwaterTime;
     }
 
@@ -125,8 +136,15 @@ public class Player : MonoBehaviour, IDamageable
     }
 
     bool IsGrounded() {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.5f, _groundLayer);
-        Debug.DrawRay(transform.position, Vector2.down, Color.green);
+        CapsuleCollider2D capsule = GetComponent<CapsuleCollider2D>();
+        Vector2 origin = capsule.bounds.center;
+        Vector2 size = capsule.bounds.size;
+        float extraHeight = 0.1f;
+
+        RaycastHit2D hit = Physics2D.CapsuleCast(origin, size, capsule.direction, 0f, Vector2.down, extraHeight, _groundLayer);
+
+        Color rayColor = hit.collider != null ? Color.green : Color.red;
+        Debug.DrawRay(origin, Vector2.down * (size.y / 2 + extraHeight), rayColor);
 
         if (hit.collider != null && !_resetJump) {
             _playerAnimator.Jump(false);
@@ -243,6 +261,7 @@ public class Player : MonoBehaviour, IDamageable
     {
         if (_isDead) return;
         Health--;
+        _heartUI.UpdateHearts(Health);
         Debug.Log("Player's HP lefts: " + Health);
         _playerAnimator.Hit();
         if (Health < 1) {
