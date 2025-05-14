@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
   m_Name: NPC4
   m_EditorClassIdentifier: 
-  npcName: ???
+  npcName: Elyra
   npcPortrait: {fileID: 471107871, guid: 72c40d9500d2ebb4d814996b613e6b86, type: 3}
   dialogueLines:
   - 'Must all life fade away? Should you keep fighting if you cannot let go?  '

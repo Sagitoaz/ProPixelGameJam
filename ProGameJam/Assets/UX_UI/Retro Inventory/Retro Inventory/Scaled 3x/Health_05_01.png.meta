@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Health_05_01_0: 7194900165932991150
+      Health_05_01_1: -2757781533717486926
+      Health_05_01_2: 217843262848218519
+      Health_05_01_3: -8709127197036728470
+      Health_05_01_4: -2426462872620772371
+      Health_05_01_5: 2264231447695395261
+      Health_05_01_6: -6972507280066420726
+      Health_05_01_7: -1392970015725623789
+      Health_05_01_8: -2328684765522170048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

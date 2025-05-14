@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Health_04_Heart_Yellow_Clear_0: 3895326012659713129
+      Health_04_Heart_Yellow_Clear_1: 6493901785620345364
+      Health_04_Heart_Yellow_Clear_2: -7142326682719959407
+      Health_04_Heart_Yellow_Clear_3: -8340471099844921003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

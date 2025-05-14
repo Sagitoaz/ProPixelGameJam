@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
   m_Name: NPC3
   m_EditorClassIdentifier: 
-  npcName: ???
+  npcName: Thaeon
   npcPortrait: {fileID: -639057597, guid: a2f25f77f46bba3408a580bb2d2296ca, type: 3}
   dialogueLines:
   - Must the power you hold be placed in the hands of those who understand it? Have

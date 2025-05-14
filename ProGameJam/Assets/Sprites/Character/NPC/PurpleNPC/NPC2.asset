@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
   m_Name: NPC2
   m_EditorClassIdentifier: 
-  npcName: ???
+  npcName: Karethul
   npcPortrait: {fileID: -956217350, guid: 76707d4a8ffdfe44697b91eca59773f8, type: 3}
   dialogueLines:
   - Will the weak repeat their old mistakes? Should everything be wiped clean and
