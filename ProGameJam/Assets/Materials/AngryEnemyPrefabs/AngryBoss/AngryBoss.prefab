@@ -353,9 +353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9d4674006ba494f9bfd2caf21f9021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 50
   speed: 2
   coins: 0
+  _coinPrefabs: {fileID: 0}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256

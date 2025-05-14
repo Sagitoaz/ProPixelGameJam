@@ -466,7 +466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   speed: 2
-  coins: 0
+  coins: 5
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -543,4 +544,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

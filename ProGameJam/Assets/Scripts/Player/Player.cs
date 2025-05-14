@@ -291,8 +291,10 @@ public class Player : MonoBehaviour, IDamageable
                     _environmentDamaged = true;
                     StartCoroutine(RespawnToCheckpoint());
                 }
-            }
-            _inWater = true;
+            } else {
+                _inWater = true;
+                _rb.gravityScale = 0.5f;
+            }        
         }
         if (other.CompareTag("Lava")) {
             _inLava = true;
@@ -307,6 +309,7 @@ public class Player : MonoBehaviour, IDamageable
         if (other.CompareTag("Water")) {
             Debug.Log("OnTriggerExit2D Water");
             _inWater = false;
+            _rb.gravityScale = 5f;
         }
         if (other.CompareTag("Lava")) {
             _inLava = false;

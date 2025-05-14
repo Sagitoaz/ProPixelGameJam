@@ -355,15 +355,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1416382d52ef7d448b98c4628bd6c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 80
   speed: 3
-  coins: 0
+  coins: 150
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
   _hitbox: {fileID: 3404456530416528793}
-  teleportInterval: 10
-  teleportDistance: 2
+  teleportInterval: 7
+  teleportDistance: 2.5
   fallSpeed: 5
 --- !u!61 &8774160481607564456
 BoxCollider2D:

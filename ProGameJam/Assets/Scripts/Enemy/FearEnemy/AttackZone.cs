@@ -9,7 +9,7 @@ public class AttackZone : MonoBehaviour
         _attackableEnemy = _enemy as IAttackableEnemy;
         if (_attackableEnemy == null)
         {
-            Debug.LogError("Enemy not implement IAttackableEnemy!");
+            Debug.Log("Enemy not implement IAttackableEnemy!");
         }
         else
         {

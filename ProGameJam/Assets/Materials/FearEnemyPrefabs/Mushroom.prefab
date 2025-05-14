@@ -144,7 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   speed: 3
-  coins: 0
+  coins: 10
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -269,7 +270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackCoolDown: 0.5
-  canDamage: 0
 --- !u!61 &2932053657155214725
 BoxCollider2D:
   m_ObjectHideFlags: 0

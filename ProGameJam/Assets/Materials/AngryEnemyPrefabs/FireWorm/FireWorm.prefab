@@ -188,7 +188,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 6
   speed: 1
-  coins: 0
+  coins: 3
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256

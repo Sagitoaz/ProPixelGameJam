@@ -350,7 +350,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 828544023581716843}
@@ -370,9 +370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd68dfe088757c4b9493d500395366a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   speed: 3
-  coins: 0
+  coins: 5
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   flyDistance: 5
 --- !u!61 &4316024371807536242
 BoxCollider2D:

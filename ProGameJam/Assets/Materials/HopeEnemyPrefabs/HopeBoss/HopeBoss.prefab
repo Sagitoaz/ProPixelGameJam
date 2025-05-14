@@ -233,14 +233,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55110a64f8dccab40bfaec3134e6716b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 20
   speed: 2
+  coins: 300
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 256
   _hitbox: {fileID: 9191909127460272989}
-  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
-  coins: 0
   _teleportDistance: 1
 --- !u!50 &8961754337632312058
 Rigidbody2D:

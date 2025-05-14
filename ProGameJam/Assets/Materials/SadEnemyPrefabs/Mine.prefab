@@ -51,6 +51,10 @@ MonoBehaviour:
   health: 10000
   speed: 0
   coins: 0
+  _coinPrefabs: {fileID: 6450834510229246767, guid: 4e9de02a234581842828a57e23fd0b28, type: 3}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!70 &832472753626228110
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,7 +168,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: -2955957596030943199, guid: 1818c58a69724254a88815fd216e8a98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -245,7 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackCoolDown: 0.5
-  canDamage: 0
 --- !u!50 &6472086561028318852
 Rigidbody2D:
   serializedVersion: 5
