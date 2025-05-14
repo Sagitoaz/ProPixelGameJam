@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class FinalBoss : Enemy
 {
-    [SerializeField] protected Transform _target;
     protected Animator _anim;
     protected SpriteRenderer _sprite;
     [SerializeField] protected Transform _hitbox;
@@ -18,7 +17,6 @@ public class FinalBoss : Enemy
     protected bool _playerInAir = false;
     protected bool _isDead = false;
     [SerializeField] protected float _retreatSpeed = 2.0f;
-    [SerializeField] protected LayerMask _groundLayer;
     protected virtual void Start()
     {
         _anim = GetComponentInChildren<Animator>();

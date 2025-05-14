@@ -50,6 +50,10 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private float _underwaterTimer;
     public int Health { get; set; }
 
+    public int GetCoin(){
+        return _coin;
+    }
+
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
@@ -300,5 +304,11 @@ public class Player : MonoBehaviour, IDamageable
         _inLava = false;
         _inWater = false;
         _environmentDamaged = false; 
+    }
+
+    // BUY ITEM
+    public void DeductCoin(int itemPrice){
+        if (_coin - itemPrice < 0) _coin = 0;
+        else _coin -= itemPrice;
     }
 }
