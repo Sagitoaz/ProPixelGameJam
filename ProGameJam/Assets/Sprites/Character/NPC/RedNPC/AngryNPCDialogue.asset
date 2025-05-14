@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
+  m_Name: AngryNPCDialogue
+  m_EditorClassIdentifier: 
+  npcName: Angry
+  npcPortrait: {fileID: -639057597, guid: a2f25f77f46bba3408a580bb2d2296ca, type: 3}
+  dialogueLines:
+  - "You carried both Fear and Sorrow within you, Auralis. And with them, you entered
+    Embercrag\u2026 a land scorched by rage and fire."
+  - "Lava roared beneath your feet. The sky bled smoke. This was no ordinary battlefield\u2014this
+    was Furyblaze\u2019s domain."
+  - "He emerged from the inferno\u2014a blazing monster, all fury and flame. But
+    he wasn\u2019t just a beast\u2026"
+  - "He was you. Or rather\u2026 what you could become. A twisted reflection. Furyblaze
+    called himself the rightful ruler of Lumora."
+  - He said you were weak. Broken. And that your failure had doomed the world.
+  autoProgressLines: 0101010101
+  endDialogueLines: 0000000001
+  choices: []
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

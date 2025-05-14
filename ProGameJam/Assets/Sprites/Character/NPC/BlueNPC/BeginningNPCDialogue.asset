@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
+  m_Name: BeginningNPCDialogue
+  m_EditorClassIdentifier: 
+  npcName: ???
+  npcPortrait: {fileID: 471107871, guid: 72c40d9500d2ebb4d814996b613e6b86, type: 3}
+  dialogueLines:
+  - "You don\u2019t remember\u2026 do you?"
+  - "Then let me remind you\u2026"
+  - You were once Auralis, the guardian deity of Lumora
+  - A radiant world filled with light and life. But from the abyss came Daros, the
+    embodiment of destruction, and everything changed.
+  - 'In the final battle, your soul was torn into four: Fear, Sorrow, Rage, and Hope.'
+  - 'The first three became monsters. '
+  - Hope vanished.
+  - "Lumora fell into darkness\u2026 and you were reborn as a human, stripped of
+    memory, stripped of power."
+  autoProgressLines: 0101010101010101
+  endDialogueLines: 0000000000000001
+  choices: []
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
