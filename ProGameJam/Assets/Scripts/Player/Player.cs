@@ -339,7 +339,7 @@ public class Player : MonoBehaviour, IDamageable
     }
     public void DestroyPlayer()
     {
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 
     //GETTER

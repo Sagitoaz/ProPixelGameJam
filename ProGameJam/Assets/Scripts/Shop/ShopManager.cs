@@ -105,7 +105,7 @@ public class ShopManager : MonoBehaviour
 
     void BuyItem()
     {
-        if (selectedItem != null && inventoryManager != null)
+        if (selectedItem != null && inventoryManager != null && player.GetCoin() >= selectedItem.price)
         {
             // Thêm vật phẩm vào inventory
             if (inventoryManager.AddItem(selectedItem))
