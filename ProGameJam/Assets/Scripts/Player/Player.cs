@@ -64,9 +64,13 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private HeartUI _heartUI;
     [SerializeField] private ManaUI _manaUI;
     [SerializeField] private int _maxMana = 100;
-    private int _currentMana;
+    [SerializeField] private int _currentMana;
 
-    void Start() {
+    // Inventory
+    [SerializeField] private InventoryManager _inventoryManager;
+
+    void Start()
+    {
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
@@ -78,7 +82,8 @@ public class Player : MonoBehaviour, IDamageable
         _underwaterTimer = _maxUnderwaterTime;
     }
 
-    void Update() {
+    void Update()
+    {
         if (_isDead) return;
         HandleSwim();
         if (_isDash) return;
@@ -86,26 +91,35 @@ public class Player : MonoBehaviour, IDamageable
         HandleAttack();
         HandleComboTimer();
 
-        if (Input.GetKeyDown(KeyCode.L) && _canDash) {
+        if (Input.GetKeyDown(KeyCode.L) && _canDash)
+        {
             StartCoroutine(DashRoutine());
-        } else if (_isAttackDash) {
+        }
+        else if (_isAttackDash)
+        {
             return;
-        } else {
+        }
+        else
+        {
             HandleMovement();
         }
     }
 
     //MOVEMENT
-    void HandleMovement() {
+    void HandleMovement()
+    {
         _move = Input.GetAxisRaw("Horizontal");
         FlipSprite();
         _grounded = IsGrounded();
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            if (_inLava) {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (_inLava)
+            {
                 return;
             }
-            if (_inWater) {
+            if (_inWater)
+            {
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _waterJumpForce);
                 _playerAnimator.Jump(true);
                 return;
@@ -146,23 +160,30 @@ public class Player : MonoBehaviour, IDamageable
         _playerAnimator.Fall(_rb.linearVelocityY);
     }
 
-    void FlipSprite() {
-        if (_move > 0) {
+    void FlipSprite()
+    {
+        if (_move > 0)
+        {
             _playerSprite.flipX = false;
-            if (!_facingRight) {
+            if (!_facingRight)
+            {
                 _facingRight = true;
                 FlipHitbox();
             }
-        } else if (_move < 0) {
+        }
+        else if (_move < 0)
+        {
             _playerSprite.flipX = true;
-            if (_facingRight) {
+            if (_facingRight)
+            {
                 _facingRight = false;
                 FlipHitbox();
             }
         }
     }
 
-    bool IsGrounded() {
+    bool IsGrounded()
+    {
         CapsuleCollider2D capsule = GetComponent<CapsuleCollider2D>();
         Vector2 origin = capsule.bounds.center;
         Vector2 size = capsule.bounds.size;
@@ -173,7 +194,8 @@ public class Player : MonoBehaviour, IDamageable
         Color rayColor = hit.collider != null ? Color.green : Color.red;
         Debug.DrawRay(origin, Vector2.down * (size.y / 2 + extraHeight), rayColor);
 
-        if (hit.collider != null && !_resetJump) {
+        if (hit.collider != null && !_resetJump)
+        {
             _playerAnimator.Jump(false);
             _hasAirJump = false;
             return true;
@@ -182,31 +204,39 @@ public class Player : MonoBehaviour, IDamageable
         return false;
     }
 
-    IEnumerator ResetJump() {
+    IEnumerator ResetJump()
+    {
         _resetJump = true;
         yield return new WaitForSeconds(0.5f);
         _resetJump = false;
     }
 
-    private void HandleSwim() {
-        if (_inWater && _canSwim) {
+    private void HandleSwim()
+    {
+        if (_inWater && _canSwim)
+        {
             _underwaterTimer -= Time.deltaTime;
-            if (_underwaterTimer <= 0f) {
-                if (!_environmentDamaged) {
+            if (_underwaterTimer <= 0f)
+            {
+                if (!_environmentDamaged)
+                {
                     Damage();
                     _environmentDamaged = true;
                     StartCoroutine(RespawnToCheckpoint());
                 }
                 _underwaterTimer = _maxUnderwaterTime;
             }
-        } else if (_underwaterTimer < _maxUnderwaterTime) {
+        }
+        else if (_underwaterTimer < _maxUnderwaterTime)
+        {
             _underwaterTimer += Time.deltaTime;
             _underwaterTimer = Mathf.Min(_underwaterTimer, _maxUnderwaterTime);
         }
     }
 
     //COMBAT
-    void HandleAttack() {
+    void HandleAttack()
+    {
         if (!_canAttack) return;
         if (Input.GetKeyDown(KeyCode.U)) {
             audioManager.PlaySFX(audioManager.attack2);
@@ -233,29 +263,35 @@ public class Player : MonoBehaviour, IDamageable
         }
     }
 
-    void HandleComboTimer() {
-        if (_comboStep > 0) {
+    void HandleComboTimer()
+    {
+        if (_comboStep > 0)
+        {
             _comboTimer += Time.deltaTime;
-            if (_comboTimer > _comboDelay) {
+            if (_comboTimer > _comboDelay)
+            {
                 _comboStep = 0;
                 _comboTimer = 0;
             }
         }
     }
 
-    private void FlipHitbox() {
+    private void FlipHitbox()
+    {
         Vector3 scale = _hitbox.localScale;
         scale.x = _facingRight ? 1 : -1;
         _hitbox.localScale = scale;
     }
 
-    IEnumerator AttackCoolDown() {
+    IEnumerator AttackCoolDown()
+    {
         _canAttack = false;
         yield return new WaitForSeconds(0.7f);
         _canAttack = true;
     }
 
-    IEnumerator DashWhenAttack() {
+    IEnumerator DashWhenAttack()
+    {
         _isAttackDash = true;
         float dashForce = 6.0f;
         float direction = _playerSprite.flipX ? -1 : 1;
@@ -301,16 +337,19 @@ public class Player : MonoBehaviour, IDamageable
             _playerAnimator.Death();
         }
     }
-    public void DestroyPlayer() {
+    public void DestroyPlayer()
+    {
         Destroy(gameObject);
     }
 
     //GETTER
-    public bool GetIsGround() {
+    public bool GetIsGround()
+    {
         return _grounded;
     }
 
-    public void SetCoin(int coinQuantity){
+    public void SetCoin(int coinQuantity)
+    {
         _coin += coinQuantity;
     }
     
@@ -351,22 +390,59 @@ public class Player : MonoBehaviour, IDamageable
             }
         }
     }
-    private void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Water")) {
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Water"))
+        {
             Debug.Log("OnTriggerExit2D Water");
             _inWater = false;
             _rb.gravityScale = 5f;
         }
-        if (other.CompareTag("Lava")) {
+        if (other.CompareTag("Lava"))
+        {
             _inLava = false;
         }
         _environmentDamaged = false;
     }
-    private IEnumerator RespawnToCheckpoint() {
+    private IEnumerator RespawnToCheckpoint()
+    {
         yield return new WaitForSeconds(0.5f);
         transform.position = _checkpoint.position;
         _inLava = false;
         _inWater = false;
-        _environmentDamaged = false; 
+        _environmentDamaged = false;
+    }
+
+    // BUY ITEM
+    public int GetCoin()
+    {
+        return _coin;
+    }
+    public void DeductCoin(int itemPrice)
+    {
+        if (_coin - itemPrice < 0) _coin = 0;
+        else _coin -= itemPrice;
+    }
+
+    // USE ITEM
+    public void UseItem(Item item)
+    {
+        item.Use(this);
+    }
+    public int GetMaxHealth()
+    {
+        return _health;
+    }
+    public void SetMaxHealth(int healthAmount)
+    {
+        _health = healthAmount;
+    }
+    public int GetMana()
+    {
+        return _currentMana;
+    }
+    public void SetMana(int manaAmount)
+    {
+        _currentMana = manaAmount;
     }
 }

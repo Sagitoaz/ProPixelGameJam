@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128f6cbbaff50ad4a98e92eb6d26f4c2, type: 3}
+  m_Name: New Mana Potion
+  m_EditorClassIdentifier: 
+  ID: 1
+  displayName: Tears of Anguish
+  description: '- A mystery potion that helps you restore 10 mana instantly upon
+    use.'
+  price: 50
+  itemType: 1
+  actionType: 0
+  stackable: 1
+  image: {fileID: 18521717381868090, guid: ef36538ff54e4fe41bc2d4ff210090f5, type: 3}
+  manaAmount: 20

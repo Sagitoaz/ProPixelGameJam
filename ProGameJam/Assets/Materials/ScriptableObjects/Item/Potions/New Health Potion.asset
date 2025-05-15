@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a387b7cf00936eb46aa893a1ca0b7ab6, type: 3}
+  m_Name: New Health Potion
+  m_EditorClassIdentifier: 
+  ID: 0
+  displayName: Dragon Blood
+  description: '- A miraculous potent health potion that permanently increases maximum
+    health by 3 points.'
+  price: 300
+  itemType: 1
+  actionType: 1
+  stackable: 1
+  image: {fileID: 3310002292416464744, guid: 116aa552f836ebd45898b2c2d9360381, type: 3}
+  boostAmount: 3
