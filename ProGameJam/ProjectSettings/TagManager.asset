@@ -8,6 +8,7 @@ TagManager:
   - Water
   - Lava
   - Coin
+  - Audio
   layers:
   - Default
   - TransparentFX
