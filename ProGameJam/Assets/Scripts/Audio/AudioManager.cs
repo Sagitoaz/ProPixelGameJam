@@ -1,0 +1,63 @@
+using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    private bool isRunningLoop = false;
+    [Header("-------- Audio Source --------")]
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource SFXSource;
+
+    [Header("-------- Audio Clip --------")]
+    public AudioClip background;
+    public AudioClip run;
+    public AudioClip attack1;
+    public AudioClip attack2;
+    public AudioClip jump;
+    public AudioClip dash;
+    public AudioClip death;
+
+    [Header("-------- Volume Settings --------")]
+    [Range(0f, 1f)] public float musicVolume = 1f;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
+    private void Start()
+    {
+        musicSource.clip = background;
+        musicSource.Play();
+
+        musicSource.volume = musicVolume;
+        SFXSource.volume = sfxVolume;
+    }
+
+    private void Update()
+    {
+        musicSource.volume = musicVolume;
+        SFXSource.volume = sfxVolume;
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
+    }
+
+    public void Run()
+    {
+        if (!isRunningLoop || SFXSource.clip != run)
+        {
+            SFXSource.clip = run;
+            SFXSource.loop = true;
+            SFXSource.Play();
+            isRunningLoop = true;
+        }
+    }
+
+    public void StopRun()
+    {
+        if (isRunningLoop)
+        {
+            SFXSource.Stop();
+            SFXSource.loop = false;
+            isRunningLoop = false;
+        }
+    }
+}
