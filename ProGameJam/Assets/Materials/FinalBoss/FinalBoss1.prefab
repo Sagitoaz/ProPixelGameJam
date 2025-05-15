@@ -335,6 +335,10 @@ MonoBehaviour:
   health: 50
   speed: 3
   coins: 0
+  _coinPrefabs: {fileID: 0}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
   _target: {fileID: 0}
   _hitbox: {fileID: 8584183174196593167}
   _facingRight: 1
@@ -439,7 +443,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 55
   m_Sprite: {fileID: 1460175549, guid: cb2d0c0dc17f6b943bfcbb2e6104b9c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

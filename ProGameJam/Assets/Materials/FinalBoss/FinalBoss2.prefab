@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 55
   m_Sprite: {fileID: -771651028, guid: ad8d4ecc11832e24b9093db5be757f03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -614,6 +614,10 @@ MonoBehaviour:
   health: 100
   speed: 5
   coins: 0
+  _coinPrefabs: {fileID: 0}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
   _target: {fileID: 0}
   _hitbox: {fileID: 8461346695094183514}
   _facingRight: 1
@@ -623,17 +627,19 @@ MonoBehaviour:
   - 10
   - 10
   - 10
+  - 20
   _skillLast:
   - 3.5
   - 1.5
   - 2.5
   - 2.5
   - 2.5
+  - 0.5
   _lastUsedTime:
   - 0
   - 0
   - 0
   - 0
   - 0
+  - 0
   _retreatSpeed: 3.5
-  _bossPhase1: {fileID: 0}
