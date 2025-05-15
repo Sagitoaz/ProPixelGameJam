@@ -9,6 +9,13 @@ public class Teleport : MonoBehaviour
     private bool playerInRange = false;
     private bool isTeleporting = false;
 
+    private Player playerScript;
+
+   private void Start()
+    {
+        playerScript = Player.GetComponent<Player>();
+    }
+
     private void Update()
     {
         if (playerInRange && !isTeleporting && Input.GetKeyDown(KeyCode.E))
@@ -38,6 +45,10 @@ public class Teleport : MonoBehaviour
         isTeleporting = true;
         yield return new WaitForSeconds(tpTime);
         Player.transform.position = Portal.transform.position;
+        if (playerScript != null)
+        {
+            playerScript.Checkpoint = Portal.transform;
+        }
         isTeleporting = false;
     }
 }

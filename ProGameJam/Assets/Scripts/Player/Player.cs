@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IDamageable
 {
+    //Audio
+    AudioManager audioManager;
+    private bool _isRunningSFX = false;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     //Movement
     private Rigidbody2D _rb;
     [SerializeField] private float _speed = 5.0f;
@@ -102,11 +111,13 @@ public class Player : MonoBehaviour, IDamageable
                 return;
             }
             if (_grounded) {
+                audioManager.PlaySFX(audioManager.jump);
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
                 StartCoroutine(ResetJump());
                 _playerAnimator.Jump(true);
                 _hasAirJump = false;
             } else if (_canAirJump && !_hasAirJump) {
+                audioManager.PlaySFX(audioManager.jump);
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
                 StartCoroutine(ResetJump());
                 _playerAnimator.Jump(true);
@@ -115,6 +126,22 @@ public class Player : MonoBehaviour, IDamageable
         }
 
         _rb.linearVelocity = new Vector2(_move * _speed, _rb.linearVelocityY);
+        if (_grounded && Mathf.Abs(_move) > 0.1f)
+        {
+            if (!_isRunningSFX)
+            {
+                audioManager.Run();
+                _isRunningSFX = true;
+            }
+        }
+        else
+        {
+            if (_isRunningSFX)
+            {
+                audioManager.StopRun();
+                _isRunningSFX = false;
+            }
+        }
         _playerAnimator.Move(_move);
         _playerAnimator.Fall(_rb.linearVelocityY);
     }
@@ -182,6 +209,7 @@ public class Player : MonoBehaviour, IDamageable
     void HandleAttack() {
         if (!_canAttack) return;
         if (Input.GetKeyDown(KeyCode.U)) {
+            audioManager.PlaySFX(audioManager.attack2);
             _playerAnimator.Attack(3);
             _comboStep = 0;
             _comboTimer = 0;
@@ -190,10 +218,12 @@ public class Player : MonoBehaviour, IDamageable
         } 
         if (Input.GetKeyDown(KeyCode.J)) {
             if (_comboStep == 0) {
+                audioManager.PlaySFX(audioManager.attack1);
                 _playerAnimator.Attack(1);
                 _comboStep = 1;
                 _comboTimer = 0;
             } else if (_comboStep == 1 && _comboTimer < _comboDelay) {
+                audioManager.PlaySFX(audioManager.attack1);
                 _playerAnimator.Attack(2);
                 _comboStep = 0;
                 _comboTimer = 0;
@@ -236,6 +266,7 @@ public class Player : MonoBehaviour, IDamageable
 
     //DASH
     IEnumerator DashRoutine() {
+        audioManager.PlaySFX(audioManager.dash);
         _isDash = true;
         _canDash = false;
 
@@ -265,6 +296,7 @@ public class Player : MonoBehaviour, IDamageable
         Debug.Log("Player's HP lefts: " + Health);
         _playerAnimator.Hit();
         if (Health < 1) {
+            audioManager.PlaySFX(audioManager.death);
             _isDead = true;
             _playerAnimator.Death();
         }
@@ -281,24 +313,38 @@ public class Player : MonoBehaviour, IDamageable
     public void SetCoin(int coinQuantity){
         _coin += coinQuantity;
     }
+    
+    public Transform Checkpoint
+    {
+        get => _checkpoint;
+        set => _checkpoint = value;
+    }
 
     //ENVIRONMENT
-    private void OnTriggerStay2D(Collider2D other) {
-        if (other.CompareTag("Water")) {
-            if (!_canSwim) {
-                if (!_environmentDamaged) {
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            if (!_canSwim)
+            {
+                if (!_environmentDamaged)
+                {
                     Damage();
                     _environmentDamaged = true;
                     StartCoroutine(RespawnToCheckpoint());
                 }
-            } else {
+            }
+            else
+            {
                 _inWater = true;
                 _rb.gravityScale = 0.5f;
-            }        
+            }
         }
-        if (other.CompareTag("Lava")) {
+        if (other.CompareTag("Lava"))
+        {
             _inLava = true;
-            if (!_environmentDamaged) {
+            if (!_environmentDamaged)
+            {
                 Damage();
                 _environmentDamaged = true;
                 StartCoroutine(RespawnToCheckpoint());
