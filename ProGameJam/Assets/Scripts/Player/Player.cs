@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour, IDamageable, IDataPersistence
 {
@@ -41,6 +42,11 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     //Health
     [SerializeField] private int _health;
     private bool _isDead = false;
+    private float _healingHoldTime = 0f;
+    [SerializeField] private float _requiredHoldTime = 1.0f;
+    [SerializeField] private int _manaCostToHeal = 30;
+    private float _healCooldown = 0.5f;
+    private float _healCooldownTimer = 0f;
 
     //Components
     private PlayerAnimation _playerAnimator;
@@ -65,6 +71,8 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     [SerializeField] private ManaUI _manaUI;
     [SerializeField] private int _maxMana = 100;
     [SerializeField] private int _currentMana;
+    [SerializeField] private Text _coinText;
+    [SerializeField] private PauseUI _pauseUI;
 
     // Inventory
     [SerializeField] private InventoryManager _inventoryManager;
@@ -78,7 +86,9 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _heartUI.SetMaxHealth(_health);
         _heartUI.UpdateHearts(Health);
         _currentMana = _maxMana;
-        _manaUI.SetMaxMana(_currentMana);
+        _manaUI.SetMaxMana(_maxMana);
+        _manaUI.UpdateMana(_currentMana);
+        _coinText.text = "" + _coin;
         _underwaterTimer = _maxUnderwaterTime;
     }
 
@@ -103,6 +113,7 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         {
             HandleMovement();
         }
+        HandleHealing();
     }
 
     //MOVEMENT
@@ -124,13 +135,16 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
                 _playerAnimator.Jump(true);
                 return;
             }
-            if (_grounded) {
+            if (_grounded)
+            {
                 audioManager.PlaySFX(audioManager.jump);
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
                 StartCoroutine(ResetJump());
                 _playerAnimator.Jump(true);
                 _hasAirJump = false;
-            } else if (_canAirJump && !_hasAirJump) {
+            }
+            else if (_canAirJump && !_hasAirJump)
+            {
                 audioManager.PlaySFX(audioManager.jump);
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
                 StartCoroutine(ResetJump());
@@ -238,21 +252,26 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     void HandleAttack()
     {
         if (!_canAttack) return;
-        if (Input.GetKeyDown(KeyCode.U)) {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
             audioManager.PlaySFX(audioManager.attack2);
             _playerAnimator.Attack(3);
             _comboStep = 0;
             _comboTimer = 0;
             StartCoroutine(AttackCoolDown());
             return;
-        } 
-        if (Input.GetKeyDown(KeyCode.J)) {
-            if (_comboStep == 0) {
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            if (_comboStep == 0)
+            {
                 audioManager.PlaySFX(audioManager.attack1);
                 _playerAnimator.Attack(1);
                 _comboStep = 1;
                 _comboTimer = 0;
-            } else if (_comboStep == 1 && _comboTimer < _comboDelay) {
+            }
+            else if (_comboStep == 1 && _comboTimer < _comboDelay)
+            {
                 audioManager.PlaySFX(audioManager.attack1);
                 _playerAnimator.Attack(2);
                 _comboStep = 0;
@@ -301,7 +320,8 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     }
 
     //DASH
-    IEnumerator DashRoutine() {
+    IEnumerator DashRoutine()
+    {
         audioManager.PlaySFX(audioManager.dash);
         _isDash = true;
         _canDash = false;
@@ -328,10 +348,12 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     {
         if (_isDead) return;
         Health--;
+        audioManager.PlaySFX(audioManager.hitSound);
         _heartUI.UpdateHearts(Health);
         Debug.Log("Player's HP lefts: " + Health);
         _playerAnimator.Hit();
-        if (Health < 1) {
+        if (Health < 1)
+        {
             audioManager.PlaySFX(audioManager.death);
             _isDead = true;
             _playerAnimator.Death();
@@ -340,6 +362,38 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     public void DestroyPlayer()
     {
         this.gameObject.SetActive(false);
+    }
+
+    //HEALTH AND MANA
+    private void HandleHealing()
+    {
+        if (_isDead) return;
+
+        if (Input.GetKey(KeyCode.I))
+        {
+            _healingHoldTime += Time.deltaTime;
+            if (_healingHoldTime >= _requiredHoldTime)
+            {
+                _healCooldownTimer -= Time.deltaTime;
+                if (_currentMana >= _manaCostToHeal && Health < _health)
+                {
+                    _currentMana -= _manaCostToHeal;
+                    _manaUI.UpdateMana(_currentMana);
+                    Health++;
+                    audioManager.PlaySFX(audioManager.HealingSound);
+                    _heartUI.UpdateHearts(Health);
+                    Debug.Log("Healed 1 HP. Current HP: " + Health);
+                    _healCooldownTimer = _healCooldown;
+                }
+
+                _healingHoldTime = 0f;
+            }
+        }
+        else
+        {
+            _healingHoldTime = 0f;
+            _healCooldownTimer = 0f;
+        }
     }
 
     //GETTER
@@ -351,8 +405,10 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     public void SetCoin(int coinQuantity)
     {
         _coin += coinQuantity;
+        _coinText.text = "" + _coin;
+        audioManager.PlaySFX(audioManager.coinCollect);
     }
-    
+
     public Transform Checkpoint
     {
         get => _checkpoint;
@@ -422,6 +478,7 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     {
         if (_coin - itemPrice < 0) _coin = 0;
         else _coin -= itemPrice;
+        SetCoin(0);
     }
 
     // USE ITEM
@@ -429,6 +486,8 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     {
         item.Use(this);
     }
+
+    //GETTER AND SETTER
     public int GetMaxHealth()
     {
         return _health;
@@ -436,6 +495,8 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     public void SetMaxHealth(int healthAmount)
     {
         _health = healthAmount;
+        _heartUI.SetMaxHealth(_health);
+        _heartUI.UpdateHearts(Health);
     }
     public int GetMana()
     {
@@ -444,6 +505,20 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     public void SetMana(int manaAmount)
     {
         _currentMana = manaAmount;
+        _manaUI.UpdateMana(_currentMana);
+    }
+
+    public void PlayerCanAirJump()
+    {
+        _canAirJump = true;
+    }
+    public void PlayerCanSwim()
+    {
+        _canSwim = true;
+    }
+    public void PlayerCanDash()
+    {
+        _canDash = true;
     }
 
     //Load save data

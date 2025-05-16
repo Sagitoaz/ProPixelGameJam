@@ -56,6 +56,7 @@ public class FishBig : Enemy, IDamageable
         Debug.Log("Fish hit! Remaining health: " + Health);
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
             OnEnemyDeath?.Invoke();
             _isIdle = true;

@@ -513,22 +513,25 @@ MonoBehaviour:
     m_Bits: 256
   _canAirJump: 1
   _hasAirJump: 0
-  _coin: 0
+  _coin: 50000
   _canSwim: 1
   _dashForce: 12
   _canDash: 1
   _comboDelay: 0.5
-  _health: 100
+  _health: 10
   _hitbox: {fileID: 8281467368813008816}
   _inWater: 0
   _inLava: 0
-  _waterJumpForce: 15
+  _waterJumpForce: 5
   _checkpoint: {fileID: 0}
-  _maxUnderwaterTime: 5
+  _maxUnderwaterTime: 20
   _underwaterTimer: 0
   _heartUI: {fileID: 0}
   _manaUI: {fileID: 0}
   _maxMana: 100
+  _currentMana: 0
+  _coinText: {fileID: 0}
+  _inventoryManager: {fileID: 0}
 --- !u!114 &2348181470632481107
 MonoBehaviour:
   m_ObjectHideFlags: 0

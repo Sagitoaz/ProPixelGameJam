@@ -127,7 +127,13 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
         Debug.Log("Health point lefts: " + Health);
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
+            Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
+            if (player != null)
+            {
+                player.PlayerCanSwim();
+            }
             anim.SetTrigger("Death");
             _isAttack = false;
             _isIdle = true;
