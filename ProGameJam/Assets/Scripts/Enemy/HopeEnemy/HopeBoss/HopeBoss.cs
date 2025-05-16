@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-public class HopeBoss : Enemy, IDamageable
+public class HopeBoss : Enemy, IDamageable, IDataPersistence
 {
     [SerializeField] private GameObject _hitbox;
-    protected bool _isDead = false;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
     [SerializeField] private float _teleportDistance = 3.0f;
@@ -326,4 +325,14 @@ public class HopeBoss : Enemy, IDamageable
             yield return new WaitForSeconds(1.0f);
         }
     }
+    //Load save data
+    public void LoadData(GameData data)
+    {
+        this._isDead = data.isHopeBossDeath;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.isHopeBossDeath = this._isDead;
+    }  
 }

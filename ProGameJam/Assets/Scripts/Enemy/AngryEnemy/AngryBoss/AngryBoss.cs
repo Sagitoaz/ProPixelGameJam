@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class AngryBoss : Enemy, IDamageable
+public class AngryBoss : Enemy, IDamageable, IDataPersistence
 {
     [SerializeField] private GameObject _hitbox;
     [SerializeField] private GameObject[] _flameHitboxes;
     protected bool _isActivated = false;
-    protected bool _isDead = false;
     protected Coroutine _attackCoroutine;
     protected bool _isChasing = false;
     public int Health { get; set; }
@@ -241,4 +240,14 @@ public class AngryBoss : Enemy, IDamageable
             }
         }
     }
+    //Load save data
+    public void LoadData(GameData data)
+    {
+        this._isDead = data.isAngryBossDeath;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.isAngryBossDeath = this._isDead;
+    }  
 }

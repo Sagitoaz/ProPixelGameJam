@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour, IIneractable
+public class NPC : MonoBehaviour, IIneractable, IDataPersistence
 {
     public NPCDialogue dialogueData;
     private DialogueController dialogueUI;
@@ -178,5 +178,17 @@ public class NPC : MonoBehaviour, IIneractable
         isDialogueActive = false;
         dialogueUI.SetDialogueText("");
         dialogueUI.ShowDialogueUI(false);
+    }
+
+    public void LoadData(GameData data)
+    {
+        totalYesCount = data.totalYes;
+        totalNoCount = data.totalNo;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.totalYes = totalYesCount;
+        data.totalNo = totalNoCount;
     }
 }
