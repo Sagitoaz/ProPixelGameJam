@@ -117,6 +117,7 @@ public class SmallMushroom : Enemy, IDamageable
         anim.SetTrigger("Hit");
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
             OnEnemyDeath?.Invoke();
             Destroy(gameObject);

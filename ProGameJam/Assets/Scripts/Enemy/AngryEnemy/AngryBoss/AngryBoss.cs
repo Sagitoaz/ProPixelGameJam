@@ -122,8 +122,14 @@ public class AngryBoss : Enemy, IDamageable
             anim.SetTrigger("Hit");
             if (Health < 1)
             {
+                SpawnCoin();
                 _isDead = true;
                 StopAllCoroutines();
+                Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.PlayerCanDash();
+                }
                 foreach (GameObject flame in _flameHitboxes)
                 {
                     if (flame != null)

@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     public AudioClip dash;
     public AudioClip death;
+    public AudioClip coinCollect;
+    public AudioClip HealingSound;
+    public AudioClip hitSound;
 
     [Header("-------- Volume Settings --------")]
     [Range(0f, 1f)] public float musicVolume = 1f;
@@ -59,5 +62,24 @@ public class AudioManager : MonoBehaviour
             SFXSource.loop = false;
             isRunningLoop = false;
         }
+    }
+    public void SetMusicVolume(float value)
+    {
+        musicVolume = value;
+    }
+
+    public void SetSfxVolume(float value)
+    {
+        sfxVolume = value;
+    }
+
+    public float GetMusicVolume()
+    {
+        return musicVolume;
+    }
+
+    public float GetSfxVolume()
+    {
+        return sfxVolume;
     }
 }

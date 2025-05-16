@@ -32,6 +32,7 @@ public class FireWorm : Enemy, IDamageable
         Debug.Log("Health point lefts: " + Health);
         anim.SetTrigger("Hit");
         if (Health < 1) {
+            SpawnCoin();
             anim.SetTrigger("Death");
             _isDead = true;
             OnEnemyDeath?.Invoke();

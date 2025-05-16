@@ -35,6 +35,7 @@ public class AxeDemon : Enemy, IDamageable
         anim.SetTrigger("Hit");
         if (Health < 1)
         {
+            SpawnCoin();
             anim.SetTrigger("Death");
             _isDead = true;
             OnEnemyDeath?.Invoke();

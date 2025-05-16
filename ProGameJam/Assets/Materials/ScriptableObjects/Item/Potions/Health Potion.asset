@@ -21,4 +21,4 @@ MonoBehaviour:
   actionType: 1
   stackable: 1
   image: {fileID: 3310002292416464744, guid: 116aa552f836ebd45898b2c2d9360381, type: 3}
-  boostAmount: 3
+  boostAmount: 1
