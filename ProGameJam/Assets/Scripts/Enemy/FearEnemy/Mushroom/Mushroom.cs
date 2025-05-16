@@ -65,6 +65,7 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
         anim.SetTrigger("TakeHit");
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
             OnEnemyDeath?.Invoke();
             anim.SetTrigger("Death");

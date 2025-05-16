@@ -91,7 +91,13 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
         }
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
+            Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
+            if (player != null)
+            {
+                player.PlayerCanAirJump();
+            }
             anim.SetTrigger("Death");
             _isAttack = false;
             _isIdle = true;

@@ -26,6 +26,7 @@ public class Mine : Enemy, IDamageable
         Debug.Log("Mine hit! Remaining health: " + Health);
         if (Health < 1)
         {
+            SpawnCoin();
             _isDead = true;
             OnEnemyDeath?.Invoke();
             StopAllCoroutines();
