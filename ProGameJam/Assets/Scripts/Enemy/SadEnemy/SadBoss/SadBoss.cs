@@ -1,11 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class SadBoss : Enemy, IDamageable, IAttackableEnemy
+public class SadBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
 {
     private Coroutine _attackCoroutine;
     [SerializeField] private GameObject _hitbox;
-    private bool _isDead = false;
     private bool _isActive = false;
     private bool _isPerformingAction = false;
     [SerializeField] private float teleportInterval = 5f;
@@ -255,10 +254,9 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy
         anim.SetBool("Run", false);
 
         Health = base.health;
-        _isDead = false;
         _isFalling = false;
         _isGrounded = false;
-        
+
         anim.Rebind();
     }
 
@@ -288,5 +286,14 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy
             Flip();
         }
     }
+    //Load save data
+    public void LoadData(GameData data)
+    {
+        this._isDead = data.isSadBossDeath;
+    }
 
+    public void SaveData(ref GameData data)
+    {
+        data.isSadBossDeath = this._isDead;
+    }  
 }

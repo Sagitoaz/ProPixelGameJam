@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class FearBoss : Enemy, IDamageable, IAttackableEnemy
+public class FearBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
 {
     [SerializeField] private GameObject _hitbox;
     [SerializeField] private float invisibleTime;
     private Coroutine _attackCoroutine;
-    private bool _isDead = false;
     private bool _isActive = false;
     private bool _isPerformingAction = false;
     private Coroutine _invisibleRoutine;
@@ -102,6 +101,7 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
             _isAttack = false;
             _isIdle = true;
             _canFlip = false;
+            DataPersistenceManager.Instance.SaveGame();
             StopAllCoroutines();
             StartCoroutine(DeathRoutine());
         }
@@ -173,7 +173,7 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
     IEnumerator DeathRoutine()
     {
         yield return new WaitForSeconds(1.0f);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     IEnumerator InvisibleCycle()
@@ -225,7 +225,6 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
         _target = null;
         _isAttack = false;
         _isIdle = true;
-        _isDead = false;
         _isPerformingAction = false;
         anim.SetBool("Run", false);
 
@@ -234,4 +233,18 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy
         anim.Rebind();
     }
 
+    //Load save data
+    public void LoadData(GameData data)
+    {
+        this._isDead = data.isFearBossDeath;
+        if (_isDead)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.isFearBossDeath = _isDead;
+    }    
 }

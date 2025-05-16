@@ -12,17 +12,12 @@ public class MushroomHitbox : MonoBehaviour
         get => _canDamage;
         set => _canDamage = value;
     }
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     DamageTo(collision);
-    // }
     void OnTriggerStay2D(Collider2D collision)
     {
         DamageTo(collision);
     }
     private void DamageTo(Collider2D collision)
     {
-        Debug.Log("value: " + _canDamage);
         if (collision.CompareTag("Player"))
         {
             if (Time.time - _lastAttack >= _attackCoolDown)

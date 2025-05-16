@@ -3,7 +3,7 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour, IDamageable
+public class Player : MonoBehaviour, IDamageable, IDataPersistence
 {
     //Audio
     AudioManager audioManager;
@@ -22,14 +22,14 @@ public class Player : MonoBehaviour, IDamageable
     private float _move;
     private bool _grounded = false;
     private bool _resetJump = false;
-    [SerializeField] private bool _canAirJump = true;
+    [SerializeField] private bool _canAirJump = false;
     [SerializeField] private bool _hasAirJump = false;
     [SerializeField] private int _coin = 0;
     [SerializeField] private bool _canSwim = false;
 
     //Dash
     [SerializeField] private float _dashForce = 12.0f;
-    [SerializeField] private bool _canDash = true;
+    [SerializeField] private bool _canDash = false;
     private bool _isDash = false;
 
     //Combat
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour, IDamageable
     private bool _isAttackDash = false;
 
     //Health
-    [SerializeField] private int _health = 3;
+    [SerializeField] private int _health;
     private bool _isDead = false;
     private float _healingHoldTime = 0f;
     [SerializeField] private float _requiredHoldTime = 1.0f;
@@ -519,5 +519,33 @@ public class Player : MonoBehaviour, IDamageable
     public void PlayerCanDash()
     {
         _canDash = true;
+    }
+
+    //Load save data
+    public void LoadData(GameData data)
+    {
+        this.Health = data.currentHealth;
+        this._health = data.maxHealth;
+        this.transform.position = data.playerPosition;
+        this._currentMana = data.currentMana;
+        this._maxMana = data.maxMana;
+        this._coin = data.coin;
+        this._canAirJump = data.canDoubleJump;
+        this._canDash = data.canDash;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.currentHealth = this.Health;
+        data.maxHealth = this._health;
+        if (_checkpoint != null)
+            data.playerPosition = _checkpoint.position;
+        else
+            data.playerPosition = this.transform.position;
+        data.currentMana = this._currentMana;
+        data.maxMana = this._maxMana;
+        data.coin = this._coin;
+        data.canDoubleJump = this._canAirJump;
+        data.canDash = this._canDash;
     }
 }
