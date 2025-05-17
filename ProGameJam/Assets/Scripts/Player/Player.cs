@@ -82,7 +82,6 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _rb = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<PlayerAnimation>();
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
-        Health = _health;
         _heartUI.SetMaxHealth(_health);
         _heartUI.UpdateHearts(Health);
         _currentMana = _maxMana;

@@ -133,6 +133,7 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
             if (player != null)
             {
                 player.PlayerCanSwim();
+                player.SetMaxHealth(player.GetMaxHealth() + 1);
             }
             anim.SetTrigger("Death");
             _isAttack = false;

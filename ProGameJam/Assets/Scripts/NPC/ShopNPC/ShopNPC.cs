@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ShopNPC : MonoBehaviour
 {
-    [SerializeField] private GameObject inventoryCanvas;
+    [SerializeField] private GameObject shopCanvas;
     [SerializeField] private ShopManager shopManager; // Tham chiếu đến ShopManager
     private bool playerInRange = false; // Theo dõi xem Player có ở trong vùng va chạm không
     private bool isShopOpen = false; // Theo dõi trạng thái của ShopCanvas
@@ -52,7 +52,7 @@ public class ShopNPC : MonoBehaviour
 
     private void ToggleShopCanvas()
     {
-        if (inventoryCanvas == null)
+        if (shopCanvas == null)
         {
             Debug.LogError("Shop Canvas not assigned in Inspector!");
             return;
@@ -66,7 +66,7 @@ public class ShopNPC : MonoBehaviour
 
         // Đảo ngược trạng thái của ShopCanvas
         isShopOpen = !isShopOpen;
-        inventoryCanvas.SetActive(isShopOpen);
+        shopCanvas.SetActive(isShopOpen);
 
         if (isShopOpen)
         {
@@ -82,9 +82,9 @@ public class ShopNPC : MonoBehaviour
 
     private void CloseShopCanvas()
     {
-        if (inventoryCanvas != null)
+        if (shopCanvas != null)
         {
-            inventoryCanvas.SetActive(false);
+            shopCanvas.SetActive(false);
             isShopOpen = false;
         }
     }

@@ -86,4 +86,14 @@ public class FileDataHandler
         }
         return modifiedData;
     }
+
+    public bool SaveFileExists()
+    {
+        return File.Exists(GetFullPath());
+    }
+
+    private string GetFullPath()
+    {
+        return Path.Combine(dataDirPath, dataFileName);
+    }
 }

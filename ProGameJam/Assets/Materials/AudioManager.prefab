@@ -55,6 +55,9 @@ MonoBehaviour:
   jump: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
   dash: {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}
   death: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  coinCollect: {fileID: 8300000, guid: 8e83a6de183f9b94daeffdb4198c3ed1, type: 3}
+  HealingSound: {fileID: 8300000, guid: 1116a0401d4b163478346a8356777469, type: 3}
+  hitSound: {fileID: 8300000, guid: f4d03f32dc1cec14da434c40e88be0f5, type: 3}
   musicVolume: 1
   sfxVolume: 1
 --- !u!1 &4979207201558328074

@@ -96,6 +96,7 @@ public class FearBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
             if (player != null)
             {
                 player.PlayerCanAirJump();
+                player.SetMaxHealth(player.GetMaxHealth() + 1);                
             }
             anim.SetTrigger("Death");
             _isAttack = false;

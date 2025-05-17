@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class GameData
@@ -17,6 +18,8 @@ public class GameData
     public bool isHopeBossDeath;
     public int totalYes;
     public int totalNo;
+    public float musicVolume;
+    public float sfxVolume;
     public Vector3 playerPosition;
 
     public GameData()
@@ -34,6 +37,8 @@ public class GameData
         this.isHopeBossDeath = false;
         this.totalYes = 0;
         this.totalNo = 0;
+        this.musicVolume = 1f;
+        this.sfxVolume = 1f;
         this.playerPosition = new Vector3(-57f, -25f, 0f);
     }
 }

@@ -586,7 +586,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5643380332717284404}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6280198114268152114}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: GoToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3816754729302015305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5face8d5b3bf2f47acb38e1958374a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseUI: {fileID: 6166466561944524465}
+  pauseUI: {fileID: 2103772860415081603}
   musicSlider: {fileID: 2208685693911463066}
   sfxSlider: {fileID: 2674629850089806177}
   audioManager: {fileID: 0}
@@ -1304,7 +1316,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1458393092231402048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6280198114268152114}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7138389304499934989
 GameObject:
   m_ObjectHideFlags: 0

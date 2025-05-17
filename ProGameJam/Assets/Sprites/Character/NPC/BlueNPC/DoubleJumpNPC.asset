@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
   m_Name: DoubleJumpNPC
   m_EditorClassIdentifier: 
-  npcName: 
-  npcPortrait: {fileID: 0}
-  dialogueLines: []
+  npcName: ???
+  npcPortrait: {fileID: 471107871, guid: 72c40d9500d2ebb4d814996b613e6b86, type: 3}
+  dialogueLines:
+  - Defeat him to unlock the dash ability! Press L to dash forward.
   autoProgressLines: 
   endDialogueLines: 
   choices: []

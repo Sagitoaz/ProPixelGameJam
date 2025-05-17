@@ -49,6 +49,7 @@ public class PauseUI : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        DataPersistenceManager.Instance.SaveGame();
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }

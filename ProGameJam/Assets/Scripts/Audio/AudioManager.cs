@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoBehaviour, IDataPersistence
 {
     private bool isRunningLoop = false;
     [Header("-------- Audio Source --------")]
@@ -20,8 +20,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip hitSound;
 
     [Header("-------- Volume Settings --------")]
-    [Range(0f, 1f)] public float musicVolume = 1f;
-    [Range(0f, 1f)] public float sfxVolume = 1f;
+    [Range(0f, 1f)] public float musicVolume;
+    [Range(0f, 1f)] public float sfxVolume;
 
     private void Start()
     {
@@ -81,5 +81,17 @@ public class AudioManager : MonoBehaviour
     public float GetSfxVolume()
     {
         return sfxVolume;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.musicVolume = data.musicVolume;
+        this.sfxVolume = data.sfxVolume;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.musicVolume = this.musicVolume;
+        data.sfxVolume = this.sfxVolume;
     }
 }

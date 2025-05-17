@@ -128,6 +128,7 @@ public class AngryBoss : Enemy, IDamageable, IDataPersistence
                 if (player != null)
                 {
                     player.PlayerCanDash();
+                    player.SetMaxHealth(player.GetMaxHealth() + 1);
                 }
                 foreach (GameObject flame in _flameHitboxes)
                 {

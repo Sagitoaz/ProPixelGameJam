@@ -139,6 +139,12 @@ public class HopeBoss : Enemy, IDamageable, IDataPersistence
             TryTeleportBehindTarget();
             if (Health < 1)
             {
+                SpawnCoin();
+                Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.SetMaxHealth(player.GetMaxHealth() + 1);
+                }
                 _isDead = true;
                 StopAllCoroutines();
                 StartCoroutine(DeathRoutine());
