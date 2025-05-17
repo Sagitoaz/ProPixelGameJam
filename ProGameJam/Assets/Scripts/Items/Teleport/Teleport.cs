@@ -48,6 +48,7 @@ public class Teleport : MonoBehaviour
         if (playerScript != null)
         {
             playerScript.Checkpoint = Portal.transform;
+            DataPersistenceManager.Instance.SaveGame();
         }
         isTeleporting = false;
     }

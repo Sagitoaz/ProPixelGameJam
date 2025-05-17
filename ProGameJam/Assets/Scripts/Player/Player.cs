@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -84,7 +83,6 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _playerSprite = GetComponentInChildren<SpriteRenderer>();
         _heartUI.SetMaxHealth(_health);
         _heartUI.UpdateHearts(Health);
-        _currentMana = _maxMana;
         _manaUI.SetMaxMana(_maxMana);
         _manaUI.UpdateMana(_currentMana);
         _coinText.text = "" + _coin;
@@ -353,14 +351,24 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _playerAnimator.Hit();
         if (Health < 1)
         {
+            _coin = 0;
+            _coinText.text = "" + _coin;
+            DataPersistenceManager.Instance.SaveGame();
             audioManager.PlaySFX(audioManager.death);
             _isDead = true;
             _playerAnimator.Death();
+            Debug.Log("Current Real Health: " + Health);
         }
     }
     public void DestroyPlayer()
     {
-        this.gameObject.SetActive(false);
+        Health = _health;
+        _heartUI.UpdateHearts(Health);
+        _currentMana = _maxMana;
+        _manaUI.UpdateMana(_currentMana);
+        _isDead = false;
+        _playerAnimator.Reborn();
+        DataPersistenceManager.Instance.LoadGame();
     }
 
     //HEALTH AND MANA
@@ -529,8 +537,10 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         this._currentMana = data.currentMana;
         this._maxMana = data.maxMana;
         this._coin = data.coin;
+        _coinText.text = "" + _coin;
         this._canAirJump = data.canDoubleJump;
         this._canDash = data.canDash;
+        this._canSwim = data.canSwim;
     }
 
     public void SaveData(ref GameData data)
@@ -540,11 +550,12 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         if (_checkpoint != null)
             data.playerPosition = _checkpoint.position;
         else
-            data.playerPosition = new Vector3(-57f, -25f, 0f);;
+            data.playerPosition = new Vector3(-57f, -25f, 0f); ;
         data.currentMana = this._currentMana;
         data.maxMana = this._maxMana;
         data.coin = this._coin;
         data.canDoubleJump = this._canAirJump;
         data.canDash = this._canDash;
+        data.canSwim = this._canSwim;
     }
 }

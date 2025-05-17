@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Mine : Enemy, IDamageable
 {
-    private bool _isDead = false;
     public int Health { get; set; }
 
 

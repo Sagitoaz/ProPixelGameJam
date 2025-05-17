@@ -4,9 +4,9 @@ using System.IO;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private string fileName = "save.json";
+    [SerializeField] private string fileName = "data.json";
     [SerializeField] private bool useEncryption = false;
-    [SerializeField] private string sceneToLoad = "GameScene"; // Tên scene chơi chính
+    [SerializeField] private string sceneToLoad = "Game"; // Tên scene chơi chính
 
     public void OnClickNewGame()
     {
@@ -23,6 +23,12 @@ public class MainMenuController : MonoBehaviour
     public void OnClickContinue()
     {
         // Không cần làm gì thêm vì LoadGame đã được gọi ở Start() của DataPersistenceManager
+        DataPersistenceManager.Instance.LoadGame();
         SceneManager.LoadScene(sceneToLoad);
+    }
+    public void OnClickQuit()
+    {
+        Debug.Log("App Quit");
+        Application.Quit();
     }
 }

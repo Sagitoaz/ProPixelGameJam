@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class FishBig : Enemy, IDamageable
 {
-    private bool _isDead = false;
     public int Health { get; set; }
 
     [SerializeField] private float flyDistance = 5f;

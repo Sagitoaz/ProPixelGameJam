@@ -13,14 +13,18 @@ public class DataPersistenceManager : MonoBehaviour
     private List<IDataPersistence> dataPersistenceObjects;
     private FileDataHandler dataHandler;
     public static DataPersistenceManager Instance { get; private set; }
-    private void Awake()
+    private bool isInitialized = false;
+
+private void Awake()
+{
+    if (Instance != null && Instance != this)
     {
-        if (Instance != null)
-        {
-            Debug.LogError("Found more than one DPM in the scene.");
-        }
-        Instance = this;
+        Destroy(this.gameObject);
+        return;
     }
+
+    Instance = this;
+}
 
     private void Start()
     {
@@ -32,6 +36,7 @@ public class DataPersistenceManager : MonoBehaviour
     public void NewGame()
     {
         this.gameData = new GameData();
+        Debug.Log("New Game data");
     }
 
     public void LoadGame()
@@ -47,6 +52,7 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(gameData);
         }
+        Debug.Log("Continue Game");
     }
 
     public void SaveGame()
@@ -56,6 +62,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.SaveData(ref gameData);
         }
         dataHandler.Save(gameData);
+        Debug.Log("Game saved");
     }
 
     private void OnApplicationQuit()
@@ -66,6 +73,6 @@ public class DataPersistenceManager : MonoBehaviour
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None).OfType<IDataPersistence>();
-        return new List<IDataPersistence>(dataPersistenceObjects) ;
+        return new List<IDataPersistence>(dataPersistenceObjects);
     }
 }

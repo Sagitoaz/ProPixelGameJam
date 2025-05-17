@@ -8,8 +8,8 @@ public class NPC : MonoBehaviour, IIneractable, IDataPersistence
     private DialogueController dialogueUI;
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
-    private static int totalYesCount = 0;
-    private static int totalNoCount = 0;
+    public static int totalYesCount = 0;
+    public static int totalNoCount = 0;
     private static HashSet<string> askedNPCs = new HashSet<string>();
 
     public bool CanInteract()

@@ -10,6 +10,7 @@ public class HopeBoss : Enemy, IDamageable, IDataPersistence
     private bool _isActivated = false;
     public int Health { get; set; }
     public Animator Animator => anim;
+    [SerializeField] private GameObject _finalDes;
 
     protected void Start()
     {
@@ -139,6 +140,7 @@ public class HopeBoss : Enemy, IDamageable, IDataPersistence
             TryTeleportBehindTarget();
             if (Health < 1)
             {
+                _finalDes.SetActive(true);
                 SpawnCoin();
                 Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
                 if (player != null)

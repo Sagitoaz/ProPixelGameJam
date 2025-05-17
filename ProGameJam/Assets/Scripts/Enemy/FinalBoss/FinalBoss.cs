@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 
 public class FinalBoss : Enemy
 {
-    [SerializeField] protected Transform _target;
+    [SerializeField] protected Transform _targetP;
     protected Animator _anim;
     protected SpriteRenderer _sprite;
     [SerializeField] protected Transform _hitbox;
@@ -16,7 +15,6 @@ public class FinalBoss : Enemy
     protected bool _isUsingSkil = false;
     protected bool _isRetreat = false;
     protected bool _playerInAir = false;
-    protected bool _isDead = false;
     [SerializeField] protected float _retreatSpeed = 2.0f;
     protected virtual void Start()
     {
@@ -31,10 +29,10 @@ public class FinalBoss : Enemy
         if (_isDead) {
             return;
         }
-        _playerInAir = !_target.GetComponent<Player>().GetIsGround();
+        _playerInAir = !_targetP.GetComponent<Player>().GetIsGround();
         if (_isUsingSkil) return;
         if (!_isRetreat) {
-            if (!TrySkills() && (Vector2.Distance(transform.position, _target.position) < 3.0f)) {
+            if (!TrySkills() && (Vector2.Distance(transform.position, _targetP.position) < 3.0f)) {
                 StartCoroutine(RetreatRoutine());
             } else {
                 Movement();
@@ -43,7 +41,7 @@ public class FinalBoss : Enemy
     }
     protected void Movement() {
         if (_isDead) return;
-        Vector3 direction = _target.position;
+        Vector3 direction = _targetP.position;
         float distance = transform.position.x - direction.x;
         Flip(distance);
         if (Mathf.Abs(distance) < 2.0f) {
@@ -74,7 +72,7 @@ public class FinalBoss : Enemy
         _hitbox.localScale = scale;
     }
     protected virtual bool TrySkills() {
-        float distance = Vector2.Distance(_target.position, transform.position);
+        float distance = Vector2.Distance(_targetP.position, transform.position);
         if (distance < 6.0f) {
             return ActiveSkill(3, 5);
         } else if (_playerInAir) {
@@ -103,7 +101,7 @@ public class FinalBoss : Enemy
         if (_isDead) yield break;
         _isUsingSkil = true;
         if (skillIndex == 5 && this is FBPhase2) {
-            Vector3 playerPos = _target.position;
+            Vector3 playerPos = _targetP.position;
             Vector3 dirToBack = (_facingRight ? -1 : 1) * transform.right;
             float[] checkDistances = new float[] { 3.0f, 2.0f, 1.0f };
 
@@ -134,7 +132,7 @@ public class FinalBoss : Enemy
             transform.position = new Vector3(validTeleportPos.Value.x, transform.position.y, transform.position.z);
 
             // Flip to player
-            Flip(_target.position.x - transform.position.x);
+            Flip(_targetP.position.x - transform.position.x);
 
             _anim.SetTrigger("Counter");
             _lastUsedTime[skillIndex] = Time.time;
@@ -153,7 +151,7 @@ public class FinalBoss : Enemy
         _anim.SetBool("Moving", true);
         float retreatTime = 3.5f;
         float timer = 0f;
-        Vector3 direction = (transform.position - _target.position).normalized;
+        Vector3 direction = (transform.position - _targetP.position).normalized;
         while (timer < retreatTime) {
             Flip(-direction.x);
             transform.position += direction * _retreatSpeed * Time.deltaTime;
@@ -164,7 +162,7 @@ public class FinalBoss : Enemy
         _isRetreat = false;
         yield break;
     }
-    public void Damage() {
+    public virtual void Damage() {
         if (_isDead) return;
         health--;
         Debug.Log("Boss HP lefts: " + health);

@@ -5,7 +5,6 @@ public class Mushroom : Enemy, IDamageable, IAttackableEnemy
 {
     private Coroutine _attackCoroutine;
     [SerializeField] private GameObject _hitbox;
-    private bool _isDead = false;
     public int Health { get; set; }
 
     void Start()

@@ -148,6 +148,12 @@ public class AngryBoss : Enemy, IDamageable, IDataPersistence
 
     public virtual IEnumerator DeathRoutine()
     {
+        _isAttack = false;
+        _isChasing = false;
+        _isIdle = false;
+        _target = null;
+        _hitbox.SetActive(false);
+        _isDead = true;
         anim.SetTrigger("Death");
         yield return new WaitForSeconds(1.0f);
         StopCoroutine(DeathRoutine());

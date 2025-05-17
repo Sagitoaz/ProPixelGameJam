@@ -13,15 +13,21 @@ public class FBPhase2 : FinalBoss
     }
     protected override bool TrySkills()
     {
-        if (Time.time - _lastUsedTime[5] >= _skillCooldowns[5]) {
+        if (Time.time - _lastUsedTime[5] >= _skillCooldowns[5])
+        {
             return ActiveSkill(5, 6);
         }
         float distance = Vector2.Distance(_target.position, transform.position);
-        if (distance < 5.0f) {
+        if (distance < 5.0f)
+        {
             return ActiveSkill(3, 4);
-        } else if (_playerInAir) {
+        }
+        else if (_playerInAir)
+        {
             return ActiveSkill(0, 3);
-        } else {
+        }
+        else
+        {
             return ActiveSkill(4, 5);
         }
     }
@@ -30,9 +36,32 @@ public class FBPhase2 : FinalBoss
         if (!_hasSpawned) return;
         base.Update();
     }
+    public override void Damage()
+    {
+        if (_isDead) return;
+        health--;
+        Debug.Log("Boss HP lefts: " + health);
+        if (health < 1)
+        {
+            _isDead = true;
+            CheckEnding();
+            _anim.SetTrigger("Death");
+        }
+    }
     IEnumerator EndSpawnRoutine()
     {
         yield return new WaitForSeconds(3.0f);
         _hasSpawned = true;
+    }
+    void CheckEnding()
+    {
+        if (NPC.totalYesCount >= NPC.totalNoCount)
+        {
+            //ED2
+        }
+        else
+        {
+            //ED3
+        }
     }
 }

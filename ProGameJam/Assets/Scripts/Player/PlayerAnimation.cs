@@ -35,7 +35,12 @@ public class PlayerAnimation : MonoBehaviour
     public void Death() {
         _anim.SetBool("Death", true);
     }
-    public void Hit() {
+    public void Reborn()
+    {
+        _anim.SetBool("Death", false);
+    }
+    public void Hit()
+    {
         _anim.SetTrigger("Hit");
     }
 }
