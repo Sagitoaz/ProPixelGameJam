@@ -540,7 +540,7 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         if (_checkpoint != null)
             data.playerPosition = _checkpoint.position;
         else
-            data.playerPosition = this.transform.position;
+            data.playerPosition = new Vector3(-57f, -25f, 0f);;
         data.currentMana = this._currentMana;
         data.maxMana = this._maxMana;
         data.coin = this._coin;
