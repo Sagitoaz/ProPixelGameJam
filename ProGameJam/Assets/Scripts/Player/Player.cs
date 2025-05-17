@@ -351,9 +351,6 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _playerAnimator.Hit();
         if (Health < 1)
         {
-            _coin = 0;
-            _coinText.text = "" + _coin;
-            DataPersistenceManager.Instance.SaveGame();
             audioManager.PlaySFX(audioManager.death);
             _isDead = true;
             _playerAnimator.Death();
@@ -368,6 +365,9 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _manaUI.UpdateMana(_currentMana);
         _isDead = false;
         _playerAnimator.Reborn();
+        _coin = 0;
+        _coinText.text = "" + _coin;
+        DataPersistenceManager.Instance.SaveGame();
         DataPersistenceManager.Instance.LoadGame();
     }
 
