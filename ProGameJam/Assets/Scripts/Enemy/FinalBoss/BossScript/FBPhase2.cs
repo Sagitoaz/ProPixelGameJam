@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FBPhase2 : FinalBoss
 {
+    [SerializeField] private VideoManager videoManager;
     private bool _hasSpawned = false;
     protected override void Start()
     {
@@ -57,11 +58,11 @@ public class FBPhase2 : FinalBoss
     {
         if (NPC.totalYesCount >= NPC.totalNoCount)
         {
-            //ED2
+            videoManager.PlayVideoED(videoManager.Ending2);
         }
         else
         {
-            //ED3
+            videoManager.PlayVideoED(videoManager.Ending3);
         }
     }
 }
