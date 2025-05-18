@@ -75,7 +75,6 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
 
     // Inventory
     [SerializeField] private InventoryManager _inventoryManager;
-
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -87,6 +86,24 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         _manaUI.UpdateMana(_currentMana);
         _coinText.text = "" + _coin;
         _underwaterTimer = _maxUnderwaterTime;
+        _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+    }
+
+    void FixedUpdate()
+    {
+        if (_isDead || _isDash || _isAttackDash) return;
+
+        // Kiểm tra có đang đứng trên mặt đất không
+        _grounded = IsGrounded();
+
+        // Cập nhật vận tốc nếu không bơi/lava
+        if (!_inLava && !_inWater)
+        {
+            _rb.linearVelocity = new Vector2(_move * _speed, _rb.linearVelocity.y);
+        }
+
+        // Rơi xuống (cho animation)
+        _playerAnimator.Fall(_rb.linearVelocity.y);
     }
 
     void Update()
@@ -118,24 +135,23 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     {
         _move = Input.GetAxisRaw("Horizontal");
         FlipSprite();
-        _grounded = IsGrounded();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (_inLava)
-            {
                 return;
-            }
+
             if (_inWater)
             {
-                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _waterJumpForce);
+                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _waterJumpForce);
                 _playerAnimator.Jump(true);
                 return;
             }
+
             if (_grounded)
             {
                 audioManager.PlaySFX(audioManager.jump);
-                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
+                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
                 StartCoroutine(ResetJump());
                 _playerAnimator.Jump(true);
                 _hasAirJump = false;
@@ -143,14 +159,14 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
             else if (_canAirJump && !_hasAirJump)
             {
                 audioManager.PlaySFX(audioManager.jump);
-                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, _jumpForce);
+                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
                 StartCoroutine(ResetJump());
                 _playerAnimator.Jump(true);
                 _hasAirJump = true;
             }
         }
 
-        _rb.linearVelocity = new Vector2(_move * _speed, _rb.linearVelocityY);
+        // Âm thanh chạy
         if (_grounded && Mathf.Abs(_move) > 0.1f)
         {
             if (!_isRunningSFX)
@@ -167,8 +183,9 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
                 _isRunningSFX = false;
             }
         }
+
+        // Animation
         _playerAnimator.Move(_move);
-        _playerAnimator.Fall(_rb.linearVelocityY);
     }
 
     void FlipSprite()
@@ -198,7 +215,7 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
         CapsuleCollider2D capsule = GetComponent<CapsuleCollider2D>();
         Vector2 origin = capsule.bounds.center;
         Vector2 size = capsule.bounds.size;
-        float extraHeight = 0.1f;
+        float extraHeight = 0.3f;
 
         RaycastHit2D hit = Physics2D.CapsuleCast(origin, size, capsule.direction, 0f, Vector2.down, extraHeight, _groundLayer);
 
