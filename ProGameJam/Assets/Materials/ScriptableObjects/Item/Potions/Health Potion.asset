@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: Dragon Blood
   description: '- A miraculous potent health potion that permanently increases maximum
     health by 3 points.'
-  price: 300
+  price: 500
   itemType: 1
   actionType: 1
   stackable: 1
