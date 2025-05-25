@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
+  m_Name: NPC4
+  m_EditorClassIdentifier: 
+  npcName: Elyra
+  npcPortrait: {fileID: 471107871, guid: 72c40d9500d2ebb4d814996b613e6b86, type: 3}
+  dialogueLines:
+  - 'Must all life fade away? Should you keep fighting if you cannot let go?  '
+  - I acknowledge your answer.
+  autoProgressLines: 0101
+  endDialogueLines: 0001
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - YES
+    - NO
+    nextDialogueIndexes: 0100000001000000
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

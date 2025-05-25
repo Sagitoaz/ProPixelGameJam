@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: fb5441558cb465d4b9d9e8aee714788c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5681298786988155714
+    second: Forest-Props_0
+  - first:
+      213: 4975849908371301404
+    second: Forest-Props_1
+  - first:
+      213: 3581865118998767545
+    second: Forest-Props_2
+  - first:
+      213: -6421706309384660673
+    second: Forest-Props_3
+  - first:
+      213: 2230220103139071396
+    second: Forest-Props_4
+  - first:
+      213: -832711065345567234
+    second: Forest-Props_5
+  - first:
+      213: -7526153419130002585
+    second: Forest-Props_6
+  - first:
+      213: -6894118220423287438
+    second: Forest-Props_7
+  - first:
+      213: -4355404264763973696
+    second: Forest-Props_8
+  - first:
+      213: -1932648003730933033
+    second: Forest-Props_9
+  - first:
+      213: -334628502246822013
+    second: Forest-Props_10
+  - first:
+      213: 6047917832568897775
+    second: Forest-Props_11
+  - first:
+      213: -7723516138613727919
+    second: Forest-Props_12
+  - first:
+      213: 6334609043163157579
+    second: Forest-Props_13
+  - first:
+      213: -7921090913737898898
+    second: Forest-Props_14
+  - first:
+      213: -6545898379651844810
+    second: Forest-Props_15
+  - first:
+      213: -8607160739824952250
+    second: Forest-Props_16
+  - first:
+      213: 736418368730084809
+    second: Forest-Props_17
+  - first:
+      213: 7967345115923823806
+    second: Forest-Props_18
+  - first:
+      213: -3822998064158817680
+    second: Forest-Props_19
+  - first:
+      213: 3366276930431289240
+    second: Forest-Props_20
+  - first:
+      213: -8720693121853794441
+    second: Forest-Props_21
+  - first:
+      213: -6394772704487705510
+    second: Forest-Props_22
+  - first:
+      213: -1795114776525121072
+    second: Forest-Props_23
+  - first:
+      213: -2170701574745086876
+    second: Forest-Props_24
+  - first:
+      213: 5819082863750485494
+    second: Forest-Props_25
+  - first:
+      213: 7767820203499606188
+    second: Forest-Props_26
+  - first:
+      213: 8012789777546826976
+    second: Forest-Props_27
+  - first:
+      213: -267880463632794498
+    second: Forest-Props_28
+  - first:
+      213: 3601637553073906764
+    second: Forest-Props_29
+  - first:
+      213: 7354903017857229863
+    second: Forest-Props_30
+  - first:
+      213: 5403243784220789573
+    second: Forest-Props_31
+  - first:
+      213: -3971852447481109149
+    second: Forest-Props_32
+  - first:
+      213: -6068228970644408407
+    second: Forest-Props_33
+  - first:
+      213: -6022282933637938307
+    second: Forest-Props_34
+  - first:
+      213: -8789922756853246855
+    second: Forest-Props_35
+  - first:
+      213: -6771055072248656403
+    second: Forest-Props_36
+  - first:
+      213: -243353737404759994
+    second: Forest-Props_37
+  - first:
+      213: 4497592046450051278
+    second: Forest-Props_38
+  - first:
+      213: 6772146507776989373
+    second: Forest-Props_39
+  - first:
+      213: -4471766972906613183
+    second: Forest-Props_40
+  - first:
+      213: 2072605613787212708
+    second: Forest-Props_41
+  - first:
+      213: 8501044037192059040
+    second: Forest-Props_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forest-Props_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 255
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243694d552708de40800000000000000
+      internalID: 5681298786988155714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 255
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14a124e025cd0540800000000000000
+      internalID: 4975849908371301404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 255
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7a843295755b130800000000000000
+      internalID: 3581865118998767545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 255
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f391e31a22481e6a0800000000000000
+      internalID: -6421706309384660673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 255
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a51a8a1e5553fe10800000000000000
+      internalID: 2230220103139071396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 255
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef55a8da2bd9174f0800000000000000
+      internalID: -832711065345567234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 231
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7632aaf275bbd8790800000000000000
+      internalID: -7526153419130002585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 239
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d2f10510c2350a0800000000000000
+      internalID: -6894118220423287438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 239
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf9589a5ee7e83c0800000000000000
+      internalID: -4355404264763973696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 239
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7daffb551eadd25e0800000000000000
+      internalID: -1932648003730933033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 239
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f6bdf66292b5bf0800000000000000
+      internalID: -334628502246822013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 239
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe00509b9358ee350800000000000000
+      internalID: 6047917832568897775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 239
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d9eec2efe80d490800000000000000
+      internalID: -7723516138613727919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 215
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4497b0dc5d09e750800000000000000
+      internalID: 6334609043163157579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_14
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 215
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64041d18c1a21290800000000000000
+      internalID: -7921090913737898898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 215
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635fb09fa1c4825a0800000000000000
+      internalID: -6545898379651844810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 215
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c9b0ae8e83d8880800000000000000
+      internalID: -8607160739824952250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 183
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5ba3aca98483a00800000000000000
+      internalID: 736418368730084809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_18
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 199
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc359d8b22b19e60800000000000000
+      internalID: 7967345115923823806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_19
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 183
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072cec8048bf1fac0800000000000000
+      internalID: -3822998064158817680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 167
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89703fd680b67be20800000000000000
+      internalID: 3366276930431289240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 167
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77756b45fcfd9f680800000000000000
+      internalID: -8720693121853794441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 167
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5475a13b143147a0800000000000000
+      internalID: -6394772704487705510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 151
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d95a262f987617e0800000000000000
+      internalID: -1795114776525121072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 151
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46420fb2b6e10e1e0800000000000000
+      internalID: -2170701574745086876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 151
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f51964a80981c050800000000000000
+      internalID: 5819082863750485494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_26
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 151
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca052b4c157dccb60800000000000000
+      internalID: 7767820203499606188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 119
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e45f8e59d5233f60800000000000000
+      internalID: 8012789777546826976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 119
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c76ea332c484cf0800000000000000
+      internalID: -267880463632794498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_29
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 119
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c446da0b5469bf130800000000000000
+      internalID: 3601637553073906764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 119
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72424d8a35dd11660800000000000000
+      internalID: 7354903017857229863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_31
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 87
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b4159189d2cfa40800000000000000
+      internalID: 5403243784220789573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 87
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3656f972e3521e8c0800000000000000
+      internalID: -3971852447481109149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 87
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7710de6e159cba0800000000000000
+      internalID: -6068228970644408407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_34
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 87
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d730d9b449d8c6ca0800000000000000
+      internalID: -6022282933637938307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 47
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974d3aad2dbe30680800000000000000
+      internalID: -8789922756853246855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded030059416802a0800000000000000
+      internalID: -6771055072248656403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_37
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 47
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640c93fa01f6f9cf0800000000000000
+      internalID: -243353737404759994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 47
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec807411328aa6e30800000000000000
+      internalID: 4497592046450051278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_39
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db813f25e5f7bfd50800000000000000
+      internalID: 6772146507776989373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146d39d61a711f1c0800000000000000
+      internalID: -4471766972906613183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_41
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 7
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab644913df53cc10800000000000000
+      internalID: 2072605613787212708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest-Props_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 7
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a809c8e286c9f570800000000000000
+      internalID: 8501044037192059040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Forest-Props_0: 5681298786988155714
+      Forest-Props_1: 4975849908371301404
+      Forest-Props_10: -334628502246822013
+      Forest-Props_11: 6047917832568897775
+      Forest-Props_12: -7723516138613727919
+      Forest-Props_13: 6334609043163157579
+      Forest-Props_14: -7921090913737898898
+      Forest-Props_15: -6545898379651844810
+      Forest-Props_16: -8607160739824952250
+      Forest-Props_17: 736418368730084809
+      Forest-Props_18: 7967345115923823806
+      Forest-Props_19: -3822998064158817680
+      Forest-Props_2: 3581865118998767545
+      Forest-Props_20: 3366276930431289240
+      Forest-Props_21: -8720693121853794441
+      Forest-Props_22: -6394772704487705510
+      Forest-Props_23: -1795114776525121072
+      Forest-Props_24: -2170701574745086876
+      Forest-Props_25: 5819082863750485494
+      Forest-Props_26: 7767820203499606188
+      Forest-Props_27: 8012789777546826976
+      Forest-Props_28: -267880463632794498
+      Forest-Props_29: 3601637553073906764
+      Forest-Props_3: -6421706309384660673
+      Forest-Props_30: 7354903017857229863
+      Forest-Props_31: 5403243784220789573
+      Forest-Props_32: -3971852447481109149
+      Forest-Props_33: -6068228970644408407
+      Forest-Props_34: -6022282933637938307
+      Forest-Props_35: -8789922756853246855
+      Forest-Props_36: -6771055072248656403
+      Forest-Props_37: -243353737404759994
+      Forest-Props_38: 4497592046450051278
+      Forest-Props_39: 6772146507776989373
+      Forest-Props_4: 2230220103139071396
+      Forest-Props_40: -4471766972906613183
+      Forest-Props_41: 2072605613787212708
+      Forest-Props_42: 8501044037192059040
+      Forest-Props_5: -832711065345567234
+      Forest-Props_6: -7526153419130002585
+      Forest-Props_7: -6894118220423287438
+      Forest-Props_8: -4355404264763973696
+      Forest-Props_9: -1932648003730933033
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

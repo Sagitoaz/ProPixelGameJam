@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 53f58bfdebefb8d47bb96394a95a2bbf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5098813168783846317
+    second: Animated-Props-Sheet-8x8_0
+  - first:
+      213: 1061891416579102048
+    second: Animated-Props-Sheet-8x8_1
+  - first:
+      213: -5352959696553728987
+    second: Animated-Props-Sheet-8x8_2
+  - first:
+      213: -8806248225374924758
+    second: Animated-Props-Sheet-8x8_3
+  - first:
+      213: 5090727950354395264
+    second: Animated-Props-Sheet-8x8_4
+  - first:
+      213: 3828482716927734549
+    second: Animated-Props-Sheet-8x8_5
+  - first:
+      213: 7365888587755203723
+    second: Animated-Props-Sheet-8x8_6
+  - first:
+      213: -1469260128526535707
+    second: Animated-Props-Sheet-8x8_7
+  - first:
+      213: -1180860661188376122
+    second: Animated-Props-Sheet-8x8_8
+  - first:
+      213: -1901988147568791868
+    second: Animated-Props-Sheet-8x8_9
+  - first:
+      213: -9104417647133918397
+    second: Animated-Props-Sheet-8x8_10
+  - first:
+      213: 5699469441967435351
+    second: Animated-Props-Sheet-8x8_11
+  - first:
+      213: -6719581577694756317
+    second: Animated-Props-Sheet-8x8_12
+  - first:
+      213: 3610759909358254232
+    second: Animated-Props-Sheet-8x8_13
+  - first:
+      213: -2888124549239755634
+    second: Animated-Props-Sheet-8x8_14
+  - first:
+      213: -8704766452092342256
+    second: Animated-Props-Sheet-8x8_15
+  - first:
+      213: -3744175583188924005
+    second: Animated-Props-Sheet-8x8_16
+  - first:
+      213: -676475446598776510
+    second: Animated-Props-Sheet-8x8_17
+  - first:
+      213: -1313818109765707677
+    second: Animated-Props-Sheet-8x8_18
+  - first:
+      213: 6043040945474439521
+    second: Animated-Props-Sheet-8x8_19
+  - first:
+      213: -2299666923110051067
+    second: Animated-Props-Sheet-8x8_20
+  - first:
+      213: 8070939848492774633
+    second: Animated-Props-Sheet-8x8_21
+  - first:
+      213: 393938099562371084
+    second: Animated-Props-Sheet-8x8_22
+  - first:
+      213: 5709517687809131649
+    second: Animated-Props-Sheet-8x8_23
+  - first:
+      213: 8268158352194569611
+    second: Animated-Props-Sheet-8x8_24
+  - first:
+      213: -6088766129438368182
+    second: Animated-Props-Sheet-8x8_25
+  - first:
+      213: -6831376473702089479
+    second: Animated-Props-Sheet-8x8_26
+  - first:
+      213: -7571760124200529371
+    second: Animated-Props-Sheet-8x8_27
+  - first:
+      213: -2110070495266557345
+    second: Animated-Props-Sheet-8x8_28
+  - first:
+      213: 6937964324589001550
+    second: Animated-Props-Sheet-8x8_29
+  - first:
+      213: 6176087672927356299
+    second: Animated-Props-Sheet-8x8_30
+  - first:
+      213: -1494880732551391107
+    second: Animated-Props-Sheet-8x8_31
+  - first:
+      213: 2439546898909620435
+    second: Animated-Props-Sheet-8x8_32
+  - first:
+      213: 681726529338307945
+    second: Animated-Props-Sheet-8x8_33
+  - first:
+      213: 5785138256760002270
+    second: Animated-Props-Sheet-8x8_34
+  - first:
+      213: 5500021379559894241
+    second: Animated-Props-Sheet-8x8_35
+  - first:
+      213: -2444065059924173818
+    second: Animated-Props-Sheet-8x8_36
+  - first:
+      213: -8342296207979531854
+    second: Animated-Props-Sheet-8x8_37
+  - first:
+      213: 5756484986059989691
+    second: Animated-Props-Sheet-8x8_38
+  - first:
+      213: -8485657044077007619
+    second: Animated-Props-Sheet-8x8_39
+  - first:
+      213: 3928764136095064423
+    second: Animated-Props-Sheet-8x8_40
+  - first:
+      213: -2614263540428631015
+    second: Animated-Props-Sheet-8x8_41
+  - first:
+      213: -6243992114501964641
+    second: Animated-Props-Sheet-8x8_42
+  - first:
+      213: 6900506905784411630
+    second: Animated-Props-Sheet-8x8_43
+  - first:
+      213: -3746171907769323758
+    second: Animated-Props-Sheet-8x8_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 255
+        width: 8
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3541e8a00706d39b0800000000000000
+      internalID: -5098813168783846317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 303
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065db330e989cbe00800000000000000
+      internalID: 1061891416579102048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 255
+        width: 10
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524aee5648776b5b0800000000000000
+      internalID: -5352959696553728987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 255
+        width: 154
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a201d9285ebe9c580800000000000000
+      internalID: -8806248225374924758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_4
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 255
+        width: 10
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080b6095916e5a640800000000000000
+      internalID: 5090727950354395264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 255
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51333333fb0812530800000000000000
+      internalID: 3828482716927734549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 255
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ca048f4a4e83660800000000000000
+      internalID: 7365888587755203723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_7
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 255
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3f78492b32c9be0800000000000000
+      internalID: -1469260128526535707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 255
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c942a03c7dbc9fe0800000000000000
+      internalID: -1180860661188376122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cea8216bd7ca95e0800000000000000
+      internalID: -1901988147568791868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 207
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bf8cf136c96a180800000000000000
+      internalID: -9104417647133918397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 207
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ea9a8a245981f40800000000000000
+      internalID: 5699469441967435351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_12
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 207
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322ce3e28204fb2a0800000000000000
+      internalID: -6719581577694756317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8983586c10ffb1230800000000000000
+      internalID: 3610759909358254232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8caa7f36025be7d0800000000000000
+      internalID: -2888124549239755634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_15
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0107c4a1805723780800000000000000
+      internalID: -8704766452092342256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_16
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99455305240a0cc0800000000000000
+      internalID: -3744175583188924005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249c43a5a2dac96f0800000000000000
+      internalID: -676475446598776510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36890fbd36164cde0800000000000000
+      internalID: -1313818109765707677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 159
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1690526f8b13dd350800000000000000
+      internalID: 6043040945474439521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5035f4a1e11f510e0800000000000000
+      internalID: -2299666923110051067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 159
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4f4f0d70db10070800000000000000
+      internalID: 8070939848492774633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_22
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0858e74d9c877500800000000000000
+      internalID: 393938099562371084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 159
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1844ca436184c3f40800000000000000
+      internalID: 5709517687809131649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_24
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b858c39f6366eb270800000000000000
+      internalID: 8268158352194569611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_25
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 116
+        width: 10
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e5566077b508ba0800000000000000
+      internalID: -6088766129438368182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 116
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcb6069a431231a0800000000000000
+      internalID: -6831376473702089479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_27
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 159
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5225f80b844bbe690800000000000000
+      internalID: -7571760124200529371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_28
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52ba9e601687b2e0800000000000000
+      internalID: -2110070495266557345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_29
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 159
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bd5775bc9984060800000000000000
+      internalID: 6937964324589001550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_30
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b850186240fd5b550800000000000000
+      internalID: 6176087672927356299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_31
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78d2bad4ed114be0800000000000000
+      internalID: -1494880732551391107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_32
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8e962baf20bd120800000000000000
+      internalID: 2439546898909620435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_33
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 21
+        width: 6
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9657b2f9aaaf57900800000000000000
+      internalID: 681726529338307945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_34
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6d3b2f790f84050800000000000000
+      internalID: 5785138256760002270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_35
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eca8b9ed40045c40800000000000000
+      internalID: 5500021379559894241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_36
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c9647f6cfe41ed0800000000000000
+      internalID: -2444065059924173818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 21
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1ba485cc53a3c80800000000000000
+      internalID: -8342296207979531854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_38
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2a9fc789423ef40800000000000000
+      internalID: 5756484986059989691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_39
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 21
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcaff990e3ec3a80800000000000000
+      internalID: -8485657044077007619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 21
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761ad329a26c58630800000000000000
+      internalID: 3928764136095064423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 21
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9141f73392548bbd0800000000000000
+      internalID: -2614263540428631015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_42
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 21
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c25c20142e859a0800000000000000
+      internalID: -6243992114501964641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_43
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 21
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5e869687683cf50800000000000000
+      internalID: 6900506905784411630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated-Props-Sheet-8x8_44
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 21
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21facd97f7ce20cc0800000000000000
+      internalID: -3746171907769323758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Animated-Props-Sheet-8x8_0: -5098813168783846317
+      Animated-Props-Sheet-8x8_1: 1061891416579102048
+      Animated-Props-Sheet-8x8_10: -9104417647133918397
+      Animated-Props-Sheet-8x8_11: 5699469441967435351
+      Animated-Props-Sheet-8x8_12: -6719581577694756317
+      Animated-Props-Sheet-8x8_13: 3610759909358254232
+      Animated-Props-Sheet-8x8_14: -2888124549239755634
+      Animated-Props-Sheet-8x8_15: -8704766452092342256
+      Animated-Props-Sheet-8x8_16: -3744175583188924005
+      Animated-Props-Sheet-8x8_17: -676475446598776510
+      Animated-Props-Sheet-8x8_18: -1313818109765707677
+      Animated-Props-Sheet-8x8_19: 6043040945474439521
+      Animated-Props-Sheet-8x8_2: -5352959696553728987
+      Animated-Props-Sheet-8x8_20: -2299666923110051067
+      Animated-Props-Sheet-8x8_21: 8070939848492774633
+      Animated-Props-Sheet-8x8_22: 393938099562371084
+      Animated-Props-Sheet-8x8_23: 5709517687809131649
+      Animated-Props-Sheet-8x8_24: 8268158352194569611
+      Animated-Props-Sheet-8x8_25: -6088766129438368182
+      Animated-Props-Sheet-8x8_26: -6831376473702089479
+      Animated-Props-Sheet-8x8_27: -7571760124200529371
+      Animated-Props-Sheet-8x8_28: -2110070495266557345
+      Animated-Props-Sheet-8x8_29: 6937964324589001550
+      Animated-Props-Sheet-8x8_3: -8806248225374924758
+      Animated-Props-Sheet-8x8_30: 6176087672927356299
+      Animated-Props-Sheet-8x8_31: -1494880732551391107
+      Animated-Props-Sheet-8x8_32: 2439546898909620435
+      Animated-Props-Sheet-8x8_33: 681726529338307945
+      Animated-Props-Sheet-8x8_34: 5785138256760002270
+      Animated-Props-Sheet-8x8_35: 5500021379559894241
+      Animated-Props-Sheet-8x8_36: -2444065059924173818
+      Animated-Props-Sheet-8x8_37: -8342296207979531854
+      Animated-Props-Sheet-8x8_38: 5756484986059989691
+      Animated-Props-Sheet-8x8_39: -8485657044077007619
+      Animated-Props-Sheet-8x8_4: 5090727950354395264
+      Animated-Props-Sheet-8x8_40: 3928764136095064423
+      Animated-Props-Sheet-8x8_41: -2614263540428631015
+      Animated-Props-Sheet-8x8_42: -6243992114501964641
+      Animated-Props-Sheet-8x8_43: 6900506905784411630
+      Animated-Props-Sheet-8x8_44: -3746171907769323758
+      Animated-Props-Sheet-8x8_5: 3828482716927734549
+      Animated-Props-Sheet-8x8_6: 7365888587755203723
+      Animated-Props-Sheet-8x8_7: -1469260128526535707
+      Animated-Props-Sheet-8x8_8: -1180860661188376122
+      Animated-Props-Sheet-8x8_9: -1901988147568791868
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

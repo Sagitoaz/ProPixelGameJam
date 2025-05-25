@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 07c88c08638ec8a4c84fd29028644f69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5782661542461495669
+    second: Tileset-Forest-Ground-8x8_0
+  - first:
+      213: 4204961455651715735
+    second: Tileset-Forest-Ground-8x8_1
+  - first:
+      213: -849205481993230314
+    second: Tileset-Forest-Ground-8x8_2
+  - first:
+      213: 4252437678399092682
+    second: Tileset-Forest-Ground-8x8_3
+  - first:
+      213: 4181657532188587162
+    second: Tileset-Forest-Ground-8x8_4
+  - first:
+      213: -569232940565585947
+    second: Tileset-Forest-Ground-8x8_5
+  - first:
+      213: 8238406189520925506
+    second: Tileset-Forest-Ground-8x8_6
+  - first:
+      213: 6034509706176253155
+    second: Tileset-Forest-Ground-8x8_7
+  - first:
+      213: 3600666275407210413
+    second: Tileset-Forest-Ground-8x8_8
+  - first:
+      213: -9074923021514486162
+    second: Tileset-Forest-Ground-8x8_9
+  - first:
+      213: 6032307981964202623
+    second: Tileset-Forest-Ground-8x8_10
+  - first:
+      213: 1905756640450538428
+    second: Tileset-Forest-Ground-8x8_11
+  - first:
+      213: -4978927468448556507
+    second: Tileset-Forest-Ground-8x8_12
+  - first:
+      213: -6614193610704900346
+    second: Tileset-Forest-Ground-8x8_13
+  - first:
+      213: -3760522524866230429
+    second: Tileset-Forest-Ground-8x8_14
+  - first:
+      213: 1576117771183542400
+    second: Tileset-Forest-Ground-8x8_15
+  - first:
+      213: 7321954330203500989
+    second: Tileset-Forest-Ground-8x8_16
+  - first:
+      213: 7336629721372189020
+    second: Tileset-Forest-Ground-8x8_17
+  - first:
+      213: 57266904770067920
+    second: Tileset-Forest-Ground-8x8_18
+  - first:
+      213: 8760337952197268604
+    second: Tileset-Forest-Ground-8x8_19
+  - first:
+      213: -3388954459892054196
+    second: Tileset-Forest-Ground-8x8_20
+  - first:
+      213: 1739887654742315399
+    second: Tileset-Forest-Ground-8x8_21
+  - first:
+      213: -6607976376448803997
+    second: Tileset-Forest-Ground-8x8_22
+  - first:
+      213: 1108362751444980856
+    second: Tileset-Forest-Ground-8x8_23
+  - first:
+      213: -1710782312412848947
+    second: Tileset-Forest-Ground-8x8_24
+  - first:
+      213: 5880269587701330678
+    second: Tileset-Forest-Ground-8x8_25
+  - first:
+      213: -4105853961647426327
+    second: Tileset-Forest-Ground-8x8_26
+  - first:
+      213: 3281769488812915803
+    second: Tileset-Forest-Ground-8x8_27
+  - first:
+      213: -4316196093069561224
+    second: Tileset-Forest-Ground-8x8_28
+  - first:
+      213: 8332010616018734774
+    second: Tileset-Forest-Ground-8x8_29
+  - first:
+      213: -4272096642307215497
+    second: Tileset-Forest-Ground-8x8_30
+  - first:
+      213: -5738948083273275337
+    second: Tileset-Forest-Ground-8x8_31
+  - first:
+      213: -3955443573851090966
+    second: Tileset-Forest-Ground-8x8_32
+  - first:
+      213: -8086641195590865518
+    second: Tileset-Forest-Ground-8x8_33
+  - first:
+      213: -1276336154240692510
+    second: Tileset-Forest-Ground-8x8_34
+  - first:
+      213: 6740580709168368454
+    second: Tileset-Forest-Ground-8x8_35
+  - first:
+      213: 6267087008286131005
+    second: Tileset-Forest-Ground-8x8_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 71
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86254907fbdfbfa0800000000000000
+      internalID: -5782661542461495669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 71
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a74524a260b5a30800000000000000
+      internalID: 4204961455651715735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618aa780d140734f0800000000000000
+      internalID: -849205481993230314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 87
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7f672c981b30b30800000000000000
+      internalID: 4252437678399092682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 87
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94ff62ce5b380a30800000000000000
+      internalID: 4181657532188587162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 90
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef132f08ada918f0800000000000000
+      internalID: -569232940565585947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 82
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24336c9c7c2b45270800000000000000
+      internalID: 8238406189520925506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec48460b92eeb350800000000000000
+      internalID: 6034509706176253155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7206c76e228f130800000000000000
+      internalID: 3600666275407210413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e4d9ac7956f0280800000000000000
+      internalID: -9074923021514486162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 74
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72dab8262017b350800000000000000
+      internalID: 6032307981964202623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_11
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 66
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb656e319b927a10800000000000000
+      internalID: 1905756640450538428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a50b0d8db47eab0800000000000000
+      internalID: -4978927468448556507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 55
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fa64e54f9a534a0800000000000000
+      internalID: -6614193610704900346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_14
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3674e7f00b0ffcbc0800000000000000
+      internalID: -3760522524866230429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080539323ce7fd510800000000000000
+      internalID: 1576117771183542400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1b9618baecc9560800000000000000
+      internalID: 7321954330203500989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5166f64cd1f0d560800000000000000
+      internalID: 7336629721372189020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_18
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 58
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddb43c42f37bc000800000000000000
+      internalID: 57266904770067920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 50
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74571904f8f29970800000000000000
+      internalID: 8760337952197268604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47882acfd308f0d0800000000000000
+      internalID: -3388954459892054196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781d00a8a92552810800000000000000
+      internalID: 1739887654742315399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b98950f70cb44a0800000000000000
+      internalID: -6607976376448803997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_23
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8741722dc02b16f00800000000000000
+      internalID: 1108362751444980856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc5c9c0d841248e0800000000000000
+      internalID: -1710782312412848947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f27876f80aea9150800000000000000
+      internalID: 5880269587701330678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4ff5c53931507c0800000000000000
+      internalID: -4105853961647426327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cb86766ff2b8d20800000000000000
+      internalID: 3281769488812915803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872f8a3858ac914c0800000000000000
+      internalID: -4316196093069561224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_29
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be8498a28f31a370800000000000000
+      internalID: 8332010616018734774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fa3250db676b4c0800000000000000
+      internalID: -4272096642307215497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7386610ef192b50b0800000000000000
+      internalID: -5738948083273275337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_32
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef0183c6017b19c0800000000000000
+      internalID: -3955443573851090966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_33
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d24ce6daa76cf80800000000000000
+      internalID: -8086641195590865518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_34
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eece70b70b894ee0800000000000000
+      internalID: -1276336154240692510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_35
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bc4dd117a5b8d50800000000000000
+      internalID: 6740580709168368454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset-Forest-Ground-8x8_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d334c59fd6a29f650800000000000000
+      internalID: 6267087008286131005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tileset-Forest-Ground-8x8_0: -5782661542461495669
+      Tileset-Forest-Ground-8x8_1: 4204961455651715735
+      Tileset-Forest-Ground-8x8_10: 6032307981964202623
+      Tileset-Forest-Ground-8x8_11: 1905756640450538428
+      Tileset-Forest-Ground-8x8_12: -4978927468448556507
+      Tileset-Forest-Ground-8x8_13: -6614193610704900346
+      Tileset-Forest-Ground-8x8_14: -3760522524866230429
+      Tileset-Forest-Ground-8x8_15: 1576117771183542400
+      Tileset-Forest-Ground-8x8_16: 7321954330203500989
+      Tileset-Forest-Ground-8x8_17: 7336629721372189020
+      Tileset-Forest-Ground-8x8_18: 57266904770067920
+      Tileset-Forest-Ground-8x8_19: 8760337952197268604
+      Tileset-Forest-Ground-8x8_2: -849205481993230314
+      Tileset-Forest-Ground-8x8_20: -3388954459892054196
+      Tileset-Forest-Ground-8x8_21: 1739887654742315399
+      Tileset-Forest-Ground-8x8_22: -6607976376448803997
+      Tileset-Forest-Ground-8x8_23: 1108362751444980856
+      Tileset-Forest-Ground-8x8_24: -1710782312412848947
+      Tileset-Forest-Ground-8x8_25: 5880269587701330678
+      Tileset-Forest-Ground-8x8_26: -4105853961647426327
+      Tileset-Forest-Ground-8x8_27: 3281769488812915803
+      Tileset-Forest-Ground-8x8_28: -4316196093069561224
+      Tileset-Forest-Ground-8x8_29: 8332010616018734774
+      Tileset-Forest-Ground-8x8_3: 4252437678399092682
+      Tileset-Forest-Ground-8x8_30: -4272096642307215497
+      Tileset-Forest-Ground-8x8_31: -5738948083273275337
+      Tileset-Forest-Ground-8x8_32: -3955443573851090966
+      Tileset-Forest-Ground-8x8_33: -8086641195590865518
+      Tileset-Forest-Ground-8x8_34: -1276336154240692510
+      Tileset-Forest-Ground-8x8_35: 6740580709168368454
+      Tileset-Forest-Ground-8x8_36: 6267087008286131005
+      Tileset-Forest-Ground-8x8_4: 4181657532188587162
+      Tileset-Forest-Ground-8x8_5: -569232940565585947
+      Tileset-Forest-Ground-8x8_6: 8238406189520925506
+      Tileset-Forest-Ground-8x8_7: 6034509706176253155
+      Tileset-Forest-Ground-8x8_8: 3600666275407210413
+      Tileset-Forest-Ground-8x8_9: -9074923021514486162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

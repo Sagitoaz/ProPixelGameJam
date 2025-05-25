@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39efc176cbcc5140aff52d301ee4b30, type: 3}
+  m_Name: NPC2
+  m_EditorClassIdentifier: 
+  npcName: Karethul
+  npcPortrait: {fileID: -956217350, guid: 76707d4a8ffdfe44697b91eca59773f8, type: 3}
+  dialogueLines:
+  - Will the weak repeat their old mistakes? Should everything be wiped clean and
+    rebuilt from the beginning?
+  - I acknowledge your answer.
+  autoProgressLines: 0101
+  endDialogueLines: 0001
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - YES
+    - NO
+    nextDialogueIndexes: 0100000001000000
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
