@@ -257,6 +257,10 @@ public class AngryBoss : Enemy, IDamageable, IDataPersistence
     public void LoadData(GameData data)
     {
         this._isDead = data.isAngryBossDeath;
+        if (_isDead)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public void SaveData(ref GameData data)
