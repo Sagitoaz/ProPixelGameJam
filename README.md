@@ -148,7 +148,10 @@ ProGameJam/
 https://drive.google.com/drive/folders/1iTtKBR8d_gjoQaxAhEz-ccvnMhbevjC1?usp=sharing
 
 **Video Demo:**
-https://youtu.be/JKnJl8QNuZE
+https://youtu.be/ODlu7tyBmpc
+
+**Download:**
+https://sagitoaz.itch.io/
 
 # 6. Các Vấn Đề Gặp Phải
 
