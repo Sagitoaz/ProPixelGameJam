@@ -291,6 +291,10 @@ public class SadBoss : Enemy, IDamageable, IAttackableEnemy, IDataPersistence
     public void LoadData(GameData data)
     {
         this._isDead = data.isSadBossDeath;
+        if (_isDead)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public void SaveData(ref GameData data)

@@ -93,11 +93,10 @@ public class Player : MonoBehaviour, IDamageable, IDataPersistence
     {
         if (_isDead || _isDash || _isAttackDash) return;
 
-        // Kiểm tra có đang đứng trên mặt đất không
         _grounded = IsGrounded();
 
-        // Cập nhật vận tốc nếu không bơi/lava
-        if (!_inLava && !_inWater)
+        // Cập nhật vận tốc nếu không trong lava
+        if (!_inLava)
         {
             _rb.linearVelocity = new Vector2(_move * _speed, _rb.linearVelocity.y);
         }

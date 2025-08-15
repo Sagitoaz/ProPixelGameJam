@@ -18,7 +18,7 @@ public class FBPhase2 : FinalBoss
         {
             return ActiveSkill(5, 6);
         }
-        float distance = Vector2.Distance(_target.position, transform.position);
+        float distance = Vector2.Distance(_targetP.position, transform.position);
         if (distance < 5.0f)
         {
             return ActiveSkill(3, 4);

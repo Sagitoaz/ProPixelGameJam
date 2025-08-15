@@ -140,7 +140,6 @@ public class HopeBoss : Enemy, IDamageable, IDataPersistence
             TryTeleportBehindTarget();
             if (Health < 1)
             {
-                _finalDes.SetActive(true);
                 SpawnCoin();
                 Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
                 if (player != null)
@@ -337,6 +336,11 @@ public class HopeBoss : Enemy, IDamageable, IDataPersistence
     public void LoadData(GameData data)
     {
         this._isDead = data.isHopeBossDeath;
+        if (_isDead)
+        {
+            gameObject.SetActive(false);
+            _finalDes.SetActive(true);
+        }
     }
 
     public void SaveData(ref GameData data)
