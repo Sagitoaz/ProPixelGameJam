@@ -27,14 +27,14 @@ public class GameData
 
     public GameData()
     {
-        this.currentHealth = 3;
-        this.maxHealth = 3;
-        this.currentMana = 100;
-        this.maxMana = 100;
-        this.coin = 0;
-        this.canSwim = false;
-        this.canDoubleJump = false;
-        this.canDash = false;
+        this.currentHealth = 10;
+        this.maxHealth = 10;
+        this.currentMana = 200;
+        this.maxMana = 200;
+        this.coin = 10000;
+        this.canSwim = true;
+        this.canDoubleJump = true;
+        this.canDash = true;
         this.isFearBossDeath = false;
         this.isSadBossDeath = false;
         this.isAngryBossDeath = false;
